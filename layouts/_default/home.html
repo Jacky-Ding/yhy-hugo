@@ -1,0 +1,88 @@
+{{ define "main" }}
+<!-- Hero Banner -->
+<section class="hero-banner" id="hero-carousel">
+    <!-- Slide 1 -->
+    <div class="carousel-slide active">
+        <div class="carousel-bg" style="background-image:url('{{ "images/banner-1.webp" | relURL }}')"></div>
+        <div class="carousel-content">
+            <h1>{{ T "banner_title" }}</h1>
+            <p>{{ T "banner_slogan" }}</p>
+            <a href="{{ "about/" | relLangURL }}" class="carousel-btn">{{ T "banner_btn" }}</a>
+        </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="carousel-slide">
+        <div class="carousel-bg carousel-bg-fallback"></div>
+        <div class="carousel-content">
+            <h1>{{ T "banner_title" }}</h1>
+            <p>{{ T "products_core_desc" }}</p>
+            <a href="{{ "products/" | relLangURL }}" class="carousel-btn">{{ T "products" }}</a>
+        </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="carousel-slide">
+        <div class="carousel-bg" style="background-image:url('{{ "images/banner-3.webp" | relURL }}')"></div>
+        <div class="carousel-content">
+            <h1>{{ T "banner_title" }}</h1>
+            <p>{{ T "global_subtitle" }}</p>
+            <a href="{{ "global/" | relLangURL }}" class="carousel-btn">{{ T "global" }}</a>
+        </div>
+    </div>
+    <div class="carousel-dots">
+        <button class="carousel-dot active"></button>
+        <button class="carousel-dot"></button>
+        <button class="carousel-dot"></button>
+    </div>
+</section>
+
+<!-- Core Highlights -->
+<section class="highlights-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>{{ T "highlights_title" }}</h2>
+            <p>{{ T "highlights_subtitle" }}</p>
+        </div>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <div class="highlight-icon">👥</div>
+                <h3>{{ T "highlight1_title" }}</h3>
+                <p>{{ T "highlight1_desc" }}</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🏭</div>
+                <h3>{{ T "highlight2_title" }}</h3>
+                <p>{{ T "highlight2_desc" }}</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">✅</div>
+                <h3>{{ T "highlight3_title" }}</h3>
+                <p>{{ T "highlight3_desc" }}</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🌍</div>
+                <h3>{{ T "highlight4_title" }}</h3>
+                <p>{{ T "highlight4_desc" }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cooperative Brands: 2 rows × 4 columns -->
+<section class="brands-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>{{ T "brands_title" }}</h2>
+        </div>
+        <div class="brands-grid">
+            <div class="brand-item"><img src="{{ "images/shanqi.webp" | relURL }}" alt="SHACMAN"></div>
+            <div class="brand-item"><img src="{{ "images/zhongqi2.webp" | relURL }}" alt="CNHTC"></div>
+            <div class="brand-item"><img src="{{ "images/weichai.webp" | relURL }}" alt="WEICHAI"></div>
+            <div class="brand-item"><img src="{{ "images/JIEFANG2.webp" | relURL }}" alt="FAW JIEFANG"></div>
+            <div class="brand-item"><img src="{{ "images/法士特logo.webp" | relURL }}" alt="FAST"></div>
+            <div class="brand-item"><img src="{{ "images/汉德logo.webp" | relURL }}" alt="HANDE"></div>
+            <div class="brand-item"><img src="{{ "images/康明斯.webp" | relURL }}" alt="CUMMINS"></div>
+            <div class="brand-item"><img src="{{ "images/海沃.webp" | relURL }}" alt="HYVA"></div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+    <meta http-equiv="refresh" content="0; url={{ "/" | relLangURL }}">
+    <script>
+      // 根据浏览器语言自动跳转
+      (function() {
+        var lang = navigator.language || navigator.userLanguage || 'zh';
+        lang = lang.toLowerCase();
+        var path = '/';
+        if (lang.startsWith('en')) path = '/en/';
+        else if (lang.startsWith('ru')) path = '/ru/';
+        else path = '/zh/';
+        window.location.href = path;
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting... <a href="{{ "/" | relLangURL }}">Click here if not redirected</a></p>
+  </body>
+</html>

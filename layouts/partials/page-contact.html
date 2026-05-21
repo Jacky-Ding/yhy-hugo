@@ -1,0 +1,180 @@
+<!-- Contact Page — 3 locations with QR codes + Leaflet map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>{{ T "contact" }}</h1>
+            <p>{{ T "contact_subtitle" }}</p>
+        </div>
+
+        <div class="contact-wrap">
+            <!-- Left: Contact Info -->
+            <div class="contact-info">
+
+                <!-- 中国总部 (临沂) -->
+                <div class="subsidiary-item contact-block">
+                    <h3>{{ T "contact_headquarters_title" }}</h3>
+                    <p class="company-name">{{ T "contact_headquarters_company" }}</p>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="info-text"><label>{{ T "contact_address_label" }}</label><p>{{ T "contact_headquarters_address" }}</p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="info-text"><label>{{ T "contact_phone_label" }}</label><p><a href="tel:{{ T "contact_headquarters_phone" }}">{{ T "contact_headquarters_phone" }}</a></p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="info-text"><label>{{ T "contact_email_label" }}</label><p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="info-text"><label>{{ T "contact_working_hours" }}</label><p>{{ T "contact_headquarters_hours" }}</p></div></div>
+                    <div class="qr-row">
+                        <div class="qr-card"><img src="{{ "images/wechat-linyi.webp" | relURL }}" alt="临沂微信"><div class="qr-label">{{ T "contact_wechat" }}</div></div>
+                        <div class="qr-card"><img src="{{ "images/whatsapp-linyi.webp" | relURL }}" alt="临沂WhatsApp"><div class="qr-label">WhatsApp</div></div>
+                    </div>
+                </div>
+
+                <!-- 赞比亚恩多拉基地 -->
+                <div class="subsidiary-item contact-block">
+                    <h3>{{ T "contact_overseas_title" }} — 恩多拉</h3>
+                    <p class="company-name">{{ T "contact_overseas_ndola_company" }}</p>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="info-text"><label>{{ T "contact_address_label" }}</label><p>{{ T "contact_overseas_address_ndola" }}</p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="info-text"><label>{{ T "contact_phone_label" }}</label><p><a href="tel:{{ T "contact_overseas_phone1" }}">{{ T "contact_overseas_phone1" }}</a></p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="info-text"><label>{{ T "contact_email_label" }}</label><p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="info-text"><label>{{ T "contact_working_hours" }}</label><p>{{ T "contact_overseas_hours" }}</p></div></div>
+                    <div class="qr-row">
+                        <div class="qr-card"><img src="{{ "images/wechat-ndola.webp" | relURL }}" alt="恩多拉微信"><div class="qr-label">{{ T "contact_wechat" }}</div></div>
+                        <div class="qr-card"><img src="{{ "images/whatsapp-ndola.webp" | relURL }}" alt="恩多拉WhatsApp"><div class="qr-label">WhatsApp</div></div>
+                    </div>
+                </div>
+
+                <!-- 赞比亚卢萨卡基地 -->
+                <div class="subsidiary-item contact-block">
+                    <h3>{{ T "contact_overseas_title" }} — 卢萨卡</h3>
+                    <p class="company-name">{{ T "contact_overseas_lusaka_company" }}</p>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="info-text"><label>{{ T "contact_address_label" }}</label><p>{{ T "contact_overseas_address_lusaka" }}</p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="info-text"><label>{{ T "contact_phone_label" }}</label><p><a href="tel:{{ T "contact_overseas_lusaka_phone" }}">{{ T "contact_overseas_lusaka_phone" }}</a></p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="info-text"><label>{{ T "contact_email_label" }}</label><p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p></div></div>
+                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="info-text"><label>{{ T "contact_working_hours" }}</label><p>{{ T "contact_overseas_hours" }}</p></div></div>
+                    <div class="qr-row">
+                        <div class="qr-card"><img src="{{ "images/wechat-lusaka.webp" | relURL }}" alt="卢萨卡微信"><div class="qr-label">{{ T "contact_wechat" }}</div></div>
+                        <div class="qr-card"><img src="{{ "images/whatsapp-lusaka.webp" | relURL }}" alt="卢萨卡WhatsApp"><div class="qr-label">WhatsApp</div></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact-form">
+                <h3>{{ T "contact_form_title" }}</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label>{{ T "form_name" }} *</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>{{ T "form_email" }} *</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>{{ T "form_phone" }}</label>
+                        <input type="tel" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>{{ T "form_message" }} *</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">{{ T "form_submit" }}</button>
+                    <p class="form-tips">{{ T "form_tips" }}</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Leaflet Map: 3 locations -->
+        <div class="single-map-container">
+            <div id="company-map"></div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="content-block">
+            <h2>{{ T "contact_faq" }}</h2>
+            <div class="faq-list">
+                <div class="faq-item"><div class="faq-question">{{ T "faq1_title" }}</div><div class="faq-answer">{{ T "faq1_answer" }}</div></div>
+                <div class="faq-item"><div class="faq-question">{{ T "faq2_title" }}</div><div class="faq-answer">{{ T "faq2_answer" }}</div></div>
+                <div class="faq-item"><div class="faq-question">{{ T "faq3_title" }}</div><div class="faq-answer">{{ T "faq3_answer" }}</div></div>
+                <div class="faq-item"><div class="faq-question">{{ T "faq4_title" }}</div><div class="faq-answer">{{ T "faq4_answer" }}</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+async function handleFormSubmit(e) {
+    e.preventDefault();
+    var form = document.getElementById('contact-form');
+    var btn = form.querySelector('.form-submit');
+    var tips = form.querySelector('.form-tips');
+    btn.disabled = true;
+    btn.textContent = '提交中...';
+    tips.textContent = '';
+
+    var data = {
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        message: form.message.value
+    };
+
+    try {
+        var resp = await fetch('{{ "contact-form-handler.php" | relURL }}', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+        var result = await resp.json();
+        if (result.success) {
+            tips.style.color = '#52c41a';
+            tips.textContent = '✓ ' + result.message;
+            form.reset();
+        } else {
+            tips.style.color = '#ff4d4f';
+            tips.textContent = '✗ ' + result.message;
+        }
+    } catch(err) {
+        tips.style.color = '#ff4d4f';
+        tips.textContent = '✗ 网络错误，请检查网络后重试，或直接发邮件至 yhy@yhytradehub.com';
+    }
+    btn.disabled = false;
+    btn.textContent = '{{ T "form_submit" }}';
+}
+</script>
+
+<!-- Leaflet Map Init -->
+<script>
+(function() {
+    var map = L.map('company-map').setView([-2.0, 28.0], 3);
+    var tileSources = [
+        { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' },
+        { url: 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', attribution: '&copy; OpenStreetMap contributors' },
+        { url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', attribution: '&copy; <a href="https://carto.com/">CARTO</a>' }
+    ];
+    var idx = 0;
+    var tileLayer = L.tileLayer(tileSources[idx].url, { attribution: tileSources[idx].attribution, maxZoom: 18 }).addTo(map);
+    tileLayer.on('tileerror', function() {
+        idx++;
+        if (idx < tileSources.length) {
+            map.removeLayer(tileLayer);
+            tileLayer = L.tileLayer(tileSources[idx].url, { attribution: tileSources[idx].attribution, maxZoom: 18 }).addTo(map);
+        }
+    });
+
+    var locations = [
+        { name: '{{ T "contact_headquarters_company" }}', company: '{{ T "contact_headquarters_title" }}', lat: 35.1128, lng: 118.3146 },
+        { name: '{{ T "contact_overseas_ndola_company" }}', company: '恩多拉', lat: -12.9687, lng: 28.6336 },
+        { name: '{{ T "contact_overseas_lusaka_company" }}', company: '卢萨卡', lat: -15.3875, lng: 28.3228 }
+    ];
+    locations.forEach(function(loc) {
+        L.marker([loc.lat, loc.lng]).addTo(map).bindPopup('<div class="map-popup"><strong>' + loc.name + '</strong><br>' + loc.company + '</div>');
+    });
+
+    setTimeout(function() {
+        var mc = document.getElementById('company-map');
+        if (mc && mc.querySelectorAll('img').length === 0) {
+            mc.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;background:#f5f7fa;color:#86909C;font-size:15px;text-align:center;padding:20px;"><div><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#165DFF" stroke-width="1.5" style="margin-bottom:12px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><p>地图暂时无法加载，请稍后刷新重试</p><p style="font-size:13px;margin-top:8px;color:#4E5969;">临沂总部 · 赞比亚恩多拉 · 赞比亚卢萨卡</p></div></div>';
+        }
+    }, 8000);
+})();
+</script>

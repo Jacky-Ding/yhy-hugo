@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="page-hero">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.subtitle }}</p>
+    </div>
+</section>
+<section style="padding: 60px 0;">
+    <div class="container">
+        {{ if eq .Section "about" }}{{ partial "page-about.html" . }}
+        {{ else if eq .Section "products" }}{{ partial "page-products.html" . }}
+        {{ else if eq .Section "services" }}{{ partial "page-services.html" . }}
+        {{ else if eq .Section "global" }}{{ partial "page-global.html" . }}
+        {{ else if eq .Section "contact" }}{{ partial "page-contact.html" . }}
+        {{ else }}{{ .Content }}{{ end }}
+    </div>
+</section>
+{{ end }}

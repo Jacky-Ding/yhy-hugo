@@ -1,0 +1,81 @@
+# Hugo configuration for YHY International Trade — tri-lingual static site
+baseURL = 'https://www.yhytradehub.com/'
+languageCode = 'zh'
+title = '山东钰弘源国际贸易有限公司'
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+metaDataFormat = 'yaml'
+summaryLength = 140
+
+# Disable unused output formats for speed
+disableKinds = ['taxonomy', 'term']
+
+# i18n — three languages with auto redirection handled by JS
+[languages]
+[languages.zh]
+languageCode = 'zh-CN'
+languageName = '中文'
+weight = 1
+title = '山东钰弘源国际贸易有限公司'
+description = '全球商用车零部件专业授权供应商'
+
+[languages.en]
+languageCode = 'en'
+languageName = 'English'
+weight = 2
+title = 'Shandong Yuhongyuan International Trade Co., Ltd.'
+description = 'Professional Authorized Supplier of Commercial Vehicle Parts Worldwide'
+
+[languages.ru]
+languageCode = 'ru'
+languageName = 'Русский'
+weight = 3
+title = 'Шаньдун Юйхуньюань Международная Торговая Компания, ООО'
+description = 'Профессиональный авторизованный поставщик запчастей для коммерческих автомобилей по всему миру'
+
+# Menus
+[[menus.main]]
+name = 'home'
+weight = 1
+identifier = 'home'
+url = '/'
+
+[[menus.main]]
+name = 'about'
+weight = 2
+identifier = 'about'
+url = '/about/'
+
+[[menus.main]]
+name = 'products'
+weight = 3
+identifier = 'products'
+url = '/products/'
+
+[[menus.main]]
+name = 'services'
+weight = 4
+identifier = 'services'
+url = '/services/'
+
+[[menus.main]]
+name = 'global'
+weight = 5
+identifier = 'global'
+url = '/global/'
+
+[[menus.main]]
+name = 'contact'
+weight = 6
+identifier = 'contact'
+url = '/contact/'
+
+# Production overrides
+[params]
+company_full_name_zh = '山东钰弘源国际贸易有限公司'
+company_full_name_en = 'Shandong Yuhongyuan International Trade Co., Ltd.'
+company_full_name_ru = 'Шаньдун Юйхуньюань Международная Торговая Компания, ООО'
+company_email = 'yhy@yhytradehub.com'
+primary_color = '#165DFF'
+primary_dark = '#0E42B3'

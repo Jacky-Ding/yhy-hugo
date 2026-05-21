@@ -1,0 +1,36 @@
+<header id="site-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="{{ .Site.Home.Permalink }}" class="logo-link">
+                <img src="{{ "images/logo.png" | relURL }}" alt="{{ .Site.Title }}" class="logo-img">
+                <span class="logo-text">{{ .Site.Title }}</span>
+            </a>
+        </div>
+        <nav id="main-nav">
+            <ul class="nav-links">
+                <li><a href="{{ .Site.Home.Permalink }}">{{ T "home" }}</a></li>
+                <li><a href="{{ "about/" | relLangURL }}">{{ T "about" }}</a></li>
+                <li><a href="{{ "products/" | relLangURL }}">{{ T "products" }}</a></li>
+                <li><a href="{{ "services/" | relLangURL }}">{{ T "services" }}</a></li>
+                <li><a href="{{ "global/" | relLangURL }}">{{ T "global" }}</a></li>
+                <li><a href="{{ "contact/" | relLangURL }}">{{ T "contact" }}</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            {{ partial "lang-switcher.html" . }}
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+<div id="mobile-menu" class="mobile-menu">
+    <ul>
+        <li><a href="{{ .Site.Home.Permalink }}">{{ T "home" }}</a></li>
+        <li><a href="{{ "about/" | relLangURL }}">{{ T "about" }}</a></li>
+        <li><a href="{{ "products/" | relLangURL }}">{{ T "products" }}</a></li>
+        <li><a href="{{ "services/" | relLangURL }}">{{ T "services" }}</a></li>
+        <li><a href="{{ "global/" | relLangURL }}">{{ T "global" }}</a></li>
+        <li><a href="{{ "contact/" | relLangURL }}">{{ T "contact" }}</a></li>
+    </ul>
+</div>

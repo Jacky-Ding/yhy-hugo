@@ -1,0 +1,11 @@
+<footer id="site-footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>{{ replace (T "copyright") "{year}" (now.Format "2006") | safeHTML }}</p>
+            <p class="footer-contact">
+                <span>{{ T "contact_phone_label" }}: +86 186 0639 3111</span>
+                <span>{{ T "contact_email_label" }}: yhy@yhytradehub.com</span>
+            </p>
+        </div>
+    </div>
+</footer>
