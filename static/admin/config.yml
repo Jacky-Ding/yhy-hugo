@@ -7,9 +7,6 @@ backend:
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
-media_library:
-  name: uploads
-
 collections:
   - name: "posts"
     label: "博客文章"
