@@ -1,20 +1,25 @@
 backend:
   name: github
-  repo: Jacky-Ding/yhy-hugo
-  branch: main
-  auth_endpoint: https://api.netlify.com/auth/done
-  client_id: Ov23lik5G0mwdbZUWLFV
+  repo: Jacky-Ding/yhy-hugo   # 例如 octocat/yhy-hugo
+  branch: main                         # 你的默认分支，可能是 master
+  base_url: https://yhy-hugo.pages.dev # 你的 Cloudflare Pages 测试域名
+  auth_endpoint: /api/auth
 
-media_folder: static/images/uploads
-public_folder: /images/uploads
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "posts"
-    label: "文章"
-    folder: "content/posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "标题", name: "title", widget: "string" }
-      - { label: "日期", name: "date", widget: "datetime" }
-      - { label: "内容", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "页面管理"
+    files:
+      - file: "content/_index.zh.md"
+        label: "中文首页"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "Banner标题", name: "banner_title", widget: "string"}
+          # 可根据你实际内容添加更多字段
+      - file: "content/about/index.zh.md"
+        label: "关于我们 (中文)"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
