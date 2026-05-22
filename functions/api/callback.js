@@ -15,18 +15,24 @@ export async function onRequest(context) {
       })
     });
     const result = await response.json();
-    if (result.error) throw new Error(result.error_description);
+    if (result.error) {
+      return new Response(`OAuth Error: ${result.error_description}`, { status: 500 });
+    }
 
+    const token = result.access_token;
+    // 将 token 同时写入父窗口和自己的 localStorage，然后关闭窗口
     const html = `
       <html><body><script>
         (function() {
-          const token = '${result.access_token}';
-          if (window.opener && token) {
-            window.opener.postMessage({ token, provider: 'github' }, '*');
-            window.close();
-          } else {
-            document.body.innerText = 'Authorization successful. You can close this window.';
+          if (window.opener) {
+            window.opener.localStorage.setItem('decap-cms-github-token', '${token}');
+            window.opener.postMessage({ token: '${token}', provider: 'github' }, '*');
           }
+          localStorage.setItem('decap-cms-github-token', '${token}');
+          window.close();
+          setTimeout(function() {
+            document.body.innerText = '登录成功，请手动关闭此窗口并刷新管理页面。';
+          }, 500);
         })();
       </script></body></html>
     `;
