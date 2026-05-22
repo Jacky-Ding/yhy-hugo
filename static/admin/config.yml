@@ -3,17 +3,18 @@ backend:
   repo: Jacky-Ding/yhy-hugo
   branch: main
   auth_endpoint: https://api.netlify.com/auth/done
+  client_id: Ov23lik5G0mwdbZUWLFV
 
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: static/images/uploads
+public_folder: /images/uploads
 
 collections:
   - name: "posts"
-    label: "博客文章"
+    label: "文章"
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "标题", name: "title", widget: "string"}
-      - {label: "日期", name: "date", widget: "datetime"}
-      - {label: "正文", name: "body", widget: "markdown"}
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "日期", name: "date", widget: "datetime" }
+      - { label: "内容", name: "body", widget: "markdown" }
