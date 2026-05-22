@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Decap CMS Admin</title>
+  <title>Content Manager</title>
 </head>
 <body>
+  <script>
+    // 如果回调页面已经在 localStorage 写入了 token，这里可以不用额外操作
+    // 但为了保险，我们可以在页面加载时清除可能冲突的旧 token 或者不做处理
+    // Decap CMS 会自动读取 'decap-cms-github-token'
+  </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
