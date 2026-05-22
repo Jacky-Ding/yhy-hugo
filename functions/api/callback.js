@@ -15,23 +15,14 @@ export async function onRequest(context) {
       })
     });
     const result = await response.json();
-    if (result.error) throw new Error(result.error_description);
-
-    const html = `
-      <html><body><script>
-        (function() {
-          const token = '${result.access_token}';
-          if (window.opener && token) {
-            window.opener.postMessage({ token, provider: 'github' }, '*');
-            window.close();
-          } else {
-            document.body.innerText = 'Authorization successful. You can close this window.';
-          }
-        })();
-      </script></body></html>
-    `;
-    return new Response(html, { headers: { 'Content-Type': 'text/html' } });
+    
+    // 调试：直接显示整个响应
+    return new Response(`<pre>${JSON.stringify(result, null, 2)}</pre>`, {
+      headers: { 'Content-Type': 'text/html' }
+    });
   } catch (error) {
-    return new Response(`OAuth Error: ${error.message}`, { status: 500 });
+    return new Response(`<pre>Error: ${error.message}</pre>`, {
+      headers: { 'Content-Type': 'text/html' }
+    });
   }
 }
