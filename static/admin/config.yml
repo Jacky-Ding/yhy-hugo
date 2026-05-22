@@ -1,8 +1,8 @@
 backend:
   name: github
   repo: Jacky-Ding/yhy-hugo   # 例如 octocat/yhy-hugo
-  branch: main                         # 你的默认分支，可能是 master
-  base_url: https://yhy-hugo.pages.dev # 你的 Cloudflare Pages 测试域名
+  branch: main
+  base_url: https://yhy-hugo.pages.dev
   auth_endpoint: /api/auth
 
 media_folder: "static/images/uploads"
@@ -12,14 +12,16 @@ collections:
   - name: "pages"
     label: "页面管理"
     files:
-      - file: "content/_index.zh.md"
+      - name: "home_zh"                      # 唯一名称，不可重复
         label: "中文首页"
+        file: "content/_index.zh.md"
         fields:
           - {label: "标题", name: "title", widget: "string"}
           - {label: "Banner标题", name: "banner_title", widget: "string"}
-          # 可根据你实际内容添加更多字段
-      - file: "content/about/index.zh.md"
+      - name: "about_zh"                     # 唯一名称
         label: "关于我们 (中文)"
+        file: "content/about/index.zh.md"
         fields:
           - {label: "标题", name: "title", widget: "string"}
           - {label: "正文", name: "body", widget: "markdown"}
+      # 可以继续添加其他页面，每个都要有唯一的 name
