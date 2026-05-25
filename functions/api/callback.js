@@ -26,17 +26,21 @@ export async function onRequest(context) {
       <html>
       <body>
       <script>
-        // Decap CMS / Netlify CMS 默认读取的 key
-        localStorage.setItem('netlify-cms-oauth-token', '${token}');
-        // 备选（兼容旧版）
-        localStorage.setItem('decap-cms-oauth-token', '${token}');
-        if (window.opener) {
-          window.opener.postMessage({ token: '${token}', provider: 'github' }, '*');
-        }
-        setTimeout(() => {
-          window.close();
-          document.body.innerText = '登录成功，请手动关闭此窗口并刷新管理页面。';
-        }, 300);
+        (function() {
+          var token = '${token}';
+          console.log('OAuth callback received token:', token);
+          if (token) {
+            // 写入 Decap CMS 默认和备用的 key
+            localStorage.setItem('netlify-cms-oauth-token', token);
+            localStorage.setItem('decap-cms-oauth-token', token);
+            if (window.opener) {
+              window.opener.postMessage({ token: token, provider: 'github' }, '*');
+            }
+            setTimeout(() => window.close(), 500);
+          } else {
+            document.body.innerText = '登录失败：未收到 Token，请检查 Cloudflare Functions 日志。';
+          }
+        })();
       </script>
       </body>
       </html>
