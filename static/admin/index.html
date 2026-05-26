@@ -6,23 +6,6 @@
   <title>Content Manager</title>
 </head>
 <body>
-  <script>
-    // 监听来自 OAuth 弹窗的 token 消息
-    window.addEventListener('message', function(event) {
-      // 验证消息来源是否为你自己的 Worker 域名
-      if (event.origin === 'https://yhy-decap-auth.dty121.workers.dev' && event.data.type === 'decap-cms-oauth-token') {
-        const token = event.data.token;
-        if (token) {
-          // 将 token 存入 localStorage（Decap CMS 默认读取的 key）
-          localStorage.setItem('netlify-cms-oauth-token', token);
-          localStorage.setItem('decap-cms-oauth-token', token);
-          // 刷新页面，让 CMS 重新加载 token 并进入管理界面
-          window.location.reload();
-        }
-      }
-    });
-  </script>
-  <!-- 加载 Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
