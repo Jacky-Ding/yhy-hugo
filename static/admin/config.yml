@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Jacky-Ding/yhy-hugo   # 例如 octocat/yhy-hugo
   branch: main
-  base_url: https://yhy-decap-auth.dty121.workers.dev
+  base_url: https://yhytradehub.com
   auth_endpoint: /auth
 
 media_folder: "static/images/uploads"
