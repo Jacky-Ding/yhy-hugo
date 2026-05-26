@@ -3,7 +3,7 @@ backend:
   repo: Jacky-Ding/yhy-hugo   # 例如 octocat/yhy-hugo
   branch: main
   base_url: https://yhy-decap-auth.dty121.workers.dev
-  auth_endpoint: /api/auth
+  auth_endpoint: /auth
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
