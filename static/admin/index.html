@@ -6,35 +6,9 @@
   <title>Content Manager</title>
 </head>
 <body>
-  <!-- 监听 OAuth 消息的逻辑 -->
-  <script>
-    // 确保 DOM 完全加载后再执行监听逻辑
-    document.addEventListener('DOMContentLoaded', () => {
-      // 定义处理 token 的函数
-      function handleOAuthMessage(event) {
-        // 1. 安全检查：验证消息的来源
-        // 这很重要！请务必将此处替换为你的 Worker 域名进行校验
-        if (event.origin !== 'https://yhytradehub.com') {
-            console.warn('Ignoring message from untrusted origin:', event.origin);
-            return;
-        }
-        if (event.data && event.data.token) {
-          console.log('✅ Token received!');
-          // 存储 Token
-          localStorage.setItem('netlify-cms-oauth-token', event.data.token);
-          localStorage.setItem('decap-cms-oauth-token', event.data.token);
-          // 刷新页面，CMS 会读取 Token 并显示界面
-          window.location.reload();
-        } else {
-          console.log('No token found in message:', event.data);
-        }
-      }
-
-      // 添加全局消息监听器
-      window.addEventListener('message', handleOAuthMessage);
-    });
+  <script type="module">
+    import CMS from 'https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js';
+    CMS.init();
   </script>
-  <!-- 加载 Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
