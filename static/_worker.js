@@ -13,9 +13,10 @@ export default {
     // 处理 /api/callback
     if (path === "/api/callback") {
       const code = url.searchParams.get("code");
-      if (!code) {
-        return new Response("Bad Request: Missing 'code' parameter.", { status: 400 });
-      }
+      if (!code) return new Response("No code", { status: 400 });
+      // 直接返回 code 和简单的文本
+      return new Response(`Callback received code: ${code}`, { status: 200 });
+    }
 
       try {
         const tokenResponse = await fetch("https://github.com/login/oauth/access_token", {
