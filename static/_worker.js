@@ -9,7 +9,6 @@ export default {
 
     // 发起 GitHub OAuth 请求
     if (path === "/api/auth") {
-      // 从 Pages 环境变量中读取凭证
       const clientId = env.GITHUB_CLIENT_ID;
       if (!clientId) {
         console.error("Missing GITHUB_CLIENT_ID environment variable.");
@@ -34,11 +33,16 @@ export default {
       }
 
       try {
-        // 用 code 换取 access_token
+        // 用 code 换取 access_token，必须包含 redirect_uri 参数
         const tokenResponse = await fetch("https://github.com/login/oauth/access_token", {
           method: "POST",
           headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify({ client_id: clientId, client_secret: clientSecret, code: code }),
+          body: JSON.stringify({
+            client_id: clientId,
+            client_secret: clientSecret,
+            code: code,
+            redirect_uri: `${url.origin}/api/callback` // 关键：与授权时的 redirect_uri 一致
+          }),
         });
         const tokenData = await tokenResponse.json();
 
