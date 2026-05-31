@@ -728,3 +728,6 @@ other = "Ндола"
 
 [city_lusaka]
 other = "Лусака"
+[api_endpoint]
+other = "/api/contact"
+

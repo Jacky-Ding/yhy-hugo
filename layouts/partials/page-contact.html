@@ -110,6 +110,9 @@ var translations = {
     contactEmail: '{{ T "contact_email" }}'
 };
 
+// API endpoint - using Cloudflare Workers
+var API_BASE_URL = '{{ T "api_endpoint" }}';
+
 async function handleFormSubmit(e) {
     e.preventDefault();
     var form = document.getElementById('contact-form');
@@ -123,11 +126,12 @@ async function handleFormSubmit(e) {
         name: form.name.value,
         email: form.email.value,
         phone: form.phone.value,
-        message: form.message.value
+        message: form.message.value,
+        lang: '{{ .Site.Language.Lang }}'
     };
 
     try {
-        var resp = await fetch('{{ "contact-form-handler.php" | relURL }}', {
+        var resp = await fetch(API_BASE_URL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
