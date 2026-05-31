@@ -1,5 +1,5 @@
 # Hugo configuration for YHY International Trade — tri-lingual static site
-baseURL = 'https://www.yhytradehub.com/'
+baseURL = '/'
 languageCode = 'zh'
 title = '山东钰弘源国际贸易有限公司'
 defaultContentLanguage = 'zh'
@@ -7,6 +7,12 @@ defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
 metaDataFormat = 'yaml'
 summaryLength = 140
+
+# Canonical URLs for SEO
+canonifyURLs = false
+
+# Cloudflare Pages friendly - relative URLs
+relativeURLs = true
 
 # Disable unused output formats for speed
 disableKinds = ['taxonomy', 'term']

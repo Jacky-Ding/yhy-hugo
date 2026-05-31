@@ -1,0 +1,5 @@
+# Production configuration - use this for live site on yhytradehub.com
+baseURL = 'https://www.yhytradehub.com/'
+
+# Enable canonicalization for production SEO
+canonifyURLs = true

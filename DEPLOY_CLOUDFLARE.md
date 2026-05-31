@@ -21,12 +21,20 @@
 
 在 **Build settings** 中配置：
 
+#### 预览环境（Preview）配置：
 | 设置项 | 值 |
 |--------|-----|
 | Project name | yhy-hugo (或你喜欢的名字) |
 | Production branch | main (或你的主分支名) |
 | Framework preset | Hugo |
 | Build command | hugo --minify |
+| Build output directory | public |
+
+#### 生产环境（Production）配置：
+在项目设置 → **Builds & deployments** → **Build settings** 中，为生产环境单独配置：
+| 设置项 | 值 |
+|--------|-----|
+| Build command | hugo --minify --environment production |
 | Build output directory | public |
 
 ### 3. 环境变量
