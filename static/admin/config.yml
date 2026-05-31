@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: Jacky-Ding/yhy-hugo   # 你的 GitHub 仓库名
+  branch: main                 # 网站的分支，通常是 main 或 master
+  base_url: https://sveltia-cms-auth.dty121.workers.dev  # 这里填写你第一步部署的 Worker URL
+  auth_endpoint: /auth         # 认证端点，保持不变
+
+# 媒体文件存放的本地路径和访问路径
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+# 时区设置，方便显示正确的时间[reference:7]
+locale: 'zh-Hans'
+
+collections:
+  # 这是一个配置示例，定义了如何管理网站内容
+  - name: "pages"
+    label: "页面管理"
+    files:
+      - name: "home_zh"
+        label: "中文首页"
+        file: "content/_index.zh.md"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "Banner标题", name: "banner_title", widget: "string"}
+
+      - name: "about_zh"
+        label: "关于我们 (中文)"
+        file: "content/about/index.zh.md"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
+  # - name: "posts" ... 你可以在这里继续添加文章、产品等集合

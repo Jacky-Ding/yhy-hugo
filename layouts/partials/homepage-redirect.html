@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+    <meta http-equiv="refresh" content="0; url={{ "/" | relLangURL }}">
+    <script src="{{ "js/lang-detect.js" | relURL }}"></script>
+  </head>
+  <body>
+    <p>Redirecting... <a href="{{ "/" | relLangURL }}">Click here if not redirected</a></p>
+  </body>
+</html>

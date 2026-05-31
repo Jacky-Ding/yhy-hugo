@@ -1,0 +1,734 @@
+# Chinese translations — i18n/zh.toml
+
+[home]
+other = "首页"
+
+[about]
+other = "关于我们"
+
+[products]
+other = "产品中心"
+
+[services]
+other = "服务体系"
+
+[global]
+other = "全球布局"
+
+[contact]
+other = "联系我们"
+
+[banner_title]
+other = "全球商用车零部件专业授权供应商"
+
+[banner_slogan]
+other = "诚信铸品牌 服务求发展，临沂物流枢纽辐射全球市场"
+
+[banner_btn]
+other = "了解更多"
+
+[highlights_title]
+other = "核心优势"
+
+[highlights_subtitle]
+other = "我们凭借专业的团队、丰富的经验和全球化的资源，为客户提供全方位的贸易解决方案"
+
+[highlight1_title]
+other = "专业团队"
+
+[highlight1_desc]
+other = "10年以上国际贸易经验的专业团队，熟悉各国贸易政策和流程"
+
+[highlight2_title]
+other = "海量库存"
+
+[highlight2_desc]
+other = "10万+SKU现货，5万平现代化仓储，快速响应客户需求"
+
+[highlight3_title]
+other = "品牌授权"
+
+[highlight3_desc]
+other = "陕汽、重汽、潍柴等知名品牌核心授权商，原厂正品保障"
+
+[highlight4_title]
+other = "全球布局"
+
+[highlight4_desc]
+other = "500+长期合作客户，覆盖俄、非、东南亚、南美等地区"
+
+[brands_title]
+other = "合作品牌"
+
+[brand1]
+other = "陕汽"
+
+[brand2]
+other = "重汽"
+
+[brand3]
+other = "潍柴"
+
+[brand4]
+other = "解放"
+
+[brand5]
+other = "欧曼"
+
+[brand6]
+other = "法士特"
+
+[brand7]
+other = "汉德"
+
+[brand8]
+other = "康明斯"
+
+[brand9]
+other = "海沃"
+
+[about_subtitle]
+other = "深耕商用车零部件出口，打造全球优质合作平台"
+
+[about_company_intro]
+other = "公司简介"
+
+[about_intro]
+other = "山东钰弘源国际贸易有限公司成立于2022年，是专业从事商用车零部件出口的国际贸易企业。公司坐落于中国物流之都——临沂，地处长三角与京津唐经济圈枢纽、亚欧大陆桥关键节点，地理优势得天独厚。公司秉承「诚信铸品牌，服务求发展」的经营理念，致力于为全球客户提供高品质商用车零部件产品与专业配套服务。"
+
+[about_business_philosophy]
+other = "经营理念"
+
+[about_philosophy_content]
+other = "公司始终坚持「诚信、专业、创新、共赢」的核心价值观，以客户需求为导向，以优质产品为基础，以专业服务为保障，致力于成为全球客户值得信赖的商用车零部件合作伙伴。"
+
+[about_service_promise]
+other = "服务承诺"
+
+[about_promise1]
+other = "原厂正品"
+
+[about_promise1_desc]
+other = "所有产品均为原厂正品，提供品牌授权证明，假一赔十"
+
+[about_promise2]
+other = "高效交付"
+
+[about_promise2_desc]
+other = "现货产品48小时内发货，定制产品按约定时间准时交付"
+
+[about_promise3]
+other = "专业服务"
+
+[about_promise3_desc]
+other = "7×24小时专业客服响应，提供全流程技术支持与售后指导"
+
+[about_promise4]
+other = "互利共赢"
+
+[about_promise4_desc]
+other = "基于平等互利原则，与客户建立长期稳定的合作关系"
+
+[about_core_advantages]
+other = "核心优势"
+
+[about_adv1_title]
+other = "专业团队经验丰富"
+
+[about_adv1_item1]
+other = "团队成员平均从业经验超10年"
+
+[about_adv1_item2]
+other = "具备扎实的汽配专业知识与丰富实操经验"
+
+[about_adv1_item3]
+other = "在配件管理、全球市场开拓方面造诣深厚"
+
+[about_adv2_title]
+other = "资源整合能力突出"
+
+[about_adv2_item1]
+other = "拥有先进的信息化管理系统，高效统筹业务"
+
+[about_adv2_item2]
+other = "获陕汽、重汽等多个知名品牌官方授权认证"
+
+[about_adv2_item3]
+other = "渠道资源丰富，与500余家客户建立长期稳定合作"
+
+[about_adv2_item4]
+other = "业务网络覆盖国内外多个核心地区"
+
+[about_adv3_title]
+other = "仓储管理水平优异"
+
+[about_adv3_item1]
+other = "拥有5万平方米现代化仓储设施，布局科学"
+
+[about_adv3_item2]
+other = "库存SKU超10万种，现货充足，满足多场景需求"
+
+[about_adv3_item3]
+other = "配备专业仓储包装发运团队，操作标准化"
+
+[about_adv3_item4]
+other = "订单处理高效，全流程可追溯，管理规范"
+
+[about_vision_title]
+other = "企业愿景"
+
+[about_vision_content]
+other = "成为全球领先的商用车零部件出口服务商，以高品质产品与专业服务，为全球客户创造长期价值。"
+
+[products_subtitle]
+other = "全品类商用车零部件，原厂正品保障，适配多品牌需求"
+
+[products_core_desc]
+other = "公司为陕汽、重汽、潍柴、解放等国内知名商用车品牌核心授权商，产品覆盖商用车全系统，品质可靠、品类齐全，满足全球客户多样化采购需求。"
+
+[products_categories]
+other = "产品分类"
+
+[product_fit_brand]
+other = "适配品牌"
+
+[product1_title]
+other = "发动机配件"
+
+[product1_brand]
+other = "潍柴、重汽、锡柴、康明斯"
+
+[product1_desc]
+other = "涵盖气缸体、气缸盖、曲轴、连杆、活塞、喷油器、涡轮增压器等全系列发动机核心配件，原厂品质，性能稳定。"
+
+[product2_title]
+other = "底盘配件"
+
+[product2_brand]
+other = "陕汽、重汽、东风、解放"
+
+[product2_desc]
+other = "包括车架、车桥、悬挂系统、减震器、钢板弹簧等底盘核心部件，强度高、耐磨性好，适配各类商用车工况。"
+
+[product3_title]
+other = "车身配件"
+
+[product3_brand]
+other = "陕汽、重汽、福田、江淮"
+
+[product3_desc]
+other = "覆盖驾驶室总成、车门、后视镜、保险杠、车灯等车身配件，尺寸精准，安装便捷，与原车完美适配。"
+
+[product4_title]
+other = "电气配件"
+
+[product4_brand]
+other = "博世、德尔福、潍柴、重汽"
+
+[product4_desc]
+other = "包含发电机、起动机、蓄电池、传感器、控制器等电气配件，性能稳定，使用寿命长，符合原厂技术标准。"
+
+[product5_title]
+other = "制动系统"
+
+[product5_brand]
+other = "威伯科、克诺尔、陕汽、重汽"
+
+[product5_desc]
+other = "涵盖刹车片、刹车盘、制动阀、气室、ABS系统等制动配件，制动效果好，安全性高，符合国际安全标准。"
+
+[product6_title]
+other = "传动系统"
+
+[product6_brand]
+other = "法士特、采埃孚、重汽、陕汽"
+
+[product6_desc]
+other = "包括变速箱、离合器、传动轴、差速器等传动配件，传动效率高，故障率低，适配各类商用车动力需求。"
+
+[products_guarantee]
+other = "产品保障"
+
+[guarantee1_title]
+other = "原厂正品"
+
+[guarantee1_desc]
+other = "所有产品均来自品牌官方授权渠道，提供原厂合格证"
+
+[guarantee2_title]
+other = "质量检测"
+
+[guarantee2_desc]
+other = "每批产品出库前均经过严格检测，确保产品质量达标"
+
+[guarantee3_title]
+other = "售后保障"
+
+[guarantee3_desc]
+other = "提供完善的售后保障，非人为损坏可享受质保服务"
+
+[guarantee4_title]
+other = "技术支持"
+
+[guarantee4_desc]
+other = "专业技术团队提供全程技术支持，解答产品使用问题"
+
+[products_custom]
+other = "定制服务"
+
+[products_custom_desc]
+other = "针对特殊工况或个性化需求，我们可提供产品定制服务，根据客户要求定制专属的商用车零部件解决方案，满足不同市场、不同车型的特殊需求。"
+
+[services_subtitle]
+other = "全流程专业服务，从咨询到售后一站式解决，让您的采购更省心"
+
+[services_philosophy]
+other = "服务理念"
+
+[services_philosophy_desc]
+other = "我们始终坚持「客户至上，服务第一」的服务理念，以客户需求为导向，以专业的技术、高效的响应、完善的体系，为全球客户提供高品质的商用车零部件配套服务，致力于成为客户最信赖的合作伙伴。"
+
+[services_process]
+other = "服务流程"
+
+[step1_title]
+other = "需求咨询"
+
+[step1_desc]
+other = "专业客服团队7×24小时响应，了解客户采购需求"
+
+[step2_title]
+other = "方案制定"
+
+[step2_desc]
+other = "根据客户需求制定专属采购方案，明确产品、价格、交期"
+
+[step3_title]
+other = "合同签订"
+
+[step3_desc]
+other = "签订正式采购合同，明确双方权利义务，保障合作权益"
+
+[step4_title]
+other = "产品备货"
+
+[step4_desc]
+other = "按合同要求备货，严格质检，确保产品符合质量标准"
+
+[step5_title]
+other = "物流配送"
+
+[step5_desc]
+other = "选择最优物流方案，全程追踪，确保产品准时送达"
+
+[step6_title]
+other = "售后服务"
+
+[step6_desc]
+other = "产品交付后持续跟进，提供技术支持和售后保障"
+
+[services_features]
+other = "核心服务优势"
+
+[feature1_title]
+other = "响应速度快"
+
+[feature1_desc]
+other = "7×24小时专业客服团队在线，客户咨询1小时内响应，紧急需求30分钟内给出解决方案。"
+
+[feature2_title]
+other = "专业度高"
+
+[feature2_desc]
+other = "团队成员均具备10年以上商用车零部件行业经验，熟悉各类产品特性和应用场景，能精准匹配客户需求。"
+
+[feature3_title]
+other = "服务体系完善"
+
+[feature3_desc]
+other = "从需求咨询到售后服务形成完整服务闭环，每个环节都有专业人员负责，确保服务质量和效率。"
+
+[feature4_title]
+other = "定制化服务"
+
+[feature4_desc]
+other = "根据不同客户的行业特点、采购规模、使用场景，提供定制化的采购方案和服务流程。"
+
+[services_after_sales]
+other = "售后服务"
+
+[services_after_sales_desc]
+other = "我们提供全方位的售后服务保障，确保客户采购的产品能正常使用，解决客户的后顾之忧："
+
+[after_sales1]
+other = "产品质保：核心产品提供6-12个月质保期，非人为损坏可免费更换或维修；"
+
+[after_sales2]
+other = "技术支持：提供产品安装、调试、使用指导，专业技术人员远程或现场指导；"
+
+[after_sales3]
+other = "定期回访：产品交付后定期回访，了解产品使用情况，及时解决使用过程中的问题；"
+
+[after_sales4]
+other = "配件供应：长期提供产品配件供应服务，确保产品后期维护的配件需求；"
+
+[after_sales5]
+other = "投诉处理：建立完善的投诉处理机制，客户投诉24小时内响应，72小时内给出处理结果。"
+
+[services_commitment]
+other = "服务承诺"
+
+[commit1_title]
+other = "价格透明"
+
+[commit1_desc]
+other = "所有产品价格公开透明，无隐藏费用，明码标价，童叟无欺"
+
+[commit2_title]
+other = "交付准时"
+
+[commit2_desc]
+other = "按合同约定时间准时交付，如遇特殊情况提前告知并协商解决方案"
+
+[commit3_title]
+other = "质量保障"
+
+[commit3_desc]
+other = "所有产品均经过严格质检，不符合质量标准的产品绝不出库"
+
+[commit4_title]
+other = "售后无忧"
+
+[commit4_desc]
+other = "专业售后团队全程跟进，解决客户使用过程中的所有问题"
+
+[services_cases]
+other = "客户案例"
+
+[services_cases_desc]
+other = "我们已为全球多个国家和地区的客户提供专业的商用车零部件采购服务，以下是部分典型客户案例："
+
+[case1_title]
+other = "俄罗斯某大型物流企业"
+
+[case1_desc]
+other = "为该企业提供陕汽、重汽商用车整车配件供应服务，年供应金额超2000万元，产品质量稳定，交付及时，得到客户高度认可。"
+
+[case2_title]
+other = "非洲某汽车维修连锁企业"
+
+[case2_desc]
+other = "为该连锁企业提供全品类商用车零部件供应，覆盖10多个非洲国家，建立了稳定的供应链体系，配件供应及时率达98%以上。"
+
+[case3_title]
+other = "东南亚某汽车组装厂"
+
+[case3_desc]
+other = "为该组装厂提供定制化的商用车零部件配套服务，根据当地车型特点定制产品，降低客户采购成本30%以上。"
+
+[global_subtitle]
+other = "立足临沂，联动济南，深耕非洲，构建全球商用车零部件服务网络"
+
+[global_overview]
+other = "山东钰弘源国际贸易有限公司植根于\"中国物流之都\"临沂，依托国内战略子公司与海外直属基地，构建了\"国内高效协同、海外前沿服务\"的全球化运营架构。我们以临沂为供应链与物流中心，以济南为产品与品牌中心，以临沂弘远为专业货代枢纽，并通过赞比亚海光投资有限公司及地润投资有限公司，将服务前移至非洲一线，为全球客户提供无缝、高效的一站式商用车零部件供应与维修服务解决方案。"
+
+[global_structure]
+other = "组织架构"
+
+[global_domestic_title]
+other = "国内主体"
+
+[global_domestic_desc]
+other = "三位一体，高效协同，构成集团在国内的强大业务支撑体系。"
+
+[subsidiary_yhy_title]
+other = "山东钰弘源国际贸易有限公司 (临沂)"
+
+[subsidiary_yhy_desc]
+other = "公司的运营与物流中枢，负责全球市场的产品资源整合、集中采购、5万平方米现代化仓储管理及跨境订单处理，是驱动全球业务的核心动力。"
+
+[subsidiary_huanuo_title]
+other = "山东华诺汽车销售服务有限公司 (济南)"
+
+[subsidiary_huanuo_desc]
+other = "公司的核心产品与品牌中心。凭借\"原厂授权核心件 + 自有品牌（景初、环岳）差异化产品\"的双轮驱动体系，配备5万平方米专业仓储，为全球客户提供全品类、高品质的商用车零部件供应。"
+
+[subsidiary_hongyuan_title]
+other = "临沂弘远国际货运代理有限公司 (临沂)"
+
+[subsidiary_hongyuan_desc]
+other = "公司的一站式跨境物流枢纽。依托临沂的区位优势，专业提供国际货运代理、报关清关、多式联运等一体化物流服务，确保跨境贸易的高效流转与交付安全。"
+
+[global_overseas_title]
+other = "海外布局"
+
+[global_overseas_desc]
+other = "将服务与技术前移，实现真正的本地化运营与快速响应。"
+
+[branch_africa_title]
+other = "赞比亚：海光投资有限公司 (OCEANLIGHT) - 恩多拉基地"
+
+[branch_africa_desc]
+other = "公司首个海外直属服务基地，位于赞比亚恩多拉。集维修保养、原厂正品配件供应、24小时事故救援与技术支持于一体，是深耕非洲市场的前沿阵地。"
+
+[branch_lusaka_title]
+other = "地润投资有限公司 (TERRA LIGHT) - 卢萨卡服务中心"
+
+[branch_lusaka_desc]
+other = "位于赞比亚首都卢萨卡，为陕汽重卡官方授权配件中心库与特约维修服务站，提供专业化、属地化的维修保养、配件供应及技术支持服务，辐射卢萨卡及周边地区。"
+
+[global_coverage]
+other = "市场覆盖与区域优势"
+
+[global_coverage_desc]
+other = "我们的业务网络已覆盖多个核心经济区域，与超过500家客户建立了长期稳定的合作关系。"
+
+[region_africa_title]
+other = "非洲区域"
+
+[region_africa_desc]
+other = "代表国家：赞比亚、坦桑尼亚、尼日利亚、喀麦隆、莫桑比克等。依托赞比亚恩多拉与卢萨卡的双服务中心，实现配件现货供应与快速配送，提供专业技术咨询、故障诊断及现场支持，实现从跨境贸易到属地化服务的全面覆盖。"
+
+[region_europe_asia_title]
+other = "欧亚区域"
+
+[region_europe_asia_desc]
+other = "代表国家：俄罗斯联邦、哈萨克斯坦等。针对欧亚市场的特定车型与工况，提供潍柴、陕汽、重汽等头部品牌的发动机核心配件及全系零部件，满足客户的耐候性与批量采购需求。"
+
+[region_southeast_asia_south_america_title]
+other = "东南亚与南美区域"
+
+[region_southeast_asia_south_america_desc]
+other = "代表国家：印度尼西亚、菲律宾等。结合区域内快速增长的商用车市场需求，提供多样化的原厂件、自有品牌OEM滤芯及定制化产品方案，实现高性价比与快速响应的完美平衡。"
+
+[global_synergy_title]
+other = "全球协同的核心优势"
+
+[global_synergy_desc]
+other = "我们通过内部资源的高效整合，形成了难以复制的全球竞争力。"
+
+[synergy1_title]
+other = "双城仓储，高效履约"
+
+[synergy1_desc]
+other = "临沂5万平方米与济南5万平方米的专业仓储设施协同运作，库存SKU超10万种，能灵活响应全球客户的现货、急单与大批量定制化需求。"
+
+[synergy2_title]
+other = "资质齐全，合规保障"
+
+[synergy2_desc]
+other = "拥有陕汽、重汽、潍柴等品牌核心授权与\"景初\"\"环岳\"自主商标，全链条采购可追溯、知识产权清晰，从源头规避跨境贸易合规风险。"
+
+[synergy3_title]
+other = "属地服务，快速响应"
+
+[synergy3_desc]
+other = "依托赞比亚海光投资公司及地润投资有限公司，实现了海外维修保养、事故救援、配件供应当地化，能为非洲及周边市场提供7×24小时全天候服务，售后需求极速响应，真正做到了服务前移、价值延伸。"
+
+[synergy4_title]
+other = "一站式物流，链通全球"
+
+[synergy4_desc]
+other = "总公司、华诺公司、弘远货代三位一体，实现了从产品销售、品牌运营到国际货运代理的内部闭环，大幅提升通关效率，降低物流成本与风险。"
+
+[contact_subtitle]
+other = "无论您有任何问题或合作意向，都欢迎通过以下方式联系我们，我们将竭诚为您服务。"
+
+[contact_headquarters_title]
+other = "中国总部 (临沂)"
+
+[contact_headquarters_company]
+other = "山东钰弘源国际贸易有限公司"
+
+[contact_headquarters_address]
+other = "中国山东省临沂市兰山区宏大路临沂港跨境电商产业园三楼"
+
+[contact_headquarters_phone]
+other = "+86 186 0639 3111"
+
+[contact_headquarters_hours]
+other = "周一至周五 9:00 - 18:00 (北京时间)"
+
+[contact_overseas_title]
+other = "赞比亚海外基地"
+
+[contact_overseas_ndola_company]
+other = "海光投资有限公司 (OCEANLIGHT INVESTMENT)"
+
+[contact_overseas_lusaka_company]
+other = "地润投资有限公司 (TERRA LIGHT INVESTMENT)"
+
+[contact_overseas_address_ndola]
+other = "XM7R+CCO, OCEANLIGHT INVESTMENT COMPANY LIMITED (SHACMAN), Kaloko, Ndola, Zambia"
+
+[contact_overseas_address_lusaka]
+other = "TERRA LIGHT INVESTMENT COMPANY LIMITED, L7300/M/A/1, MAKENI KAFUE ROAD, LUSAKA, LUSAKA PROVINCE, ZAMBIA"
+
+[contact_overseas_phone1]
+other = "+260 969 039 959"
+
+[contact_overseas_lusaka_phone]
+other = "+260 967 187 658"
+
+[contact_overseas_hours]
+other = "7×24小时全天候服务"
+
+[contact_address_label]
+other = "地址"
+
+[contact_phone_label]
+other = "电话"
+
+[contact_email_label]
+other = "邮箱"
+
+[contact_working_hours]
+other = "工作时间"
+
+[contact_email]
+other = "yhy@yhytradehub.com"
+
+[contact_wechat]
+other = "微信"
+
+[contact_whatsapp]
+other = "WhatsApp"
+
+[contact_skype]
+other = "Skype"
+
+[contact_form_title]
+other = "在线留言"
+
+[form_name]
+other = "您的姓名"
+
+[form_email]
+other = "电子邮箱"
+
+[form_phone]
+other = "联系电话"
+
+[form_message]
+other = "留言内容"
+
+[form_submit]
+other = "提交留言"
+
+[form_required]
+other = "必填项"
+
+[form_tips]
+other = "我们会在1-2个工作日内回复您的留言"
+
+[form_error_empty]
+other = "请填写所有必填字段！"
+
+[form_error_email]
+other = "请输入有效的电子邮箱地址！"
+
+[form_success]
+other = "留言提交成功！我们会尽快与您联系。"
+
+[contact_map_title]
+other = "公司位置"
+
+[contact_map_desc]
+other = "您可以直观地查看我们在中国与赞比亚的办公地点"
+
+[contact_faq]
+other = "常见问题"
+
+[faq1_title]
+other = "最小起订量是多少？"
+
+[faq1_answer]
+other = "常规产品最小起订量为1件，批量采购可享受更优惠的价格。定制产品的最小起订量根据产品类型而定，具体可咨询我们的销售团队。"
+
+[faq2_title]
+other = "交货周期是多久？"
+
+[faq2_answer]
+other = "现货产品通常在付款后1-3个工作日内发货，定制产品的交货周期为7-30天，具体取决于产品复杂度和订单数量。海外订单的运输时间根据目的地不同为7-45天。"
+
+[faq3_title]
+other = "产品质量有保障吗？"
+
+[faq3_answer]
+other = "我们所有产品均为原厂正品，提供品牌授权证明，每批产品出库前均经过严格的质量检测。核心产品提供6-12个月的质保期，非人为损坏可免费更换或维修。"
+
+[faq4_title]
+other = "支持哪些付款方式？"
+
+[faq4_answer]
+other = "我们支持电汇(T/T)、信用证(L/C)、西联汇款、PayPal、支付宝、微信支付等多种付款方式。对于长期合作客户，可提供月结等灵活的付款条件。"
+
+[copyright]
+other = "©{year} 山东钰弘源国际贸易有限公司 保留所有权利"
+
+[page_404_title]
+other = "页面未找到"
+
+[page_404_message]
+other = "抱歉，您访问的页面不存在或已被删除，请返回首页继续浏览。"
+
+[page_404_btn]
+other = "返回首页"
+
+[site_tagline]
+other = "您值得信赖的商用车零部件合作伙伴"
+
+[about_page_title]
+other = "关于山东钰弘源"
+
+[form_submitting]
+other = "提交中..."
+
+[form_error_network]
+other = "网络错误，请检查网络后重试，或直接发邮件至"
+
+[read_more]
+other = "了解更多"
+
+[view_details]
+other = "查看详情"
+
+[home_products_title]
+other = "产品中心"
+
+[home_products_desc]
+other = "全品类商用车零部件，原厂正品保障"
+
+[home_services_title]
+other = "服务体系"
+
+[home_services_desc]
+other = "全流程专业服务，一站式解决"
+
+[home_global_title]
+other = "全球布局"
+
+[home_global_desc]
+other = "立足临沂，服务全球"
+
+[home_contact_title]
+other = "联系我们"
+
+[home_contact_desc]
+other = "期待与您合作"
+
+[map_error_title]
+other = "地图暂时无法加载，请稍后刷新重试"
+
+[map_locations]
+other = "临沂总部 · 赞比亚恩多拉 · 赞比亚卢萨卡"
+
+[city_ndola]
+other = "恩多拉"
+
+[city_lusaka]
+other = "卢萨卡"
+
+[api_endpoint]
+other = "/api/contact"
+

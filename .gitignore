@@ -1,0 +1,39 @@
+# ======================================
+# Hugo 项目专属 .gitignore
+# ======================================
+
+# Hugo 构建产物 & 缓存
+public/
+public.zip
+resources/
+.hugo_build.lock
+*.tmp
+*.log
+
+# 本地编辑器 & 系统文件
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 大型非网站文件（你目录里的设计/文档文件）
+*.pdf
+*.indd
+*.ai
+*.psd
+*.zip
+*.rar
+
+# 本地测试/临时文件
+sessions/
+memory/
+*.md.backup
+*.bak
+
+# 如果你用 npm/yarn 管理前端资源
+node_modules/
+package-lock.json
+yarn.lock

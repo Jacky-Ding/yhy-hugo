@@ -1,0 +1,733 @@
+# English translations — i18n/en.toml
+
+[home]
+other = "Home"
+
+[about]
+other = "About Us"
+
+[products]
+other = "Products"
+
+[services]
+other = "Services"
+
+[global]
+other = "Global Layout"
+
+[contact]
+other = "Contact Us"
+
+[banner_title]
+other = "Professional Authorized Supplier of Commercial Vehicle Parts Worldwide"
+
+[banner_slogan]
+other = "Integrity Builds Brand, Service Drives Growth — Linyi Logistics Hub Serving the Global Market"
+
+[banner_btn]
+other = "Learn More"
+
+[highlights_title]
+other = "Core Advantages"
+
+[highlights_subtitle]
+other = "Backed by a professional team, extensive experience, and global resources, we deliver comprehensive trade solutions to clients worldwide."
+
+[highlight1_title]
+other = "Professional Team"
+
+[highlight1_desc]
+other = "10+ years of international trade expertise, well-versed in trade policies and processes across various countries"
+
+[highlight2_title]
+other = "Abundant Inventory"
+
+[highlight2_desc]
+other = "Over 100,000 SKUs in stock, 50,000m² modern warehousing to rapidly fulfill customer demands"
+
+[highlight3_title]
+other = "Brand Authorization"
+
+[highlight3_desc]
+other = "Core authorized distributor for SHACMAN, CNHTC, WEICHAI, and other leading brands, guaranteed genuine OEM parts"
+
+[highlight4_title]
+other = "Global Presence"
+
+[highlight4_desc]
+other = "500+ long-term clients spanning Russia, Africa, Southeast Asia, South America, and beyond"
+
+[brands_title]
+other = "Cooperative Brands"
+
+[brand1]
+other = "SHACMAN"
+
+[brand2]
+other = "CNHTC"
+
+[brand3]
+other = "WEICHAI"
+
+[brand4]
+other = "FAW"
+
+[brand5]
+other = "AUMAN"
+
+[brand6]
+other = "FAST"
+
+[brand7]
+other = "HANDE"
+
+[brand8]
+other = "CUMMINS"
+
+[brand9]
+other = "HAIWO"
+
+[about_subtitle]
+other = "Deep Expertise in Commercial Vehicle Parts Export, Building a Premium Global Partnership Platform"
+
+[about_company_intro]
+other = "Company Profile"
+
+[about_intro]
+other = "Shandong Yuhongyuan International Trade Co., Ltd., established in 2022, is a professional international trade enterprise specializing in commercial vehicle parts export. Headquartered in Linyi — the 'Logistics Capital of China' — the company sits at the nexus of the Yangtze River Delta and the Beijing-Tianjin-Tangshan economic circles, and a critical node on the Eurasian Land Bridge, enjoying exceptional geographic advantages. Guided by the philosophy of 'Integrity Builds Brand, Service Drives Growth,' the company is committed to delivering high-quality commercial vehicle parts and professional supporting services to clients worldwide."
+
+[about_business_philosophy]
+other = "Business Philosophy"
+
+[about_philosophy_content]
+other = "The company adheres to the core values of 'Integrity, Professionalism, Innovation, and Win-Win,' always customer-oriented, grounded in quality products and assured by professional service, striving to become a trusted commercial vehicle parts partner for clients globally."
+
+[about_service_promise]
+other = "Service Commitment"
+
+[about_promise1]
+other = "Genuine OEM Products"
+
+[about_promise1_desc]
+other = "All products are genuine OEM parts with brand authorization certificates — tenfold compensation for any counterfeit items"
+
+[about_promise2]
+other = "Efficient Delivery"
+
+[about_promise2_desc]
+other = "In-stock items shipped within 48 hours; customized products delivered on schedule as agreed"
+
+[about_promise3]
+other = "Professional Service"
+
+[about_promise3_desc]
+other = "7×24 professional customer support, full-process technical assistance and after-sales guidance"
+
+[about_promise4]
+other = "Win-Win Cooperation"
+
+[about_promise4_desc]
+other = "Building long-term, stable partnerships with clients based on principles of equality and mutual benefit"
+
+[about_core_advantages]
+other = "Core Advantages"
+
+[about_adv1_title]
+other = "Experienced Professional Team"
+
+[about_adv1_item1]
+other = "Average team experience exceeds 10 years"
+
+[about_adv1_item2]
+other = "Solid expertise in auto parts and extensive practical experience"
+
+[about_adv1_item3]
+other = "Deep proficiency in parts management and global market development"
+
+[about_adv2_title]
+other = "Outstanding Resource Integration"
+
+[about_adv2_item1]
+other = "Advanced information management system for efficient business coordination"
+
+[about_adv2_item2]
+other = "Officially authorized and certified by SHACMAN, CNHTC, and other renowned brands"
+
+[about_adv2_item3]
+other = "Rich channel resources with long-term, stable partnerships with over 500 clients"
+
+[about_adv2_item4]
+other = "Business network covering multiple core regions domestically and internationally"
+
+[about_adv3_title]
+other = "Excellent Warehouse Management"
+
+[about_adv3_item1]
+other = "50,000m² of modern, scientifically laid-out warehousing facilities"
+
+[about_adv3_item2]
+other = "Inventory exceeds 100,000 SKUs with ample stock to meet diverse needs"
+
+[about_adv3_item3]
+other = "Professional warehousing, packaging, and shipping team operating with standardized procedures"
+
+[about_adv3_item4]
+other = "Highly efficient order processing with full traceability and standardized management"
+
+[about_vision_title]
+other = "Corporate Vision"
+
+[about_vision_content]
+other = "To become a globally leading commercial vehicle parts export service provider, creating long-term value for clients worldwide through high-quality products and professional service."
+
+[products_subtitle]
+other = "Full-Range Commercial Vehicle Parts, Genuine OEM Guaranteed, Compatible with Multi-Brand Needs"
+
+[products_core_desc]
+other = "As a core authorized distributor for leading domestic commercial vehicle brands including SHACMAN, CNHTC, WEICHAI, and FAW, our products cover the entire commercial vehicle system with reliable quality and comprehensive categories to meet the diverse procurement needs of global clients."
+
+[products_categories]
+other = "Product Categories"
+
+[product_fit_brand]
+other = "Compatible Brands"
+
+[product1_title]
+other = "Engine Parts"
+
+[product1_brand]
+other = "WEICHAI, CNHTC, XICHAI, CUMMINS"
+
+[product1_desc]
+other = "Covering cylinder blocks, cylinder heads, crankshafts, connecting rods, pistons, injectors, turbochargers, and other full-range engine core parts — genuine OEM quality, stable performance."
+
+[product2_title]
+other = "Chassis Parts"
+
+[product2_brand]
+other = "SHACMAN, CNHTC, DFM, FAW"
+
+[product2_desc]
+other = "Including frames, axles, suspension systems, shock absorbers, leaf springs, and other core chassis components — high strength, excellent wear resistance, suitable for various commercial vehicle operating conditions."
+
+[product3_title]
+other = "Body Parts"
+
+[product3_brand]
+other = "SHACMAN, CNHTC, FOTON, JAC"
+
+[product3_desc]
+other = "Covering cab assemblies, doors, rear-view mirrors, bumpers, lights, and other body parts — precise dimensions, easy installation, perfect fit with original vehicles."
+
+[product4_title]
+other = "Electrical Parts"
+
+[product4_brand]
+other = "BOSCH, DELPHI, WEICHAI, CNHTC"
+
+[product4_desc]
+other = "Including alternators, starters, batteries, sensors, controllers, and other electrical parts — stable performance, long service life, compliant with OEM technical standards."
+
+[product5_title]
+other = "Brake System"
+
+[product5_brand]
+other = "WABCO, KNORR-BREMSE, SHACMAN, CNHTC"
+
+[product5_desc]
+other = "Covering brake pads, brake discs, brake valves, air chambers, ABS systems, and other brake parts — excellent braking performance, high safety, meeting international safety standards."
+
+[product6_title]
+other = "Transmission System"
+
+[product6_brand]
+other = "FAST, ZF, CNHTC, SHACMAN"
+
+[product6_desc]
+other = "Including gearboxes, clutches, drive shafts, differentials, and other transmission parts — high transmission efficiency, low failure rate, adapted to various commercial vehicle power demands."
+
+[products_guarantee]
+other = "Product Guarantee"
+
+[guarantee1_title]
+other = "Genuine OEM"
+
+[guarantee1_desc]
+other = "All products sourced from authorized brand distribution channels, with OEM certificates provided"
+
+[guarantee2_title]
+other = "Quality Inspection"
+
+[guarantee2_desc]
+other = "Every product batch undergoes rigorous inspection before dispatch to ensure quality compliance"
+
+[guarantee3_title]
+other = "After-Sales Guarantee"
+
+[guarantee3_desc]
+other = "Comprehensive after-sales protection — warranty service for non-human-damaged products"
+
+[guarantee4_title]
+other = "Technical Support"
+
+[guarantee4_desc]
+other = "Professional technical team provides full-process support and product usage guidance"
+
+[products_custom]
+other = "Custom Service"
+
+[products_custom_desc]
+other = "For special operating conditions or personalized requirements, we offer product customization services — tailoring dedicated commercial vehicle parts solutions to meet the specific needs of different markets and vehicle models."
+
+[services_subtitle]
+other = "Full-Process Professional Service — From Consultation to After-Sales, One-Stop Solutions for Hassle-Free Procurement"
+
+[services_philosophy]
+other = "Service Philosophy"
+
+[services_philosophy_desc]
+other = "We adhere to the service philosophy of 'Customer First, Service Foremost,' always customer-oriented. With professional expertise, efficient response, and a comprehensive service system, we provide high-quality commercial vehicle parts support services to global clients, striving to become our customers' most trusted partner."
+
+[services_process]
+other = "Service Process"
+
+[step1_title]
+other = "Needs Consultation"
+
+[step1_desc]
+other = "Professional customer service team available 7×24, understanding client procurement requirements"
+
+[step2_title]
+other = "Solution Formulation"
+
+[step2_desc]
+other = "Developing a tailored procurement plan based on client needs — clarifying products, pricing, and delivery schedules"
+
+[step3_title]
+other = "Contract Signing"
+
+[step3_desc]
+other = "Signing a formal procurement contract, clearly defining mutual rights and obligations to safeguard cooperation interests"
+
+[step4_title]
+other = "Product Stocking"
+
+[step4_desc]
+other = "Preparing stock as per contract requirements, with rigorous quality inspection to ensure compliance with quality standards"
+
+[step5_title]
+other = "Logistics & Distribution"
+
+[step5_desc]
+other = "Selecting optimal logistics solutions, with full tracking to ensure timely delivery"
+
+[step6_title]
+other = "After-Sales Service"
+
+[step6_desc]
+other = "Continuous follow-up after product delivery, providing technical support and after-sales assurance"
+
+[services_features]
+other = "Core Service Advantages"
+
+[feature1_title]
+other = "Rapid Response"
+
+[feature1_desc]
+other = "7×24 professional customer service online, responding to client inquiries within 1 hour, providing solutions for urgent needs within 30 minutes."
+
+[feature2_title]
+other = "High Professionalism"
+
+[feature2_desc]
+other = "Team members all have 10+ years of commercial vehicle parts industry experience, familiar with various product characteristics and application scenarios, accurately matching client needs."
+
+[feature3_title]
+other = "Comprehensive Service System"
+
+[feature3_desc]
+other = "A complete service loop from needs consultation to after-sales service, with dedicated professionals at every stage ensuring service quality and efficiency."
+
+[feature4_title]
+other = "Customized Service"
+
+[feature4_desc]
+other = "Tailored procurement plans and service processes based on different clients' industry characteristics, procurement scale, and usage scenarios."
+
+[services_after_sales]
+other = "After-Sales Service"
+
+[services_after_sales_desc]
+other = "We provide comprehensive after-sales service guarantees to ensure that our clients' purchased products function properly, eliminating any concerns:"
+
+[after_sales1]
+other = "Product Warranty: Core products come with a 6–12 month warranty period; free replacement or repair for non-human-damaged items;"
+
+[after_sales2]
+other = "Technical Support: Product installation, commissioning, and usage guidance, with remote or on-site support from professional technicians;"
+
+[after_sales3]
+other = "Regular Follow-Up: Periodic follow-ups after product delivery to understand usage conditions and promptly resolve any issues;"
+
+[after_sales4]
+other = "Spare Parts Supply: Long-term spare parts supply services to meet ongoing product maintenance needs;"
+
+[after_sales5]
+other = "Complaint Handling: A well-established complaint handling mechanism — client complaints receive a response within 24 hours and a resolution within 72 hours."
+
+[services_commitment]
+other = "Service Commitment"
+
+[commit1_title]
+other = "Transparent Pricing"
+
+[commit1_desc]
+other = "All product prices are open and transparent — no hidden fees, clearly marked and fair"
+
+[commit2_title]
+other = "On-Time Delivery"
+
+[commit2_desc]
+other = "Delivering on schedule as per contract terms; advance notice and collaborative solutions for any exceptional circumstances"
+
+[commit3_title]
+other = "Quality Assurance"
+
+[commit3_desc]
+other = "All products undergo rigorous quality inspection; non-compliant items never leave the warehouse"
+
+[commit4_title]
+other = "Worry-Free After-Sales"
+
+[commit4_desc]
+other = "Professional after-sales team provides continuous support, resolving all issues throughout the product lifecycle"
+
+[services_cases]
+other = "Customer Cases"
+
+[services_cases_desc]
+other = "We have provided professional commercial vehicle parts procurement services to clients across multiple countries and regions worldwide. Here are selected representative cases:"
+
+[case1_title]
+other = "A Large Logistics Enterprise in Russia"
+
+[case1_desc]
+other = "Providing full vehicle parts supply services for SHACMAN and CNHTC commercial vehicles to this enterprise, with annual supply exceeding RMB 20 million. Product quality is stable, delivery is timely, and the client has given high recognition."
+
+[case2_title]
+other = "An Auto Repair Chain in Africa"
+
+[case2_desc]
+other = "Supplying full-range commercial vehicle parts to this chain enterprise, covering over 10 African countries. A stable supply chain system has been established, with spare parts supply timeliness exceeding 98%."
+
+[case3_title]
+other = "An Automobile Assembly Plant in Southeast Asia"
+
+[case3_desc]
+other = "Providing customized commercial vehicle parts supporting services for this assembly plant, tailoring products to local vehicle model characteristics and reducing client procurement costs by more than 30%."
+
+[global_subtitle]
+other = "Rooted in Linyi, Connected with Jinan, Deeply Engaged in Africa — Building a Global Commercial Vehicle Parts Service Network"
+
+[global_overview]
+other = "Shandong Yuhongyuan International Trade Co., Ltd., rooted in Linyi — the 'Logistics Capital of China' — leverages domestic strategic subsidiaries and overseas direct-operated bases to build a global operational framework of 'efficient domestic synergy with forward-deployed overseas services.' With Linyi as our supply chain and logistics center, Jinan as our product and brand center, Linyi Hongyuan as our specialized freight forwarding hub, and through Oceanlight Investment Company Limited and Terra Light Investment Company Limited in Zambia, we extend services to the African frontline, providing global clients with seamless, efficient, one-stop commercial vehicle parts supply and repair service solutions."
+
+[global_structure]
+other = "Organizational Structure"
+
+[global_domestic_title]
+other = "Domestic Entities"
+
+[global_domestic_desc]
+other = "Three integrated entities, synergizing efficiently to form the Group's powerful domestic business support system."
+
+[subsidiary_yhy_title]
+other = "Shandong Yuhongyuan International Trade Co., Ltd. (Linyi)"
+
+[subsidiary_yhy_desc]
+other = "The company's operations and logistics hub, responsible for global product resource integration, centralized procurement, 50,000m² modern warehouse management, and cross-border order processing — the core driving force behind global business."
+
+[subsidiary_huanuo_title]
+other = "Shandong Huanuo Automobile Sales & Service Co., Ltd. (Jinan)"
+
+[subsidiary_huanuo_desc]
+other = "The company's core product and brand center. Powered by a dual-wheel system of 'OEM-authorized core parts + proprietary brands (Jingchu, Huanyue) differentiated products,' equipped with 50,000m² professional warehousing, supplying full-category, high-quality commercial vehicle parts to global clients."
+
+[subsidiary_hongyuan_title]
+other = "Linyi Hongyuan International Freight Forwarding Co., Ltd. (Linyi)"
+
+[subsidiary_hongyuan_desc]
+other = "The company's one-stop cross-border logistics hub. Leveraging Linyi's locational advantages, we provide integrated logistics services including international freight forwarding, customs declaration and clearance, and multimodal transport, ensuring efficient flow and delivery security for cross-border trade."
+
+[global_overseas_title]
+other = "Overseas Layout"
+
+[global_overseas_desc]
+other = "Moving services and technology forward, achieving true localized operations and rapid response."
+
+[branch_africa_title]
+other = "Zambia: Oceanlight Investment Company Limited — Ndola Base"
+
+[branch_africa_desc]
+other = "The company's first overseas direct-operated service base, located in Ndola, Zambia. Integrating maintenance and repair, genuine OEM parts supply, 24-hour accident rescue, and technical support — a frontier stronghold for deep engagement in the African market."
+
+[branch_lusaka_title]
+other = "Terra Light Investment Company Limited — Lusaka Service Center"
+
+[branch_lusaka_desc]
+other = "Located in Zambia's capital Lusaka, this is the officially authorized parts distribution center and designated maintenance service station for SHACMAN heavy-duty trucks, providing specialized, localized repair, parts supply, and technical support services covering Lusaka and surrounding areas."
+
+[global_coverage]
+other = "Market Coverage & Regional Advantages"
+
+[global_coverage_desc]
+other = "Our business network now spans multiple core economic regions, with long-term, stable partnerships established with over 500 clients."
+
+[region_africa_title]
+other = "Africa Region"
+
+[region_africa_desc]
+other = "Representative countries: Zambia, Tanzania, Nigeria, Cameroon, Mozambique, and more. Leveraging the dual service centers in Ndola and Lusaka, we achieve in-stock parts supply and rapid distribution, provide professional technical consultation, fault diagnosis, and on-site support, realizing comprehensive coverage from cross-border trade to localized service."
+
+[region_europe_asia_title]
+other = "Europe & Asia Region"
+
+[region_europe_asia_desc]
+other = "Representative countries: Russian Federation, Kazakhstan, and more. Catering to specific vehicle models and operating conditions in the Eurasian market, we provide WEICHAI, SHACMAN, CNHTC, and other leading brand engine core parts and comprehensive components, meeting clients' durability and bulk procurement needs."
+
+[region_southeast_asia_south_america_title]
+other = "Southeast Asia & South America Regions"
+
+[region_southeast_asia_south_america_desc]
+other = "Representative countries: Indonesia, Philippines, and more. Aligned with the rapidly growing commercial vehicle market demand in these regions, we offer diverse OEM parts, proprietary-brand OEM filters, and customized product solutions, achieving the perfect balance of high cost-effectiveness and rapid response."
+
+[global_synergy_title]
+other = "Core Advantages of Global Synergy"
+
+[global_synergy_desc]
+other = "Through efficient integration of internal resources, we have forged a global competitive edge that is difficult to replicate."
+
+[synergy1_title]
+other = "Dual-City Warehousing, Efficient Fulfillment"
+
+[synergy1_desc]
+other = "50,000m² professional warehousing facilities in Linyi and 50,000m² in Jinan operating in synergy, with inventory exceeding 100,000 SKUs — flexibly responding to global clients' spot, rush, and large-volume customized demands."
+
+[synergy2_title]
+other = "Complete Credentials, Compliance Guarantee"
+
+[synergy2_desc]
+other = "Holding core authorizations from SHACMAN, CNHTC, WEICHAI, and other brands, along with proprietary trademarks 'Jingchu' and 'Huanyue' — the entire procurement chain is traceable with clear IP rights, mitigating cross-border trade compliance risks from the source."
+
+[synergy3_title]
+other = "Localized Service, Rapid Response"
+
+[synergy3_desc]
+other = "Relying on Oceanlight Investment Company Limited and Terra Light Investment Company Limited in Zambia, we have realized localized overseas maintenance, accident rescue, and parts supply, providing 7×24 all-weather service to the African and surrounding markets with extremely rapid after-sales response — truly achieving service forward-deployment and value extension."
+
+[synergy4_title]
+other = "One-Stop Logistics, Chain to the World"
+
+[synergy4_desc]
+other = "The trinity of the parent company, Huanuo, and Hongyuan Freight Forwarding forms an internal closed loop from product sales and brand operations to international freight forwarding, significantly enhancing customs clearance efficiency while reducing logistics costs and risks."
+
+[contact_subtitle]
+other = "Whatever inquiries or cooperation intentions you may have, you are welcome to reach us through the following channels — we are wholeheartedly at your service."
+
+[contact_headquarters_title]
+other = "China Headquarters (Linyi)"
+
+[contact_headquarters_company]
+other = "Shandong Yuhongyuan International Trade Co., Ltd."
+
+[contact_headquarters_address]
+other = "3rd Floor, Linyi Port Cross-Border E-Commerce Industrial Park, Hongda Road, Lanshan District, Linyi City, Shandong Province, China"
+
+[contact_headquarters_phone]
+other = "+86 186 0639 3111"
+
+[contact_headquarters_hours]
+other = "Monday to Friday, 9:00 AM – 6:00 PM (Beijing Time)"
+
+[contact_overseas_title]
+other = "Zambia Overseas Base"
+
+[contact_overseas_ndola_company]
+other = "Oceanlight Investment Company Limited"
+
+[contact_overseas_lusaka_company]
+other = "Terra Light Investment Company Limited"
+
+[contact_overseas_address_ndola]
+other = "XM7R+CCO, Oceanlight Investment Company Limited (SHACMAN), Kaloko, Ndola, Zambia"
+
+[contact_overseas_address_lusaka]
+other = "Terra Light Investment Company Limited, L7300/M/A/1, Makeni Kafue Road, Lusaka, Lusaka Province, Zambia"
+
+[contact_overseas_phone1]
+other = "+260 969 039 959"
+
+[contact_overseas_lusaka_phone]
+other = "+260 967 187 658"
+
+[contact_overseas_hours]
+other = "7×24 All-Weather Service"
+
+[contact_address_label]
+other = "Address"
+
+[contact_phone_label]
+other = "Phone"
+
+[contact_email_label]
+other = "Email"
+
+[contact_working_hours]
+other = "Working Hours"
+
+[contact_email]
+other = "yhy@yhytradehub.com"
+
+[contact_wechat]
+other = "WeChat"
+
+[contact_whatsapp]
+other = "WhatsApp"
+
+[contact_skype]
+other = "Skype"
+
+[contact_form_title]
+other = "Online Message"
+
+[form_name]
+other = "Your Name"
+
+[form_email]
+other = "Email Address"
+
+[form_phone]
+other = "Phone Number"
+
+[form_message]
+other = "Message"
+
+[form_submit]
+other = "Submit"
+
+[form_required]
+other = "Required"
+
+[form_tips]
+other = "We will reply to your message within 1–2 business days"
+
+[form_error_empty]
+other = "Please fill in all required fields!"
+
+[form_error_email]
+other = "Please enter a valid email address!"
+
+[form_success]
+other = "Message submitted successfully! We will contact you soon."
+
+[contact_map_title]
+other = "Our Locations"
+
+[contact_map_desc]
+other = "Visually explore our office locations in China and Zambia"
+
+[contact_faq]
+other = "Frequently Asked Questions"
+
+[faq1_title]
+other = "What is the minimum order quantity?"
+
+[faq1_answer]
+other = "The minimum order quantity for standard products is one piece, with more favorable pricing available for bulk purchases. MOQ for customized products depends on the product type — please consult our sales team for details."
+
+[faq2_title]
+other = "What is the delivery lead time?"
+
+[faq2_answer]
+other = "In-stock products are typically dispatched within 1–3 business days after payment. Customized products have a lead time of 7–30 days, depending on product complexity and order quantity. International shipping takes 7–45 days depending on the destination."
+
+[faq3_title]
+other = "Is product quality guaranteed?"
+
+[faq3_answer]
+other = "All our products are genuine OEM parts with brand authorization certificates. Every batch undergoes rigorous quality inspection before dispatch. Core products come with a 6–12 month warranty — free replacement or repair for non-human-damaged items."
+
+[faq4_title]
+other = "What payment methods are supported?"
+
+[faq4_answer]
+other = "We support T/T (wire transfer), L/C (letter of credit), Western Union, PayPal, Alipay, WeChat Pay, and other payment methods. Flexible payment terms such as monthly settlement can be arranged for long-term cooperative clients."
+
+[copyright]
+other = "©{year} Shandong Yuhongyuan International Trade Co., Ltd. All Rights Reserved"
+
+[page_404_title]
+other = "Page Not Found"
+
+[page_404_message]
+other = "Sorry, the page you are looking for does not exist or has been removed. Please return to the homepage to continue browsing."
+
+[page_404_btn]
+other = "Back to Home"
+
+[site_tagline]
+other = "Your Trusted Commercial Vehicle Parts Partner"
+
+[about_page_title]
+other = "About Shandong Yuhongyuan"
+
+[form_submitting]
+other = "Submitting..."
+
+[form_error_network]
+other = "Network error, please check your connection and try again, or email directly to "
+
+[read_more]
+other = "Read More"
+
+[view_details]
+other = "View Details"
+
+[home_products_title]
+other = "Products"
+
+[home_products_desc]
+other = "Full range of commercial vehicle parts, genuine OEM guarantee"
+
+[home_services_title]
+other = "Services"
+
+[home_services_desc]
+other = "Full-process professional service, one-stop solution"
+
+[home_global_title]
+other = "Global Presence"
+
+[home_global_desc]
+other = "Based in Linyi, serving the world"
+
+[home_contact_title]
+other = "Contact Us"
+
+[home_contact_desc]
+other = "Looking forward to cooperating with you"
+
+[map_error_title]
+other = "Map temporarily unavailable, please refresh and try again later"
+
+[map_locations]
+other = "Linyi HQ · Ndola Zambia · Lusaka Zambia"
+
+[city_ndola]
+other = "Ndola"
+
+[city_lusaka]
+other = "Lusaka"
+[api_endpoint]
+other = "/api/contact"
+
