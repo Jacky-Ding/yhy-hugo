@@ -680,3 +680,51 @@ other = "Your Trusted Commercial Vehicle Parts Partner"
 
 [about_page_title]
 other = "About Shandong Yuhongyuan"
+
+[form_submitting]
+other = "Submitting..."
+
+[form_error_network]
+other = "Network error, please check your connection and try again, or email directly to "
+
+[read_more]
+other = "Read More"
+
+[view_details]
+other = "View Details"
+
+[home_products_title]
+other = "Products"
+
+[home_products_desc]
+other = "Full range of commercial vehicle parts, genuine OEM guarantee"
+
+[home_services_title]
+other = "Services"
+
+[home_services_desc]
+other = "Full-process professional service, one-stop solution"
+
+[home_global_title]
+other = "Global Presence"
+
+[home_global_desc]
+other = "Based in Linyi, serving the world"
+
+[home_contact_title]
+other = "Contact Us"
+
+[home_contact_desc]
+other = "Looking forward to cooperating with you"
+
+[map_error_title]
+other = "Map temporarily unavailable, please refresh and try again later"
+
+[map_locations]
+other = "Linyi HQ · Ndola Zambia · Lusaka Zambia"
+
+[city_ndola]
+other = "Ndola"
+
+[city_lusaka]
+other = "Lusaka"

@@ -1,7 +1,7 @@
 <div class="lang-switcher">
     <span class="current-lang">{{ .Site.Language.LanguageName }}</span>
     <div class="lang-dropdown">
-        {{ range .Site.Home.AllTranslations }}
+        {{ range .Page.AllTranslations }}
         <a href="{{ .RelPermalink }}" class="lang-option{{ if eq .Lang $.Site.Language.Lang }} active{{ end }}">
             {{ .Language.LanguageName }}
         </a>

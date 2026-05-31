@@ -680,3 +680,51 @@ other = "您值得信赖的商用车零部件合作伙伴"
 
 [about_page_title]
 other = "关于山东钰弘源"
+
+[form_submitting]
+other = "提交中..."
+
+[form_error_network]
+other = "网络错误，请检查网络后重试，或直接发邮件至"
+
+[read_more]
+other = "了解更多"
+
+[view_details]
+other = "查看详情"
+
+[home_products_title]
+other = "产品中心"
+
+[home_products_desc]
+other = "全品类商用车零部件，原厂正品保障"
+
+[home_services_title]
+other = "服务体系"
+
+[home_services_desc]
+other = "全流程专业服务，一站式解决"
+
+[home_global_title]
+other = "全球布局"
+
+[home_global_desc]
+other = "立足临沂，服务全球"
+
+[home_contact_title]
+other = "联系我们"
+
+[home_contact_desc]
+other = "期待与您合作"
+
+[map_error_title]
+other = "地图暂时无法加载，请稍后刷新重试"
+
+[map_locations]
+other = "临沂总部 · 赞比亚恩多拉 · 赞比亚卢萨卡"
+
+[city_ndola]
+other = "恩多拉"
+
+[city_lusaka]
+other = "卢萨卡"
