@@ -44,22 +44,38 @@
         </div>
         <div class="highlights-grid">
             <div class="highlight-card">
-                <div class="highlight-icon">👥</div>
+                <div class="highlight-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C12.96 4 4 12.96 4 24s8.96 20 20 20 20-8.96 20-20S35.04 4 24 4zm-4 30c-3.36 0-6.36-1.88-8.04-4.72l1.42-1.2c1.24 1.88 3.48 3.12 6.04 3.12 2.56 0 4.8-1.24 6.04-3.12l1.42 1.2C30.36 32.12 27.36 34 24 34zm14-10h-3v-4h3v4zm-6h-8v-2h8v2z" fill="#c8a45c"/>
+                    </svg>
+                </div>
                 <h3>{{ T "highlight1_title" }}</h3>
                 <p>{{ T "highlight1_desc" }}</p>
             </div>
             <div class="highlight-card">
-                <div class="highlight-icon">🏭</div>
+                <div class="highlight-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 24l-8-8v5H8v6h24v5l8-8zM12 24h4V8h-4v16z" fill="#c8a45c"/>
+                    </svg>
+                </div>
                 <h3>{{ T "highlight2_title" }}</h3>
                 <p>{{ T "highlight2_desc" }}</p>
             </div>
             <div class="highlight-card">
-                <div class="highlight-icon">✅</div>
+                <div class="highlight-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4l-16 16v28h32V20L24 4zm0 6l10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#c8a45c"/>
+                    </svg>
+                </div>
                 <h3>{{ T "highlight3_title" }}</h3>
                 <p>{{ T "highlight3_desc" }}</p>
             </div>
             <div class="highlight-card">
-                <div class="highlight-icon">🌍</div>
+                <div class="highlight-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4C12.96 4 4 12.96 4 24s8.96 20 20 20 20-8.96 20-20S35.04 4 24 4zm-2 30h4v-8h-4v8z" fill="#c8a45c"/>
+                    </svg>
+                </div>
                 <h3>{{ T "highlight4_title" }}</h3>
                 <p>{{ T "highlight4_desc" }}</p>
             </div>
@@ -72,161 +88,219 @@
     <div class="container">
         <div class="section-header">
             <h2>{{ T "brands_title" }}</h2>
+            <p>{{ T "brands_subtitle" }}</p>
         </div>
         <div class="brands-grid">
             <div class="brand-item"><img src="{{ "images/shanqi.webp" | relURL }}" alt="SHACMAN"></div>
             <div class="brand-item"><img src="{{ "images/zhongqi2.webp" | relURL }}" alt="CNHTC"></div>
             <div class="brand-item"><img src="{{ "images/weichai.webp" | relURL }}" alt="WEICHAI"></div>
             <div class="brand-item"><img src="{{ "images/JIEFANG2.webp" | relURL }}" alt="FAW JIEFANG"></div>
-            <div class="brand-item"><img src="{{ "images/fashite_logo.webp" | relURL }}" alt="FAST"></div>
-            <div class="brand-item"><img src="{{ "images/handel_logo.webp" | relURL }}" alt="HANDE"></div>
-            <div class="brand-item"><img src="{{ "images/cummings.webp" | relURL }}" alt="CUMMINS"></div>
-            <div class="brand-item"><img src="{{ "images/haiwo.webp" | relURL }}" alt="HYVO"></div>
+            <div class="brand-item"><img src="{{ "images/法士特logo.webp" | relURL }}" alt="FAST"></div>
+            <div class="brand-item"><img src="{{ "images/汉德logo.webp" | relURL }}" alt="HANDE"></div>
+            <div class="brand-item"><img src="{{ "images/康明斯.webp" | relURL }}" alt="CUMMINS"></div>
+            <div class="brand-item"><img src="{{ "images/海沃.webp" | relURL }}" alt="HYVO"></div>
         </div>
     </div>
 </section>
 
 <!-- About Preview -->
-<section class="content-block">
+<section class="preview-section">
     <div class="container">
-        <div class="section-header" style="margin-bottom: 40px;">
-            <h2>{{ T "about" }}</h2>
-            <a href="{{ "about/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
-        </div>
-        <p>{{ T "about_intro" }}</p>
-        <div class="guarantee-grid" style="margin-top: 40px;">
-            <div class="guarantee-item">
-                <h4>{{ T "about_promise1" }}</h4>
-                <p>{{ T "about_promise1_desc" }}</p>
+        <div class="preview-content">
+            <div class="preview-image">
+                <img src="{{ "images/about-us.webp" | relURL }}" alt="About Us">
+                <div class="image-overlay">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="40" r="35" fill="rgba(200,164,92,0.2)"/>
+                        <path d="M40 15L50 35H40 40 40 55 40 45 30 35 40 40 55 40 15" fill="none" stroke="#c8a45c" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
             </div>
-            <div class="guarantee-item">
-                <h4>{{ T "about_promise2" }}</h4>
-                <p>{{ T "about_promise2_desc" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "about_promise3" }}</h4>
-                <p>{{ T "about_promise3_desc" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "about_promise4" }}</h4>
-                <p>{{ T "about_promise4_desc" }}</p>
+            <div class="preview-text">
+                <h2>{{ T "about" }}</h2>
+                <p>{{ T "about_intro" }}</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">{{ T "years_experience" }}</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">{{ T "countries_regions" }}</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10000+</div>
+                        <div class="stat-label">{{ T "product_types" }}</div>
+                    </div>
+                </div>
+                <a href="{{ "about/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Products Preview -->
-<section class="content-block" style="background: #f5f7fa;">
+<section class="preview-section preview-alternate">
     <div class="container">
-        <div class="section-header" style="margin-bottom: 40px;">
-            <h2>{{ T "home_products_title" }}</h2>
-            <a href="{{ "products/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
-        </div>
-        <p>{{ T "home_products_desc" }}</p>
-        <div class="guarantee-grid" style="margin-top: 40px;">
-            <div class="guarantee-item">
-                <h4>{{ T "product1_title" }}</h4>
-                <p>{{ T "product1_brand" }}</p>
+        <div class="preview-content reverse">
+            <div class="preview-image">
+                <img src="{{ "images/product-01.webp" | relURL }}" alt="Products">
+                <div class="image-badge">
+                    <span>{{ T "featured_products" }}</span>
+                </div>
             </div>
-            <div class="guarantee-item">
-                <h4>{{ T "product2_title" }}</h4>
-                <p>{{ T "product2_brand" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "product3_title" }}</h4>
-                <p>{{ T "product3_brand" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "product4_title" }}</h4>
-                <p>{{ T "product4_brand" }}</p>
+            <div class="preview-text">
+                <h2>{{ T "home_products_title" }}</h2>
+                <p>{{ T "home_products_desc" }}</p>
+                <div class="product-tags">
+                    <span class="product-tag">{{ T "product1_title" }}</span>
+                    <span class="product-tag">{{ T "product2_title" }}</span>
+                    <span class="product-tag">{{ T "product3_title" }}</span>
+                    <span class="product-tag">{{ T "product4_title" }}</span>
+                </div>
+                <a href="{{ "products/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Services Preview -->
-<section class="content-block">
+<section class="preview-section">
     <div class="container">
-        <div class="section-header" style="margin-bottom: 40px;">
-            <h2>{{ T "home_services_title" }}</h2>
-            <a href="{{ "services/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
-        </div>
-        <p>{{ T "home_services_desc" }}</p>
-        <div class="guarantee-grid" style="margin-top: 40px;">
-            <div class="guarantee-item">
-                <h4>{{ T "feature1_title" }}</h4>
-                <p>{{ T "feature1_desc" }}</p>
+        <div class="preview-content">
+            <div class="preview-image">
+                <img src="{{ "images/product-02.webp" | relURL }}" alt="Services">
+                <div class="service-icons">
+                    <div class="service-icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2l14 14l-12 4l4 12l10-6l10 6l4-12z" fill="#c8a45c"/>
+                        </svg>
+                    </div>
+                    <div class="service-icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="14" stroke="#c8a45c" stroke-width="2" fill="none"/>
+                            <path d="M16 6v6l4 4" stroke="#c8a45c" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="service-icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 16h22M16 6v20" stroke="#c8a45c" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <div class="guarantee-item">
-                <h4>{{ T "feature2_title" }}</h4>
-                <p>{{ T "feature2_desc" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "feature3_title" }}</h4>
-                <p>{{ T "feature3_desc" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "feature4_title" }}</h4>
-                <p>{{ T "feature4_desc" }}</p>
+            <div class="preview-text">
+                <h2>{{ T "home_services_title" }}</h2>
+                <p>{{ T "home_services_desc" }}</p>
+                <div class="service-list">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2l2 4h4l-3 3 1 5-4-3-4 3 1-5-3-3h4l2-4z" fill="#c8a45c"/>
+                            </svg>
+                        </div>
+                        <div class="service-text">
+                            <h4>{{ T "feature1_title" }}</h4>
+                            <p>{{ T "feature1_desc" }}</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h8 10-4.48 10-10S17.52 2 12 2z" fill="#c8a45c"/>
+                            </svg>
+                        </div>
+                        <div class="service-text">
+                            <h4>{{ T "feature2_title" }}</h4>
+                            <p>{{ T "feature2_desc" }}</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ "services/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Global Preview -->
-<section class="content-block" style="background: #f5f7fa;">
+<section class="preview-section preview-alternate">
     <div class="container">
-        <div class="section-header" style="margin-bottom: 40px;">
-            <h2>{{ T "home_global_title" }}</h2>
-            <a href="{{ "global/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
-        </div>
-        <p>{{ T "home_global_desc" }}</p>
-        <div class="guarantee-grid" style="margin-top: 40px;">
-            <div class="guarantee-item">
-                <h4>{{ T "synergy1_title" }}</h4>
-                <p>{{ T "synergy1_desc" }}</p>
+        <div class="preview-content reverse">
+            <div class="preview-image">
+                <img src="{{ "images/product-03.webp" | relURL }}" alt="Global">
+                <div class="map-dots">
+                    <div class="map-dot active" style="top: 30%; left: 70%;"></div>
+                    <div class="map-dot" style="top: 50%; left: 20%;"></div>
+                    <div class="map-dot" style="top: 60%; left: 45%;"></div>
+                    <div class="map-dot" style="top: 40%; left: 80%;"></div>
+                </div>
             </div>
-            <div class="guarantee-item">
-                <h4>{{ T "synergy2_title" }}</h4>
-                <p>{{ T "synergy2_desc" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "synergy3_title" }}</h4>
-                <p>{{ T "synergy3_desc" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "synergy4_title" }}</h4>
-                <p>{{ T "synergy4_desc" }}</p>
+            <div class="preview-text">
+                <h2>{{ T "home_global_title" }}</h2>
+                <p>{{ T "home_global_desc" }}</p>
+                <div class="global-locations">
+                    <div class="location-item">
+                        <span class="location-dot"></span>
+                        <div>
+                            <h4>{{ T "contact_headquarters_title" }}</h4>
+                            <p>{{ T "contact_headquarters_address" }}</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <span class="location-dot"></span>
+                        <div>
+                            <h4>{{ T "city_ndola" }}</h4>
+                            <p>{{ T "contact_overseas_address_ndola" }}</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <span class="location-dot"></span>
+                        <div>
+                            <h4>{{ T "city_lusaka" }}</h4>
+                            <p>{{ T "contact_overseas_address_lusaka" }}</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ "global/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Contact Preview -->
-<section class="content-block">
+<!-- Contact CTA -->
+<section class="cta-section">
     <div class="container">
-        <div class="section-header" style="margin-bottom: 40px;">
-            <h2>{{ T "home_contact_title" }}</h2>
+        <div class="cta-content">
+            <div class="cta-text">
+                <h2>{{ T "home_contact_title" }}</h2>
+                <p>{{ T "home_contact_desc" }}</p>
+            </div>
+            <div class="cta-info">
+                <div class="cta-item">
+                    <div class="cta-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" fill="#c8a45c"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>{{ T "contact_phone_label" }}</h4>
+                        <p>{{ T "contact_headquarters_phone" }}</p>
+                    </div>
+                </div>
+                <div class="cta-item">
+                    <div class="cta-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4h20a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" fill="none" stroke="#c8a45c" stroke-width="2"/>
+                            <path d="M22 6l-10 7L2 6" fill="none" stroke="#c8a45c" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>{{ T "contact_email_label" }}</h4>
+                        <p>{{ T "contact_email" }}</p>
+                    </div>
+                </div>
+            </div>
             <a href="{{ "contact/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
-        </div>
-        <p>{{ T "home_contact_desc" }}</p>
-        <div class="guarantee-grid" style="margin-top: 40px;">
-            <div class="guarantee-item">
-                <h4>{{ T "contact_headquarters_title" }}</h4>
-                <p>{{ T "contact_headquarters_phone" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "city_ndola" }}</h4>
-                <p>{{ T "contact_overseas_phone1" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "city_lusaka" }}</h4>
-                <p>{{ T "contact_overseas_lusaka_phone" }}</p>
-            </div>
-            <div class="guarantee-item">
-                <h4>{{ T "contact_email_label" }}</h4>
-                <p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p>
-            </div>
         </div>
     </div>
 </section>

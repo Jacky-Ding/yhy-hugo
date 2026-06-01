@@ -730,5 +730,20 @@ other = "恩多拉"
 other = "卢萨卡"
 
 [api_endpoint]
-other = "https://contact.yhytradehub.com"
+other = "https://yhy-contact-form.dty121.workers.dev"
+
+[brands_subtitle]
+other = "与知名品牌合作，品质保障"
+
+[years_experience]
+other = "年经验"
+
+[countries_regions]
+other = "个国家和地区"
+
+[product_types]
+other = "种产品类型"
+
+[featured_products]
+other = "精选产品"
 

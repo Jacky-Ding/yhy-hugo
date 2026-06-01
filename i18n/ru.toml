@@ -728,6 +728,22 @@ other = "Ндола"
 
 [city_lusaka]
 other = "Лусака"
+
 [api_endpoint]
-other = "https://contact.yhytradehub.com"
+other = "https://yhy-contact-form.dty121.workers.dev"
+
+[brands_subtitle]
+other = "Сотрудничаем с известными брендами, гарантируем качество"
+
+[years_experience]
+other = "Лет опыта"
+
+[countries_regions]
+other = "Стран и регионов"
+
+[product_types]
+other = "Типов продуктов"
+
+[featured_products]
+other = "Избранные продукты"
 
