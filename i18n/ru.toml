@@ -729,5 +729,5 @@ other = "Ндола"
 [city_lusaka]
 other = "Лусака"
 [api_endpoint]
-other = "https://yhy-contact-form-dev.dty121.workers.dev"
+other = "https://yhy-contact-form.dty121.workers.dev"
 

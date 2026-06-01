@@ -730,5 +730,5 @@ other = "恩多拉"
 other = "卢萨卡"
 
 [api_endpoint]
-other = "https://yhy-contact-form-dev.dty121.workers.dev"
+other = "https://yhy-contact-form.dty121.workers.dev"
 
