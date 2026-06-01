@@ -2,36 +2,9 @@ name = "yhy-contact-form"
 main = "index.js"
 compatibility_date = "2024-01-01"
 
-# 路由配置 - 将 Worker 部署到特定路径或子域名
-# 选项 1: 作为 API 端点 (推荐)
-# routes = [
-#   { pattern = "api.yhytradehub.com", zone_name = "yhytradehub.com" }
-# ]
-
-# 选项 2: 部署到 Workers.dev (免费，适合测试)
-# workers_dev = true
-
-# 生产环境配置
-[env.production]
-name = "yhy-contact-form"
-routes = [
-  { pattern = "contact.yhytradehub.com", zone_name = "yhytradehub.com" }
-]
-
-# 环境变量（生产）
-[env.production.vars]
-COMPANY_NAME = "山东钰弘源国际贸易有限公司"
-
-# 密钥（生产）- 使用 wrangler secret put 命令设置
-# wrangler secret put RESEND_API_KEY --env production
-# wrangler secret put TO_EMAIL --env production
-# wrangler secret put FROM_EMAIL --env production
-
-# 开发/预览环境配置
-[env.dev]
-name = "yhy-contact-form-dev"
+# Workers.dev 部署（立即可用，无需域名配置）
 workers_dev = true
 
-# 环境变量（开发）
-[env.dev.vars]
-COMPANY_NAME = "山东钰弘源 - 开发环境"
+# 环境变量
+[vars]
+COMPANY_NAME = "山东钰弘源国际贸易有限公司"
