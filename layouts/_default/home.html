@@ -1,31 +1,31 @@
 {{ define "main" }}
 <!-- Hero Banner -->
 <section class="hero-banner" id="hero-carousel">
-    <!-- Slide 1 -->
     <div class="carousel-slide active">
         <div class="carousel-bg" style="background-image:url('{{ "images/banner-1.webp" | relURL }}')"></div>
         <div class="carousel-content">
+            <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>{{ T "site_tagline" }}</div>
             <h1>{{ T "banner_title" }}</h1>
             <p>{{ T "banner_slogan" }}</p>
-            <a href="{{ "about/" | relLangURL }}" class="carousel-btn">{{ T "banner_btn" }}</a>
+            <a href="{{ "about/" | relLangURL }}" class="carousel-btn">{{ T "banner_btn" }}<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
     </div>
-    <!-- Slide 2 -->
     <div class="carousel-slide">
         <div class="carousel-bg carousel-bg-fallback"></div>
         <div class="carousel-content">
+            <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>{{ T "site_tagline" }}</div>
             <h1>{{ T "banner_title" }}</h1>
             <p>{{ T "products_core_desc" }}</p>
-            <a href="{{ "products/" | relLangURL }}" class="carousel-btn">{{ T "products" }}</a>
+            <a href="{{ "products/" | relLangURL }}" class="carousel-btn">{{ T "products" }}<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
     </div>
-    <!-- Slide 3 -->
     <div class="carousel-slide">
         <div class="carousel-bg" style="background-image:url('{{ "images/banner-3.webp" | relURL }}')"></div>
         <div class="carousel-content">
+            <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>{{ T "site_tagline" }}</div>
             <h1>{{ T "banner_title" }}</h1>
             <p>{{ T "global_subtitle" }}</p>
-            <a href="{{ "global/" | relLangURL }}" class="carousel-btn">{{ T "global" }}</a>
+            <a href="{{ "global/" | relLangURL }}" class="carousel-btn">{{ T "global" }}<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
     </div>
     <div class="carousel-dots">
@@ -33,51 +33,75 @@
         <button class="carousel-dot"></button>
         <button class="carousel-dot"></button>
     </div>
+    <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
 </section>
 
 <!-- Core Highlights -->
 <section class="highlights-section">
+    <div class="highlights-deco" aria-hidden="true"></div>
     <div class="container">
-        <div class="section-header">
-            <h2>{{ T "highlights_title" }}</h2>
-            <p>{{ T "highlights_subtitle" }}</p>
+        <div class="section-header section-header-split">
+            <div class="section-header-left">
+                <div class="section-eyebrow">
+                    <span class="section-eyebrow-bar"></span>
+                    <span>01 — {{ T "highlights_title" }}</span>
+                </div>
+                <h2>{{ T "highlights_title" }}</h2>
+            </div>
+            <p class="section-header-right">{{ T "highlights_subtitle" }}</p>
         </div>
         <div class="highlights-grid">
-            <div class="highlight-card">
+            <div class="highlight-card highlight-card-1">
+                <div class="highlight-card-stripe"></div>
+                <div class="highlight-index">01</div>
                 <div class="highlight-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 4C12.96 4 4 12.96 4 24s8.96 20 20 20 20-8.96 20-20S35.04 4 24 4zm-4 30c-3.36 0-6.36-1.88-8.04-4.72l1.42-1.2c1.24 1.88 3.48 3.12 6.04 3.12 2.56 0 4.8-1.24 6.04-3.12l1.42 1.2C30.36 32.12 27.36 34 24 34zm14-10h-3v-4h3v4zm-6h-8v-2h8v2z" fill="#c8a45c"/>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 22a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm18 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8ZM13 18l3-6h4l3 6M11 24h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <h3>{{ T "highlight1_title" }}</h3>
                 <p>{{ T "highlight1_desc" }}</p>
+                <div class="highlight-divider"></div>
             </div>
-            <div class="highlight-card">
+            <div class="highlight-card highlight-card-2">
+                <div class="highlight-card-stripe"></div>
+                <div class="highlight-index">02</div>
                 <div class="highlight-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M40 24l-8-8v5H8v6h24v5l8-8zM12 24h4V8h-4v16z" fill="#c8a45c"/>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 13l4-6h18l4 6v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V13Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                        <path d="M5 13h26M13 13v4M23 13v4M14 21h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                     </svg>
                 </div>
                 <h3>{{ T "highlight2_title" }}</h3>
                 <p>{{ T "highlight2_desc" }}</p>
+                <div class="highlight-divider"></div>
             </div>
-            <div class="highlight-card">
+            <div class="highlight-card highlight-card-3">
+                <div class="highlight-card-stripe"></div>
+                <div class="highlight-index">03</div>
                 <div class="highlight-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 4l-16 16v28h32V20L24 4zm0 6l10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#c8a45c"/>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 4l4 5h5l-2 7 5 4-2 6h-6l-2 6h-4l-2-6H8l-2-6 5-4-2-7h5l4-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                        <circle cx="18" cy="18" r="3.5" stroke="currentColor" stroke-width="1.8"/>
                     </svg>
                 </div>
                 <h3>{{ T "highlight3_title" }}</h3>
                 <p>{{ T "highlight3_desc" }}</p>
+                <div class="highlight-divider"></div>
             </div>
-            <div class="highlight-card">
+            <div class="highlight-card highlight-card-4">
+                <div class="highlight-card-stripe"></div>
+                <div class="highlight-index">04</div>
                 <div class="highlight-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 4C12.96 4 4 12.96 4 24s8.96 20 20 20 20-8.96 20-20S35.04 4 24 4zm-2 30h4v-8h-4v8z" fill="#c8a45c"/>
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="18" r="12" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M6 18h24M18 6c4 4 4 20 0 24M18 6c-4 4-4 20 0 24" stroke="currentColor" stroke-width="1.8"/>
+                        <circle cx="18" cy="18" r="2" fill="currentColor"/>
                     </svg>
                 </div>
                 <h3>{{ T "highlight4_title" }}</h3>
                 <p>{{ T "highlight4_desc" }}</p>
+                <div class="highlight-divider"></div>
             </div>
         </div>
     </div>
@@ -87,6 +111,11 @@
 <section class="brands-section">
     <div class="container">
         <div class="section-header">
+            <div class="section-eyebrow section-eyebrow-center">
+                <span class="section-eyebrow-bar"></span>
+                <span>02 — {{ T "brands_title" }}</span>
+                <span class="section-eyebrow-bar"></span>
+            </div>
             <h2>{{ T "brands_title" }}</h2>
             <p>{{ T "brands_subtitle" }}</p>
         </div>
@@ -107,16 +136,18 @@
 <section class="preview-section">
     <div class="container">
         <div class="preview-content">
-            <div class="preview-image">
+            <div class="preview-image preview-image-frame">
                 <img src="{{ "images/about-us.webp" | relURL }}" alt="About Us">
-                <div class="image-overlay">
-                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="40" cy="40" r="35" fill="rgba(200,164,92,0.2)"/>
-                        <path d="M40 15L50 35H40 40 40 55 40 45 30 35 40 40 55 40 15" fill="none" stroke="#c8a45c" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
+                <div class="preview-image-tag">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>10+ {{ T "years_experience" }}</span>
                 </div>
             </div>
             <div class="preview-text">
+                <div class="preview-eyebrow">
+                    <span class="preview-eyebrow-num">03</span>
+                    <span>{{ T "about" }}</span>
+                </div>
                 <h2>{{ T "about" }}</h2>
                 <p>{{ T "about_intro" }}</p>
                 <div class="stats-grid">
@@ -129,11 +160,14 @@
                         <div class="stat-label">{{ T "countries_regions" }}</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">10000+</div>
+                        <div class="stat-number">10K+</div>
                         <div class="stat-label">{{ T "product_types" }}</div>
                     </div>
                 </div>
-                <a href="{{ "about/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
+                <a href="{{ "about/" | relLangURL }}" class="carousel-btn carousel-btn-ghost">
+                    {{ T "view_details" }}
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
         </div>
     </div>
@@ -143,22 +177,31 @@
 <section class="preview-section preview-alternate">
     <div class="container">
         <div class="preview-content reverse">
-            <div class="preview-image">
+            <div class="preview-image preview-image-frame">
                 <img src="{{ "images/product-01.webp" | relURL }}" alt="Products">
-                <div class="image-badge">
-                    <span>{{ T "featured_products" }}</span>
+                <div class="image-badge">{{ T "featured_products" }}</div>
+                <div class="preview-floating-card">
+                    <div class="preview-floating-num">06</div>
+                    <div class="preview-floating-text">{{ T "products_categories" }}</div>
                 </div>
             </div>
             <div class="preview-text">
+                <div class="preview-eyebrow preview-eyebrow-blue">
+                    <span class="preview-eyebrow-num">04</span>
+                    <span>{{ T "products" }}</span>
+                </div>
                 <h2>{{ T "home_products_title" }}</h2>
                 <p>{{ T "home_products_desc" }}</p>
                 <div class="product-tags">
-                    <span class="product-tag">{{ T "product1_title" }}</span>
-                    <span class="product-tag">{{ T "product2_title" }}</span>
-                    <span class="product-tag">{{ T "product3_title" }}</span>
-                    <span class="product-tag">{{ T "product4_title" }}</span>
+                    <span class="product-tag"><span class="product-tag-dot"></span>{{ T "product1_title" }}</span>
+                    <span class="product-tag"><span class="product-tag-dot"></span>{{ T "product2_title" }}</span>
+                    <span class="product-tag"><span class="product-tag-dot"></span>{{ T "product3_title" }}</span>
+                    <span class="product-tag"><span class="product-tag-dot"></span>{{ T "product4_title" }}</span>
                 </div>
-                <a href="{{ "products/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
+                <a href="{{ "products/" | relLangURL }}" class="carousel-btn">
+                    {{ T "view_details" }}
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
         </div>
     </div>
@@ -168,36 +211,40 @@
 <section class="preview-section">
     <div class="container">
         <div class="preview-content">
-            <div class="preview-image">
+            <div class="preview-image preview-image-frame">
                 <img src="{{ "images/product-02.webp" | relURL }}" alt="Services">
-                <div class="service-icons">
-                    <div class="service-icon-circle">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 2l14 14l-12 4l4 12l10-6l10 6l4-12z" fill="#c8a45c"/>
-                        </svg>
+                <div class="service-stack">
+                    <div class="service-stack-item">
+                        <div class="service-stack-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <div class="service-stack-title">7×24h</div>
+                            <div class="service-stack-sub">{{ T "feature1_title" }}</div>
+                        </div>
                     </div>
-                    <div class="service-icon-circle">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="14" stroke="#c8a45c" stroke-width="2" fill="none"/>
-                            <path d="M16 6v6l4 4" stroke="#c8a45c" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <div class="service-icon-circle">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 16h22M16 6v20" stroke="#c8a45c" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                    <div class="service-stack-item">
+                        <div class="service-stack-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z"/></svg>
+                        </div>
+                        <div>
+                            <div class="service-stack-title">{{ T "feature2_title" }}</div>
+                            <div class="service-stack-sub">10+ {{ T "years_experience" }}</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="preview-text">
+                <div class="preview-eyebrow preview-eyebrow-copper">
+                    <span class="preview-eyebrow-num">05</span>
+                    <span>{{ T "services" }}</span>
+                </div>
                 <h2>{{ T "home_services_title" }}</h2>
                 <p>{{ T "home_services_desc" }}</p>
                 <div class="service-list">
                     <div class="service-item">
                         <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2l2 4h4l-3 3 1 5-4-3-4 3 1-5-3-3h4l2-4z" fill="#c8a45c"/>
-                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                         </div>
                         <div class="service-text">
                             <h4>{{ T "feature1_title" }}</h4>
@@ -206,9 +253,7 @@
                     </div>
                     <div class="service-item">
                         <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h8 10-4.48 10-10S17.52 2 12 2z" fill="#c8a45c"/>
-                            </svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                         </div>
                         <div class="service-text">
                             <h4>{{ T "feature2_title" }}</h4>
@@ -216,7 +261,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="{{ "services/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
+                <a href="{{ "services/" | relLangURL }}" class="carousel-btn">
+                    {{ T "view_details" }}
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
         </div>
     </div>
@@ -226,16 +274,30 @@
 <section class="preview-section preview-alternate">
     <div class="container">
         <div class="preview-content reverse">
-            <div class="preview-image">
+            <div class="preview-image preview-image-frame preview-image-map">
                 <img src="{{ "images/product-03.webp" | relURL }}" alt="Global">
+                <div class="map-grid" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
                 <div class="map-dots">
-                    <div class="map-dot active" style="top: 30%; left: 70%;"></div>
-                    <div class="map-dot" style="top: 50%; left: 20%;"></div>
-                    <div class="map-dot" style="top: 60%; left: 45%;"></div>
-                    <div class="map-dot" style="top: 40%; left: 80%;"></div>
+                    <div class="map-dot active" style="top: 30%; left: 70%;">
+                        <span class="map-dot-label">临沂</span>
+                    </div>
+                    <div class="map-dot" style="top: 60%; left: 52%;">
+                        <span class="map-dot-label">Lusaka</span>
+                    </div>
+                    <div class="map-dot" style="top: 55%; left: 50%;">
+                        <span class="map-dot-label">Ndola</span>
+                    </div>
                 </div>
             </div>
             <div class="preview-text">
+                <div class="preview-eyebrow preview-eyebrow-forest">
+                    <span class="preview-eyebrow-num">06</span>
+                    <span>{{ T "global" }}</span>
+                </div>
                 <h2>{{ T "home_global_title" }}</h2>
                 <p>{{ T "home_global_desc" }}</p>
                 <div class="global-locations">
@@ -261,7 +323,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="{{ "global/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
+                <a href="{{ "global/" | relLangURL }}" class="carousel-btn">
+                    {{ T "view_details" }}
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
         </div>
     </div>
@@ -269,18 +334,30 @@
 
 <!-- Contact CTA -->
 <section class="cta-section">
+    <div class="cta-pattern" aria-hidden="true">
+        <svg width="100%" height="100%" preserveAspectRatio="none">
+            <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(201,149,76,0.08)" stroke-width="1"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)"/>
+        </svg>
+    </div>
     <div class="container">
         <div class="cta-content">
             <div class="cta-text">
+                <div class="section-eyebrow section-eyebrow-on-dark">
+                    <span class="section-eyebrow-bar"></span>
+                    <span>07 — {{ T "contact" }}</span>
+                </div>
                 <h2>{{ T "home_contact_title" }}</h2>
                 <p>{{ T "home_contact_desc" }}</p>
             </div>
             <div class="cta-info">
                 <div class="cta-item">
                     <div class="cta-icon">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" fill="#c8a45c"/>
-                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     </div>
                     <div>
                         <h4>{{ T "contact_phone_label" }}</h4>
@@ -289,10 +366,7 @@
                 </div>
                 <div class="cta-item">
                     <div class="cta-icon">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 4h20a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" fill="none" stroke="#c8a45c" stroke-width="2"/>
-                            <path d="M22 6l-10 7L2 6" fill="none" stroke="#c8a45c" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     </div>
                     <div>
                         <h4>{{ T "contact_email_label" }}</h4>
@@ -300,7 +374,10 @@
                     </div>
                 </div>
             </div>
-            <a href="{{ "contact/" | relLangURL }}" class="carousel-btn">{{ T "view_details" }}</a>
+            <a href="{{ "contact/" | relLangURL }}" class="carousel-btn carousel-btn-light">
+                {{ T "view_details" }}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
         </div>
     </div>
 </section>
