@@ -2537,6 +2537,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer-brand img {
     height: 48px;
     width: auto;
+    max-width: 100%;
+    object-fit: contain;
     filter: brightness(0) invert(1);
 }
 
@@ -2697,8 +2699,8 @@ h1, h2, h3, h4, h5, h6 {
    SCROLL ANIMATIONS
    =================================================================== */
 .reveal {
-    opacity: 0;
-    transform: translateY(40px);
+    opacity: 1;
+    transform: translateY(0);
     transition: all var(--duration-slow) var(--ease-out);
 }
 
@@ -2708,8 +2710,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal-left {
-    opacity: 0;
-    transform: translateX(-40px);
+    opacity: 1;
+    transform: translateX(0);
     transition: all var(--duration-slow) var(--ease-out);
 }
 
@@ -2719,8 +2721,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal-right {
-    opacity: 0;
-    transform: translateX(40px);
+    opacity: 1;
+    transform: translateX(0);
     transition: all var(--duration-slow) var(--ease-out);
 }
 
@@ -2730,8 +2732,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal-scale {
-    opacity: 0;
-    transform: scale(0.9);
+    opacity: 1;
+    transform: scale(1);
     transition: all var(--duration-slow) var(--ease-out);
 }
 
@@ -2742,8 +2744,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Stagger children */
 .stagger-children > * {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    transform: translateY(0);
     transition: all var(--duration-normal) var(--ease-out);
 }
 
