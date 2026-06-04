@@ -1,23 +1,33 @@
-<div class="page-intro page-intro-products">
+<div class="page-intro reveal">
     <div class="page-intro-eyebrow">
         <span class="page-intro-dot"></span>
-        <span>06 CATEGORIES · 10,000+ SKUs</span>
+        <span>06 CATEGORIES · 100,000+ SKUs</span>
     </div>
     <h1 class="page-intro-title">{{ T "products" }}</h1>
     <p class="page-intro-lede">{{ T "products_core_desc" }}</p>
 </div>
 
-<div class="content-block content-block-icon">
-    <div class="content-block-icon-head">
-        <div class="content-block-icon-num">01</div>
-        <h2>{{ T "products_categories" }}</h2>
-        <p class="content-block-subtitle">六大产品体系，覆盖商用车全场景</p>
+<!-- Products Grid -->
+<div class="content-section">
+    <div class="content-section-header reveal">
+        <div class="content-section-eyebrow">
+            <span class="content-section-eyebrow-bar"></span>
+            <span>01 · {{ T "products_categories" }}</span>
+        </div>
+        <h2 class="content-section-title">{{ T "products_categories" }}</h2>
     </div>
-    <div class="products-grid">
-        <div class="product-card product-card-1">
+    <div class="products-grid stagger-children">
+        <div class="product-card">
             <div class="product-card-top">
                 <div class="product-card-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="3" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="21"/><line x1="3" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="21" y2="12"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"/>
+                        <circle cx="12" cy="12" r="3"/>
+                        <line x1="12" y1="3" x2="12" y2="6"/>
+                        <line x1="12" y1="18" x2="12" y2="21"/>
+                        <line x1="3" y1="12" x2="6" y2="12"/>
+                        <line x1="18" y1="12" x2="21" y2="12"/>
+                    </svg>
                 </div>
                 <div class="product-card-num">P1</div>
             </div>
@@ -25,10 +35,15 @@
             <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product1_brand" }}</div>
             <p>{{ T "product1_desc" }}</p>
         </div>
-        <div class="product-card product-card-2">
+        <div class="product-card">
             <div class="product-card-top">
                 <div class="product-card-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="11" rx="1"/><path d="M3 14h18M7 9V6h10v3"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="9" width="18" height="11" rx="1"/>
+                        <path d="M3 14h18M7 9V6h10v3"/>
+                        <circle cx="7" cy="18" r="1.5"/>
+                        <circle cx="17" cy="18" r="1.5"/>
+                    </svg>
                 </div>
                 <div class="product-card-num">P2</div>
             </div>
@@ -36,10 +51,14 @@
             <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product2_brand" }}</div>
             <p>{{ T "product2_desc" }}</p>
         </div>
-        <div class="product-card product-card-3">
+        <div class="product-card">
             <div class="product-card-top">
                 <div class="product-card-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6"/><path d="M3 18h18M7 18V8m10 10V8"/><path d="M7 8l5-4 5 4"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 18v-6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6"/>
+                        <path d="M3 18h18M7 18V8m10 10V8"/>
+                        <path d="M7 8l5-4 5 4"/>
+                    </svg>
                 </div>
                 <div class="product-card-num">P3</div>
             </div>
@@ -47,10 +66,12 @@
             <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product3_brand" }}</div>
             <p>{{ T "product3_desc" }}</p>
         </div>
-        <div class="product-card product-card-4">
+        <div class="product-card">
             <div class="product-card-top">
                 <div class="product-card-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
                 </div>
                 <div class="product-card-num">P4</div>
             </div>
@@ -58,10 +79,13 @@
             <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product4_brand" }}</div>
             <p>{{ T "product4_desc" }}</p>
         </div>
-        <div class="product-card product-card-5">
+        <div class="product-card">
             <div class="product-card-top">
                 <div class="product-card-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 7v5l3 2"/>
+                    </svg>
                 </div>
                 <div class="product-card-num">P5</div>
             </div>
@@ -69,10 +93,13 @@
             <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product5_brand" }}</div>
             <p>{{ T "product5_desc" }}</p>
         </div>
-        <div class="product-card product-card-6">
+        <div class="product-card">
             <div class="product-card-top">
                 <div class="product-card-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
                 </div>
                 <div class="product-card-num">P6</div>
             </div>
@@ -83,77 +110,101 @@
     </div>
 </div>
 
-<div class="content-block content-block-promise">
-    <div class="content-block-icon-head">
-        <div class="content-block-icon-num">02</div>
-        <h2>{{ T "products_guarantee" }}</h2>
-    </div>
-    <div class="guarantee-grid">
-        <div class="guarantee-item guarantee-item-gold">
-            <div class="guarantee-num">01</div>
-            <div class="guarantee-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
-            </div>
-            <h4>{{ T "guarantee1_title" }}</h4>
-            <p>{{ T "guarantee1_desc" }}</p>
+<!-- Product Image Banner -->
+<div class="content-section content-section-alt">
+    <div class="preview-grid">
+        <div class="preview-image reveal-left">
+            <img src="{{ "images/engine-detail.jpg" | relURL }}" alt="Engine Components">
+            <div class="preview-image-overlay"></div>
+            <div class="preview-badge">OEM</div>
         </div>
-        <div class="guarantee-item guarantee-item-blue">
-            <div class="guarantee-num">02</div>
-            <div class="guarantee-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <div class="preview-text reveal-right">
+            <div class="preview-label">
+                <span class="preview-label-num">QUALITY</span>
+                <span>{{ T "products_guarantee" }}</span>
             </div>
-            <h4>{{ T "guarantee2_title" }}</h4>
-            <p>{{ T "guarantee2_desc" }}</p>
-        </div>
-        <div class="guarantee-item guarantee-item-copper">
-            <div class="guarantee-num">03</div>
-            <div class="guarantee-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h4>{{ T "guarantee3_title" }}</h4>
-            <p>{{ T "guarantee3_desc" }}</p>
-        </div>
-        <div class="guarantee-item guarantee-item-forest">
-            <div class="guarantee-num">04</div>
-            <div class="guarantee-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            </div>
-            <h4>{{ T "guarantee4_title" }}</h4>
-            <p>{{ T "guarantee4_desc" }}</p>
+            <h2 class="preview-title">{{ T "products_guarantee" }}</h2>
+            <p class="preview-desc">{{ T "about_intro" }}</p>
         </div>
     </div>
 </div>
 
-<div class="content-block content-block-icon content-block-custom">
-    <div class="content-block-icon-head">
-        <div class="content-block-icon-num">03</div>
-        <h2>{{ T "products_custom" }}</h2>
-    </div>
-    <div class="custom-block">
-        <div class="custom-block-art" aria-hidden="true">
-            <svg viewBox="0 0 200 100" width="100%" height="100%">
-                <defs>
-                    <linearGradient id="customGrad" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0" stop-color="#C9954C" stop-opacity="0.1"/>
-                        <stop offset="0.5" stop-color="#C9954C" stop-opacity="0.3"/>
-                        <stop offset="1" stop-color="#C9954C" stop-opacity="0.1"/>
-                    </linearGradient>
-                </defs>
-                <rect x="0" y="40" width="200" height="20" fill="url(#customGrad)"/>
-                <path d="M10 50 L40 50 L50 30 L70 30 L80 50 L120 50 L130 30 L150 30 L160 50 L190 50" stroke="#0F172A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="50" cy="65" r="8" fill="#0F172A"/>
-                <circle cx="130" cy="65" r="8" fill="#0F172A"/>
-                <circle cx="50" cy="65" r="3" fill="#C9954C"/>
-                <circle cx="130" cy="65" r="3" fill="#C9954C"/>
-            </svg>
+<!-- Quality Guarantee -->
+<div class="content-section">
+    <div class="content-section-header reveal">
+        <div class="content-section-eyebrow">
+            <span class="content-section-eyebrow-bar"></span>
+            <span>02 · {{ T "products_guarantee" }}</span>
         </div>
-        <div class="custom-block-content">
-            <p>{{ T "products_custom_desc" }}</p>
-            <div class="custom-block-tags">
-                <span class="custom-block-tag">OEM</span>
-                <span class="custom-block-tag">ODM</span>
-                <span class="custom-block-tag">Bespoke</span>
-                <span class="custom-block-tag">Custom</span>
+        <h2 class="content-section-title">{{ T "products_guarantee" }}</h2>
+    </div>
+    <div class="guarantee-grid stagger-children">
+        <div class="guarantee-item">
+            <div class="guarantee-badge">01</div>
+            <div class="guarantee-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 12l2 2 4-4"/>
+                    <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/>
+                </svg>
+            </div>
+            <h3 class="guarantee-title">{{ T "guarantee1_title" }}</h3>
+            <p class="guarantee-desc">{{ T "guarantee1_desc" }}</p>
+        </div>
+        <div class="guarantee-item">
+            <div class="guarantee-badge">02</div>
+            <div class="guarantee-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+            </div>
+            <h3 class="guarantee-title">{{ T "guarantee2_title" }}</h3>
+            <p class="guarantee-desc">{{ T "guarantee2_desc" }}</p>
+        </div>
+        <div class="guarantee-item">
+            <div class="guarantee-badge">03</div>
+            <div class="guarantee-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+            </div>
+            <h3 class="guarantee-title">{{ T "guarantee3_title" }}</h3>
+            <p class="guarantee-desc">{{ T "guarantee3_desc" }}</p>
+        </div>
+        <div class="guarantee-item">
+            <div class="guarantee-badge">04</div>
+            <div class="guarantee-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+            </div>
+            <h3 class="guarantee-title">{{ T "guarantee4_title" }}</h3>
+            <p class="guarantee-desc">{{ T "guarantee4_desc" }}</p>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Solutions -->
+<div class="content-section content-section-alt">
+    <div class="content-section-header reveal">
+        <div class="content-section-eyebrow">
+            <span class="content-section-eyebrow-bar"></span>
+            <span>03 · {{ T "products_custom" }}</span>
+        </div>
+        <h2 class="content-section-title">{{ T "products_custom" }}</h2>
+    </div>
+    <div class="preview-grid">
+        <div class="preview-image reveal-left">
+            <img src="{{ "images/quality-check.jpg" | relURL }}" alt="Quality Control">
+            <div class="preview-image-overlay"></div>
+        </div>
+        <div class="preview-text reveal-right">
+            <p class="preview-desc">{{ T "products_custom_desc" }}</p>
+            <div class="tag-list">
+                <span class="tag"><span class="tag-dot"></span>OEM</span>
+                <span class="tag"><span class="tag-dot"></span>ODM</span>
+                <span class="tag"><span class="tag-dot"></span>Bespoke</span>
+                <span class="tag"><span class="tag-dot"></span>Custom</span>
             </div>
         </div>
     </div>

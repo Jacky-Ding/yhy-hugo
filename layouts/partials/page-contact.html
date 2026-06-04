@@ -2,63 +2,190 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-<div class="page-content">
-    <div class="container">
-        <div class="page-header">
-            <h1>{{ T "contact" }}</h1>
-            <p>{{ T "contact_subtitle" }}</p>
-        </div>
+<div class="page-intro reveal">
+    <div class="page-intro-eyebrow">
+        <span class="page-intro-dot"></span>
+        <span>3 OFFICES · 24/7 SUPPORT</span>
+    </div>
+    <h1 class="page-intro-title">{{ T "contact" }}</h1>
+    <p class="page-intro-lede">{{ T "contact_subtitle" }}</p>
+</div>
 
+<div class="content-section">
+    <div class="container">
         <div class="contact-wrap">
             <!-- Left: Contact Info -->
             <div class="contact-info">
 
                 <!-- 中国总部 (临沂) -->
-                <div class="subsidiary-item contact-block">
+                <div class="contact-block reveal">
                     <h3>{{ T "contact_headquarters_title" }}</h3>
                     <p class="company-name">{{ T "contact_headquarters_company" }}</p>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="info-text"><label>{{ T "contact_address_label" }}</label><p>{{ T "contact_headquarters_address" }}</p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="info-text"><label>{{ T "contact_phone_label" }}</label><p><a href="tel:{{ T "contact_headquarters_phone" }}">{{ T "contact_headquarters_phone" }}</a></p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="info-text"><label>{{ T "contact_email_label" }}</label><p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="info-text"><label>{{ T "contact_working_hours" }}</label><p>{{ T "contact_headquarters_hours" }}</p></div></div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_address_label" }}</label>
+                            <p>{{ T "contact_headquarters_address" }}</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_phone_label" }}</label>
+                            <p><a href="tel:{{ T "contact_headquarters_phone" }}">{{ T "contact_headquarters_phone" }}</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_email_label" }}</label>
+                            <p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_working_hours" }}</label>
+                            <p>{{ T "contact_headquarters_hours" }}</p>
+                        </div>
+                    </div>
                     <div class="qr-row">
-                        <div class="qr-card"><img src="{{ "images/wechat-linyi.webp" | relURL }}" alt="{{ T "contact_wechat" }}"><div class="qr-label">{{ T "contact_wechat" }}</div></div>
-                        <div class="qr-card"><img src="{{ "images/whatsapp-linyi.webp" | relURL }}" alt="{{ T "contact_whatsapp" }}"><div class="qr-label">{{ T "contact_whatsapp" }}</div></div>
+                        <div class="qr-card">
+                            <img src="{{ "images/wechat-linyi.webp" | relURL }}" alt="{{ T "contact_wechat" }}">
+                            <div class="qr-label">{{ T "contact_wechat" }}</div>
+                        </div>
+                        <div class="qr-card">
+                            <img src="{{ "images/whatsapp-linyi.webp" | relURL }}" alt="{{ T "contact_whatsapp" }}">
+                            <div class="qr-label">{{ T "contact_whatsapp" }}</div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 赞比亚恩多拉基地 -->
-                <div class="subsidiary-item contact-block">
+                <div class="contact-block reveal">
                     <h3>{{ T "contact_overseas_title" }} — {{ T "city_ndola" }}</h3>
                     <p class="company-name">{{ T "contact_overseas_ndola_company" }}</p>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="info-text"><label>{{ T "contact_address_label" }}</label><p>{{ T "contact_overseas_address_ndola" }}</p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="info-text"><label>{{ T "contact_phone_label" }}</label><p><a href="tel:{{ T "contact_overseas_phone1" }}">{{ T "contact_overseas_phone1" }}</a></p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="info-text"><label>{{ T "contact_email_label" }}</label><p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="info-text"><label>{{ T "contact_working_hours" }}</label><p>{{ T "contact_overseas_hours" }}</p></div></div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_address_label" }}</label>
+                            <p>{{ T "contact_overseas_address_ndola" }}</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_phone_label" }}</label>
+                            <p><a href="tel:{{ T "contact_overseas_phone1" }}">{{ T "contact_overseas_phone1" }}</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_email_label" }}</label>
+                            <p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p>
+                        </div>
+                    </div>
                     <div class="qr-row">
-                        <div class="qr-card"><img src="{{ "images/wechat-ndola.webp" | relURL }}" alt="{{ T "contact_wechat" }}"><div class="qr-label">{{ T "contact_wechat" }}</div></div>
-                        <div class="qr-card"><img src="{{ "images/whatsapp-ndola.webp" | relURL }}" alt="{{ T "contact_whatsapp" }}"><div class="qr-label">{{ T "contact_whatsapp" }}</div></div>
+                        <div class="qr-card">
+                            <img src="{{ "images/wechat-ndola.webp" | relURL }}" alt="{{ T "contact_wechat" }}">
+                            <div class="qr-label">{{ T "contact_wechat" }}</div>
+                        </div>
+                        <div class="qr-card">
+                            <img src="{{ "images/whatsapp-ndola.webp" | relURL }}" alt="{{ T "contact_whatsapp" }}">
+                            <div class="qr-label">{{ T "contact_whatsapp" }}</div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 赞比亚卢萨卡基地 -->
-                <div class="subsidiary-item contact-block">
+                <div class="contact-block reveal">
                     <h3>{{ T "contact_overseas_title" }} — {{ T "city_lusaka" }}</h3>
                     <p class="company-name">{{ T "contact_overseas_lusaka_company" }}</p>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="info-text"><label>{{ T "contact_address_label" }}</label><p>{{ T "contact_overseas_address_lusaka" }}</p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="info-text"><label>{{ T "contact_phone_label" }}</label><p><a href="tel:{{ T "contact_overseas_lusaka_phone" }}">{{ T "contact_overseas_lusaka_phone" }}</a></p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="info-text"><label>{{ T "contact_email_label" }}</label><p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p></div></div>
-                    <div class="contact-item"><div class="icon-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="info-text"><label>{{ T "contact_working_hours" }}</label><p>{{ T "contact_overseas_hours" }}</p></div></div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_address_label" }}</label>
+                            <p>{{ T "contact_overseas_address_lusaka" }}</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_phone_label" }}</label>
+                            <p><a href="tel:{{ T "contact_overseas_lusaka_phone" }}">{{ T "contact_overseas_lusaka_phone" }}</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <label>{{ T "contact_email_label" }}</label>
+                            <p><a href="mailto:{{ T "contact_email" }}">{{ T "contact_email" }}</a></p>
+                        </div>
+                    </div>
                     <div class="qr-row">
-                        <div class="qr-card"><img src="{{ "images/wechat-lusaka.webp" | relURL }}" alt="{{ T "contact_wechat" }}"><div class="qr-label">{{ T "contact_wechat" }}</div></div>
-                        <div class="qr-card"><img src="{{ "images/whatsapp-lusaka.webp" | relURL }}" alt="{{ T "contact_whatsapp" }}"><div class="qr-label">{{ T "contact_whatsapp" }}</div></div>
+                        <div class="qr-card">
+                            <img src="{{ "images/wechat-lusaka.webp" | relURL }}" alt="{{ T "contact_wechat" }}">
+                            <div class="qr-label">{{ T "contact_wechat" }}</div>
+                        </div>
+                        <div class="qr-card">
+                            <img src="{{ "images/whatsapp-lusaka.webp" | relURL }}" alt="{{ T "contact_whatsapp" }}">
+                            <div class="qr-label">{{ T "contact_whatsapp" }}</div>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
             <!-- Right: Contact Form -->
-            <div class="contact-form">
+            <div class="contact-form reveal">
                 <h3>{{ T "contact_form_title" }}</h3>
                 <form id="contact-form" onsubmit="handleFormSubmit(event)">
                     <div class="form-group">
@@ -78,24 +205,42 @@
                         <textarea name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="form-submit">{{ T "form_submit" }}</button>
-                    <p class="form-tips">{{ T "form_tips" }}</p>
+                    <p class="form-tips"></p>
                 </form>
             </div>
         </div>
 
         <!-- Leaflet Map: 3 locations -->
-        <div class="single-map-container">
+        <div class="single-map-container reveal">
             <div id="company-map"></div>
         </div>
 
         <!-- FAQ -->
-        <div class="content-block">
-            <h2>{{ T "contact_faq" }}</h2>
-            <div class="faq-list">
-                <div class="faq-item"><div class="faq-question">{{ T "faq1_title" }}</div><div class="faq-answer">{{ T "faq1_answer" }}</div></div>
-                <div class="faq-item"><div class="faq-question">{{ T "faq2_title" }}</div><div class="faq-answer">{{ T "faq2_answer" }}</div></div>
-                <div class="faq-item"><div class="faq-question">{{ T "faq3_title" }}</div><div class="faq-answer">{{ T "faq3_answer" }}</div></div>
-                <div class="faq-item"><div class="faq-question">{{ T "faq4_title" }}</div><div class="faq-answer">{{ T "faq4_answer" }}</div></div>
+        <div class="content-section content-section-alt" style="margin-top: 60px;">
+            <div class="content-section-header reveal">
+                <div class="content-section-eyebrow">
+                    <span class="content-section-eyebrow-bar"></span>
+                    <span>FAQ · {{ T "contact_faq" }}</span>
+                </div>
+                <h2 class="content-section-title">{{ T "contact_faq" }}</h2>
+            </div>
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <div class="faq-question">{{ T "faq1_title" }}</div>
+                    <div class="faq-answer"><p>{{ T "faq1_answer" }}</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">{{ T "faq2_title" }}</div>
+                    <div class="faq-answer"><p>{{ T "faq2_answer" }}</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">{{ T "faq3_title" }}</div>
+                    <div class="faq-answer"><p>{{ T "faq3_answer" }}</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">{{ T "faq4_title" }}</div>
+                    <div class="faq-answer"><p>{{ T "faq4_answer" }}</p></div>
+                </div>
             </div>
         </div>
     </div>

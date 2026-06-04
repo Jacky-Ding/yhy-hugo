@@ -1,19 +1,23 @@
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{{ if .IsHome }}{{ .Site.Title }} - {{ T "site_tagline" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="keywords" content="商用车配件,commercial vehicle parts,SHACMAN,CNHTC,WEICHAI,FAW,auto parts export,запчасти для коммерческих автомобилей">
+<meta name="theme-color" content="#0a1628">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Preconnect to Google Fonts (Cloudflare may optimize this) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<!-- Main Stylesheet -->
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 <link rel="icon" type="image/png" href="{{ "images/logo.png" | relURL }}">
 <!-- Critical: redirect root path to best language BEFORE page renders -->
 <script>
-(function(){if(window.location.pathname!=='/')return;var r=sessionStorage.getItem('yhyr');if(r==='1')return;var s=['zh','en','ru'],l=localStorage.getItem('yhy_lang');function g(t){if(s.indexOf(t)===-1)t='en';sessionStorage.setItem('yhyr','1');localStorage.setItem('yhy_lang',t);window.location.replace('/'+t+'/')}if(l&&s.indexOf(l)!==-1){g(l);return}var n=navigator.language||navigator.userLanguage||'',t='en';if(n.indexOf('zh')===0)t='zh';else if(n.indexOf('ru')===0)t='ru';g(t);})();
-</script>
-<meta property="og:title" content="{{ .Title }}">
+(function(){if(window.location.pathname!=='/')return;var r=sessionStorage.getItem('yhyr');if(r==='1')return;var s=['zh','en','ru'],l=localStorage.getItem('yhy_lang');function g(t){if(s.indexOf(t)===-1)t='en';sessionStorage.setItem('yhyr','1');localStorage.setItem('yhy_lang',t);window.location.replace('/'+t+'/')}if(l&&s.indexOf(l)!==-1){g(l);return}var n=navigator.language||navigator.userLanguage||'',t='en';if(n.indexOf('zh')===0)t='zh';else if(n.indexOf('ru')===0)t='ru';g(t)})();</script>
+<meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">

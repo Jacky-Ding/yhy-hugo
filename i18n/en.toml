@@ -747,3 +747,30 @@ other = "Product Types"
 [featured_products]
 other = "Featured Products"
 
+
+[featured_products]
+other = "Featured Products"
+
+[footer_description]
+other = "Professional authorized supplier of commercial vehicle parts. Backed by 10+ years experience, 100,000+ SKUs, and global operations in China and Africa."
+
+[footer_quick_links]
+other = "Quick Links"
+
+[global_locations]
+other = "Locations"
+
+[featured]
+other = "Featured"
+
+[footer_description]
+other = "Professional Authorized Supplier of Commercial Vehicle Parts Worldwide, committed to delivering high-quality products and professional services"
+
+[footer_quick_links]
+other = "Quick Links"
+
+[global_locations]
+other = "Global Presence"
+
+[featured]
+other = "Featured"

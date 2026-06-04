@@ -8,12 +8,12 @@
         </div>
         <nav id="main-nav">
             <ul class="nav-links">
-                <li><a href="{{ .Site.Home.Permalink }}">{{ T "home" }}</a></li>
-                <li><a href="{{ "about/" | relLangURL }}">{{ T "about" }}</a></li>
-                <li><a href="{{ "products/" | relLangURL }}">{{ T "products" }}</a></li>
-                <li><a href="{{ "services/" | relLangURL }}">{{ T "services" }}</a></li>
-                <li><a href="{{ "global/" | relLangURL }}">{{ T "global" }}</a></li>
-                <li><a href="{{ "contact/" | relLangURL }}">{{ T "contact" }}</a></li>
+                <li><a href="{{ .Site.Home.Permalink }}"{{ if eq .Page.Section "" }} class="active"{{ end }}>{{ T "home" }}</a></li>
+                <li><a href="{{ "about/" | relLangURL }}"{{ if eq .Page.Section "about" }} class="active"{{ end }}>{{ T "about" }}</a></li>
+                <li><a href="{{ "products/" | relLangURL }}"{{ if eq .Page.Section "products" }} class="active"{{ end }}>{{ T "products" }}</a></li>
+                <li><a href="{{ "services/" | relLangURL }}"{{ if eq .Page.Section "services" }} class="active"{{ end }}>{{ T "services" }}</a></li>
+                <li><a href="{{ "global/" | relLangURL }}"{{ if eq .Page.Section "global" }} class="active"{{ end }}>{{ T "global" }}</a></li>
+                <li><a href="{{ "contact/" | relLangURL }}"{{ if eq .Page.Section "contact" }} class="active"{{ end }}>{{ T "contact" }}</a></li>
             </ul>
         </nav>
         <div class="header-right">
