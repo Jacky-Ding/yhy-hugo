@@ -1,0 +1,8 @@
+# Redirects for Cloudflare Pages
+# Note: Root path language detection is handled by JavaScript in head.html
+
+# Ensure clean URLs (Hugo already handles this, but as a fallback)
+/*    /index.html    200
+
+# Optional: If you want to force HTTPS (Cloudflare usually handles this)
+# http://yhytradehub.com/*    https://yhytradehub.com/:splat    301

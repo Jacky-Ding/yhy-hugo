@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<!-- Page Hero Banner -->
+<section class="page-hero">
+    <div class="page-hero-bg" {{ if .Params.heroImage }}style="background-image: url('{{ .Params.heroImage | relURL }}')"{{ end }}></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container">
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ if .Params.subtitle }}
+        <p class="page-hero-subtitle">{{ .Params.subtitle }}</p>
+        {{ end }}
+    </div>
+</section>
+
+<!-- Page Content -->
+<section class="content-section">
+    <div class="container">
+        {{ if eq .Section "about" }}{{ partial "page-about.html" . }}
+        {{ else if eq .Section "products" }}{{ partial "page-products.html" . }}
+        {{ else if eq .Section "services" }}{{ partial "page-services.html" . }}
+        {{ else if eq .Section "global" }}{{ partial "page-global.html" . }}
+        {{ else if eq .Section "contact" }}{{ partial "page-contact.html" . }}
+        {{ else }}{{ .Content }}{{ end }}
+    </div>
+</section>
+
+{{ end }}
