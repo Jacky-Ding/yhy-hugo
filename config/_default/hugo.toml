@@ -11,6 +11,12 @@ summaryLength = 140
 # Canonical URLs for SEO
 canonifyURLs = false
 
+# Enable HTML minification for faster page loads
+[minify]
+  minifyOutput = true
+  [minify.tdewolff.html]
+    keepWhitespace = false
+
 # Cloudflare Pages friendly - relative URLs
 relativeURLs = true
 
