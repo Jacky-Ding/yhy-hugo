@@ -14,6 +14,8 @@ canonifyURLs = false
 # Enable HTML minification for faster page loads
 [minify]
   minifyOutput = true
+  disableCSS = false
+  disableJS = false
   [minify.tdewolff.html]
     keepWhitespace = false
 
@@ -89,5 +91,7 @@ company_full_name_zh = '山东钰弘源国际贸易有限公司'
 company_full_name_en = 'Shandong Yuhongyuan International Trade Co., Ltd.'
 company_full_name_ru = 'Шаньдун Юйхуньюань Международная Торговая Компания, ООО'
 company_email = 'yhy@yhytradehub.com'
+company_phone = '+86 186 0639 3111'
+whatsapp_number = '8618606393111'
 primary_color = '#165DFF'
 primary_dark = '#0E42B3'

@@ -4,6 +4,15 @@
 <title>{{ if .IsHome }}{{ .Site.Title }} - {{ T "site_tagline" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="keywords" content="商用车配件,commercial vehicle parts,SHACMAN,CNHTC,WEICHAI,FAW,auto parts export,запчасти для коммерческих автомобилей">
+<!-- Hreflang for multilingual SEO -->
+{{ if .IsTranslated }}
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}" />
+{{ end }}
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}" />
 <meta name="theme-color" content="#0a1628">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -30,4 +39,45 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ "images/og-banner.webp" | absURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ .Site.Title }} - {{ T "site_tagline" }}">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Schema.org Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "images/logo.png" | absURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "{{ .Site.Params.company_phone }}",
+    "contactType": "sales",
+    "availableLanguage": ["Chinese", "English", "Russian"],
+    "areaServed": ["CN", "RU", "ZM", "ZA", "NG", "TZ", "KE", "GH", "PH", "VN", "MX"]
+  },
+  "sameAs": [
+    "https://wa.me/{{ .Site.Params.whatsapp_number }}"
+  ]
+}
+</script>
+{{ if .IsHome }}
+<!-- Schema.org WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}

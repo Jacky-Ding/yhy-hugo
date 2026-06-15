@@ -1,6 +1,6 @@
 <!-- Contact Page — 3 locations with QR codes + Leaflet map -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="{{ "lib/leaflet/leaflet.css" | relURL }}" />
+<script src="{{ "lib/leaflet/leaflet.js" | relURL }}"></script>
 
 <div class="page-intro reveal">
     <div class="page-intro-eyebrow">
@@ -302,6 +302,7 @@ async function handleFormSubmit(e) {
 <!-- Leaflet Map Init -->
 <script>
 (function() {
+    L.Icon.Default.imagePath = '{{ "lib/leaflet/images/" | relURL }}';
     var map = L.map('company-map').setView([-2.0, 28.0], 3);
     var tileSources = [
         { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' },

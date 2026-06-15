@@ -23,6 +23,7 @@ routes = [
 COMPANY_NAME = "山东钰弘源国际贸易有限公司"
 
 # 密钥（生产）- 使用 wrangler secret put 命令设置
+# wrangler secret put ADMIN_PASSWORD --env production
 # wrangler secret put RESEND_API_KEY --env production
 # wrangler secret put TO_EMAIL --env production
 # wrangler secret put FROM_EMAIL --env production
