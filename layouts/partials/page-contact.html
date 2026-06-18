@@ -187,7 +187,18 @@
             <!-- Right: Contact Form -->
             <div class="contact-form reveal">
                 <h3>{{ T "contact_form_title" }}</h3>
-                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                <form id="contact-form" 
+                      action="https://formsubmit.co/yhy@yhytradehub.com" 
+                      method="POST"
+                      onsubmit="setFormLanguage()">
+                    <!-- Honeypot field to prevent spam (hidden from real users) -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <!-- Email subject with language -->
+                    <input type="hidden" name="_subject" id="form-subject" value="{{ .Site.Title }} - {{ T "contact_form_title" }}">
+                    <!-- Redirect to current page on success -->
+                    <input type="hidden" name="_next" value="{{ .Permalink }}?submitted=true#contact-form">
+                    <!-- Current language -->
+                    <input type="hidden" name="lang" id="form-lang" value="{{ .Site.Language.Lang }}">
                     <div class="form-group">
                         <label>{{ T "form_name" }} *</label>
                         <input type="text" name="name" required>
@@ -205,7 +216,7 @@
                         <textarea name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="form-submit">{{ T "form_submit" }}</button>
-                    <p class="form-tips"></p>
+                    <p class="form-tips">{{ T "form_tips" }}</p>
                 </form>
             </div>
         </div>
@@ -247,55 +258,32 @@
 </div>
 
 <script>
-// Translations for JavaScript
-var translations = {
-    formSubmitting: '{{ T "form_submitting" }}',
-    formErrorNetwork: '{{ T "form_error_network" }}',
-    formSubmit: '{{ T "form_submit" }}',
-    contactEmail: '{{ T "contact_email" }}'
-};
-
-// API endpoint - using Cloudflare Workers
-var API_BASE_URL = '{{ T "api_endpoint" }}';
-
-async function handleFormSubmit(e) {
-    e.preventDefault();
-    var form = document.getElementById('contact-form');
-    var btn = form.querySelector('.form-submit');
-    var tips = form.querySelector('.form-tips');
-    btn.disabled = true;
-    btn.textContent = translations.formSubmitting;
-    tips.textContent = '';
-
-    var data = {
-        name: form.name.value,
-        email: form.email.value,
-        phone: form.phone.value,
-        message: form.message.value,
-        lang: '{{ .Site.Language.Lang }}'
-    };
-
-    try {
-        var resp = await fetch(API_BASE_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        });
-        var result = await resp.json();
-        if (result.success) {
+// Show success message if redirected back after submission
+(function() {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('submitted') === 'true') {
+        var tips = document.querySelector('.form-tips');
+        if (tips) {
             tips.style.color = '#52c41a';
-            tips.textContent = '✓ ' + result.message;
-            form.reset();
-        } else {
-            tips.style.color = '#ff4d4f';
-            tips.textContent = '✗ ' + result.message;
+            tips.textContent = '✓ {{ T "form_success" }}';
         }
-    } catch(err) {
-        tips.style.color = '#ff4d4f';
-        tips.textContent = '✗ ' + translations.formErrorNetwork + ' ' + translations.contactEmail;
+        var formSection = document.getElementById('contact-form');
+        if (formSection) {
+            formSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     }
-    btn.disabled = false;
-    btn.textContent = translations.formSubmit;
+})();
+
+// Set language and subject before form submission
+function setFormLanguage() {
+    var lang = document.getElementById('form-lang');
+    var subject = document.getElementById('form-subject');
+    if (lang) {
+        lang.value = document.documentElement.lang || 'zh';
+    }
+    if (subject && subject.value.indexOf(' - ') === -1) {
+        // Subject already has default, no need to change
+    }
 }
 </script>
 
