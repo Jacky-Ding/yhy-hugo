@@ -497,3 +497,67 @@ countries_regions = "Стран и регионов"
 product_types = "Типов продуктов"
 
 featured_products = "Избранные продукты"
+
+footer_description = "Профессиональный авторизованный поставщик запчастей для коммерческих автомобилей. Опираясь на более чем 10-летний опыт, более 100 000 SKU и глобальные операции в Китае и Африке."
+
+footer_quick_links = "Быстрые ссылки"
+
+global_locations = "Локаций"
+
+featured = "Избранное"
+
+# === Additional keys for hardcoded text ===
+stat_founded = "Год основания"
+stat_sku_stock = "SKU в наличии"
+stat_warehouse = "Площадь склада"
+stat_clients = "Клиенты"
+stat_sku_products = "SKU продуктов"
+stat_global_clients = "Глобальные клиенты"
+stat_locations = "Локации"
+stat_countries = "Страны"
+stat_clients_global = "Клиенты"
+
+philosophy1_letter = "Ч"
+philosophy1_title = "Честность"
+philosophy1_desc = "Честность и надежность — наша основа, доверие клиентов — наше главное достояние"
+philosophy2_letter = "П"
+philosophy2_title = "Профессиональный сервис"
+philosophy2_desc = "Глубокая отраслевая экспертиза, качественное обслуживание с профессиональными знаниями и самоотдачей"
+philosophy3_letter = "И"
+philosophy3_title = "Инновации"
+philosophy3_desc = "Непрерывный поиск новых бизнес-моделей и методов обслуживания для растущих потребностей клиентов"
+philosophy4_letter = "В"
+philosophy4_title = "Взаимный выигрыш"
+philosophy4_desc = "Развитие вместе с клиентами, поставщиками и партнерами для достижения общего успеха"
+
+callout_text = "Клиент превыше всего, сервис на первом месте"
+callout_sub = "Customer First · Service Foremost"
+eyebrow_linyi = "Лини"
+vision_eyebrow = "Наше видение"
+
+services_process_subtitle = "Полный замкнутый цикл от консультации до послепродажного обслуживания"
+
+aftersales_card1_title = "Поддержка 7×24"
+aftersales_card1_desc = "Оперативный ответ на ваши запросы и отзывы"
+aftersales_card2_title = "Быстрое решение проблем"
+aftersales_card2_desc = "Решение предоставляется в течение 24 часов"
+aftersales_card3_title = "Техническое руководство"
+aftersales_card3_desc = "Профессиональная техническая поддержка"
+aftersales_card4_title = "Гарантия качества"
+aftersales_card4_desc = "Надежное послепродажное обслуживание, уверенное использование"
+
+case1_metric = "¥20 млн+ годовых поставок"
+case2_metric = "98% своевременность поставок"
+case3_metric = "30%+ снижение затрат"
+
+region_africa_tag = "Африка"
+region_eurasia_tag = "Евразия"
+region_sea_tag = "Юго-Восточная Азия"
+
+products_guarantee_desc = "Мы обеспечиваем строгий контроль качества и комплексную послепродажную гарантию для каждой партии продукции. От закупки до доставки весь процесс полностью отслеживаем, гарантируя соответствие каждого продукта техническим стандартам OEM и обеспечивая глобальным клиентам полную уверенность."
+
+eyebrow_services = "СЕРВИСНЫЙ ПРОЦЕСС · 6 ШАГОВ"
+eyebrow_global = "3 ОФИСА · 50+ СТРАН"
+eyebrow_products = "06 КАТЕГОРИЙ · 100 000+ SKU"
+eyebrow_contact = "3 ОФИСА · ПОДДЕРЖКА 24/7"
+scroll_down = "Прокрутить"

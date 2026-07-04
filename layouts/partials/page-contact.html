@@ -1,11 +1,12 @@
 <!-- Contact Page — 3 locations with QR codes + Leaflet map -->
-<link rel="stylesheet" href="{{ "lib/leaflet/leaflet.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "lib/leaflet/leaflet.css" | relURL }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ "lib/leaflet/leaflet.css" | relURL }}"></noscript>
 <script src="{{ "lib/leaflet/leaflet.js" | relURL }}"></script>
 
 <div class="page-intro reveal">
     <div class="page-intro-eyebrow">
         <span class="page-intro-dot"></span>
-        <span>3 OFFICES · 24/7 SUPPORT</span>
+        <span>{{ T "eyebrow_contact" }}</span>
     </div>
     <h1 class="page-intro-title">{{ T "contact" }}</h1>
     <p class="page-intro-lede">{{ T "contact_subtitle" }}</p>

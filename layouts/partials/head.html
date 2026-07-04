@@ -31,6 +31,10 @@
 <!-- Main Stylesheet -->
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 <link rel="icon" type="image/png" href="{{ "images/logo.png" | relURL }}">
+<!-- Fallback: ensure content is visible if JavaScript is disabled -->
+<noscript>
+<style>.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger-children>*{opacity:1!important;transform:none!important}</style>
+</noscript>
 <!-- Critical: redirect root path to best language BEFORE page renders -->
 <script>
 (function(){if(window.location.pathname!=='/')return;var r=sessionStorage.getItem('yhyr');if(r==='1')return;var s=['zh','en','ru'],l=localStorage.getItem('yhy_lang');function g(t){if(s.indexOf(t)===-1)t='en';sessionStorage.setItem('yhyr','1');localStorage.setItem('yhy_lang',t);window.location.replace('/'+t+'/')}if(l&&s.indexOf(l)!==-1){g(l);return}var n=navigator.language||navigator.userLanguage||'',t='en';if(n.indexOf('zh')===0)t='zh';else if(n.indexOf('ru')===0)t='ru';g(t)})();

@@ -20,6 +20,8 @@
     --gold-200: #ebcb91;
     --gold-100: #f5dcc0;
     --gold-50: #fcf5eb;
+    --gold-600: #b07d3a;
+    --gold-700: #8e6328;
     
     /* Neutral Colors */
     --white: #ffffff;
@@ -2700,9 +2702,10 @@ h1, h2, h3, h4, h5, h6 {
    SCROLL ANIMATIONS
    =================================================================== */
 .reveal {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all var(--duration-slow) var(--ease-out);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--duration-slow) var(--ease-out),
+                transform var(--duration-slow) var(--ease-out);
 }
 
 .reveal.active {
@@ -2711,9 +2714,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal-left {
-    opacity: 1;
-    transform: translateX(0);
-    transition: all var(--duration-slow) var(--ease-out);
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity var(--duration-slow) var(--ease-out),
+                transform var(--duration-slow) var(--ease-out);
 }
 
 .reveal-left.active {
@@ -2722,9 +2726,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal-right {
-    opacity: 1;
-    transform: translateX(0);
-    transition: all var(--duration-slow) var(--ease-out);
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity var(--duration-slow) var(--ease-out),
+                transform var(--duration-slow) var(--ease-out);
 }
 
 .reveal-right.active {
@@ -2733,9 +2738,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal-scale {
-    opacity: 1;
-    transform: scale(1);
-    transition: all var(--duration-slow) var(--ease-out);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity var(--duration-slow) var(--ease-out),
+                transform var(--duration-slow) var(--ease-out);
 }
 
 .reveal-scale.active {
@@ -2745,17 +2751,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Stagger children */
 .stagger-children > * {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all var(--duration-normal) var(--ease-out);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--duration-normal) var(--ease-out),
+                transform var(--duration-normal) var(--ease-out);
 }
 
-.stagger-children.active > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
-.stagger-children.active > *:nth-child(2) { transition-delay: 100ms; opacity: 1; transform: translateY(0); }
-.stagger-children.active > *:nth-child(3) { transition-delay: 200ms; opacity: 1; transform: translateY(0); }
-.stagger-children.active > *:nth-child(4) { transition-delay: 300ms; opacity: 1; transform: translateY(0); }
-.stagger-children.active > *:nth-child(5) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
-.stagger-children.active > *:nth-child(6) { transition-delay: 500ms; opacity: 1; transform: translateY(0); }
+.stagger-children.active > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-children.active > *:nth-child(1) { transition-delay: 0ms; }
+.stagger-children.active > *:nth-child(2) { transition-delay: 100ms; }
+.stagger-children.active > *:nth-child(3) { transition-delay: 200ms; }
+.stagger-children.active > *:nth-child(4) { transition-delay: 300ms; }
+.stagger-children.active > *:nth-child(5) { transition-delay: 400ms; }
+.stagger-children.active > *:nth-child(6) { transition-delay: 500ms; }
 
 /* ===================================================================
    RESPONSIVE — Breakpoints
