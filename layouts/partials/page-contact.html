@@ -191,15 +191,25 @@
                 <form id="contact-form" 
                       action="https://formsubmit.co/yhy@yhytradehub.com" 
                       method="POST"
-                      onsubmit="setFormLanguage()">
-                    <!-- Honeypot field to prevent spam (hidden from real users) -->
-                    <input type="text" name="_gotcha" style="display:none">
+                      onsubmit="return handleFormSubmit(event)">
+                    <!-- FormSubmit built-in settings -->
+                    <input type="hidden" name="_captcha" value="true">
                     <!-- Email subject with language -->
                     <input type="hidden" name="_subject" id="form-subject" value="{{ .Site.Title }} - {{ T "contact_form_title" }}">
                     <!-- Redirect to current page on success -->
                     <input type="hidden" name="_next" value="{{ .Permalink }}?submitted=true#contact-form">
                     <!-- Current language -->
                     <input type="hidden" name="lang" id="form-lang" value="{{ .Site.Language.Lang }}">
+                    
+                    <!-- Anti-spam Layer 1: Honeypot field (invisible to real users, bots fill it) -->
+                    <div class="form-hp-wrap" aria-hidden="true">
+                        <label for="hp-website">Website</label>
+                        <input type="text" name="website" id="hp-website" tabindex="-1" autocomplete="off">
+                    </div>
+                    
+                    <!-- Anti-spam Layer 2: Timestamp (detects instant bot submissions) -->
+                    <input type="hidden" name="_ts" id="form-timestamp">
+                    
                     <div class="form-group">
                         <label>{{ T "form_name" }} *</label>
                         <input type="text" name="name" required>
@@ -216,8 +226,8 @@
                         <label>{{ T "form_message" }} *</label>
                         <textarea name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="form-submit">{{ T "form_submit" }}</button>
-                    <p class="form-tips">{{ T "form_tips" }}</p>
+                    <button type="submit" class="form-submit" id="form-submit-btn">{{ T "form_submit" }}</button>
+                    <p class="form-tips" id="form-tips">{{ T "form_tips" }}</p>
                 </form>
             </div>
         </div>
@@ -259,11 +269,114 @@
 </div>
 
 <script>
+/* ========== Anti-Spam: Multi-layer form protection ========== */
+
+// Record page load time for timestamp check
+var _pageLoadTime = Date.now();
+
+// Set timestamp field when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    var tsField = document.getElementById('form-timestamp');
+    if (tsField) {
+        tsField.value = Math.floor(Date.now() / 1000);
+    }
+});
+
+/**
+ * Handle form submission with anti-spam checks
+ * Returns false to block submission, true to allow
+ */
+function handleFormSubmit(e) {
+    var form = document.getElementById('contact-form');
+    var tips = document.getElementById('form-tips');
+    var btn = document.getElementById('form-submit-btn');
+    
+    // === Layer 1: Honeypot check ===
+    var honeypot = document.getElementById('hp-website');
+    if (honeypot && honeypot.value.trim() !== '') {
+        // Bot filled in the hidden field - silently block
+        console.log('[Anti-spam] Honeypot triggered');
+        e.preventDefault();
+        return false;
+    }
+    
+    // === Layer 2: Timestamp check (minimum 3 seconds) ===
+    var elapsed = (Date.now() - _pageLoadTime) / 1000;
+    if (elapsed < 3) {
+        // Submitted too fast - likely a bot
+        console.log('[Anti-spam] Submission too fast: ' + elapsed.toFixed(1) + 's');
+        e.preventDefault();
+        if (tips) {
+            tips.style.color = '#f53f3f';
+            tips.textContent = '{{ T "form_spam_too_fast" }}';
+        }
+        return false;
+    }
+    
+    // === Layer 3: Basic field validation ===
+    var name = form.querySelector('[name="name"]');
+    var email = form.querySelector('[name="email"]');
+    var message = form.querySelector('[name="message"]');
+    
+    if (!name || !name.value.trim() || !email || !email.value.trim() || !message || !message.value.trim()) {
+        // HTML5 required should catch this, but double-check
+        e.preventDefault();
+        if (tips) {
+            tips.style.color = '#f53f3f';
+            tips.textContent = '{{ T "form_spam_incomplete" }}';
+        }
+        return false;
+    }
+    
+    // === Layer 4: Check for common spam patterns in message ===
+    var spamPatterns = [
+        /https?:\/\/\S+/gi,           // URLs in message (common in spam)
+        /(buy|cheap|discount|crypto|bitcoin|forex|casino|viagra|pharma)/gi,  // Common spam keywords
+        /(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g,  // Phone numbers in message
+        /^\s*$/,                       // Empty/whitespace only
+    ];
+    
+    var msgText = message.value;
+    var spamScore = 0;
+    spamPatterns.forEach(function(pattern) {
+        var matches = msgText.match(pattern);
+        if (matches && matches.length > 0) {
+            spamScore += matches.length;
+        }
+    });
+    
+    if (spamScore >= 3) {
+        // High spam probability
+        console.log('[Anti-spam] Spam patterns detected, score: ' + spamScore);
+        e.preventDefault();
+        if (tips) {
+            tips.style.color = '#f53f3f';
+            tips.textContent = '{{ T "form_spam_detected" }}';
+        }
+        return false;
+    }
+    
+    // === All checks passed - set language and allow submission ===
+    var lang = document.getElementById('form-lang');
+    var subject = document.getElementById('form-subject');
+    if (lang) {
+        lang.value = document.documentElement.lang || 'zh';
+    }
+    
+    // Disable button to prevent double submission
+    if (btn) {
+        btn.disabled = true;
+        btn.textContent = '...';
+    }
+    
+    return true;
+}
+
 // Show success message if redirected back after submission
 (function() {
     var params = new URLSearchParams(window.location.search);
     if (params.get('submitted') === 'true') {
-        var tips = document.querySelector('.form-tips');
+        var tips = document.getElementById('form-tips');
         if (tips) {
             tips.style.color = '#52c41a';
             tips.textContent = '✓ {{ T "form_success" }}';
@@ -274,18 +387,6 @@
         }
     }
 })();
-
-// Set language and subject before form submission
-function setFormLanguage() {
-    var lang = document.getElementById('form-lang');
-    var subject = document.getElementById('form-subject');
-    if (lang) {
-        lang.value = document.documentElement.lang || 'zh';
-    }
-    if (subject && subject.value.indexOf(' - ') === -1) {
-        // Subject already has default, no need to change
-    }
-}
 </script>
 
 <!-- Leaflet Map Init -->

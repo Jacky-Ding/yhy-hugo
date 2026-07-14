@@ -582,3 +582,8 @@ about_gallery_zambia_reception = "Приёмная Ндолы"
 about_gallery_workshop_interior = "Профессиональное оборудование мастерской"
 about_gallery_workshop_exterior = "Мастерская снаружи"
 about_gallery_zambia_team = "Профессиональная зарубежная команда"
+
+# Anti-spam messages
+form_spam_too_fast = "Слишком быстрая отправка. Подождите не менее 3 секунд перед повторной попыткой."
+form_spam_detected = "Ваше сообщение не прошло проверку безопасности. Пожалуйста, измените и попробуйте снова."
+form_spam_incomplete = "Пожалуйста, заполните все обязательные поля."

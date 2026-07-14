@@ -582,3 +582,8 @@ about_gallery_zambia_reception = "恩多拉接待室"
 about_gallery_workshop_interior = "维修车间专业设备"
 about_gallery_workshop_exterior = "维修车间外景"
 about_gallery_zambia_team = "专业海外团队"
+
+# Anti-spam messages
+form_spam_too_fast = "提交过快，请至少等待3秒后再试"
+form_spam_detected = "您的留言未通过安全检查，请修改后重试"
+form_spam_incomplete = "请填写所有必填字段"

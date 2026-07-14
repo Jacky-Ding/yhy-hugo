@@ -582,3 +582,8 @@ about_gallery_zambia_reception = "Ndola Reception Room"
 about_gallery_workshop_interior = "Professional Workshop Equipment"
 about_gallery_workshop_exterior = "Workshop Exterior"
 about_gallery_zambia_team = "Professional Overseas Team"
+
+# Anti-spam messages
+form_spam_too_fast = "Submission too fast. Please wait at least 3 seconds before trying again."
+form_spam_detected = "Your message did not pass the security check. Please modify and try again."
+form_spam_incomplete = "Please fill in all required fields."
