@@ -202,7 +202,7 @@
                     <input type="hidden" name="lang" id="form-lang" value="{{ .Site.Language.Lang }}">
                     
                     <!-- Anti-spam Layer 1: Honeypot field (invisible to real users, bots fill it) -->
-                    <div class="form-hp-wrap" aria-hidden="true">
+                    <div class="form-hp-wrap" aria-hidden="true" style="position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;clip:rect(0,0,0,0)!important;">
                         <label for="hp-website">Website</label>
                         <input type="text" name="website" id="hp-website" tabindex="-1" autocomplete="off">
                     </div>
