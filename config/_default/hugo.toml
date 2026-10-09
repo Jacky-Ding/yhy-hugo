@@ -32,21 +32,24 @@ languageCode = 'zh-CN'
 languageName = '中文'
 weight = 1
 title = '山东钰弘源国际贸易有限公司'
-description = '全球商用车零部件专业授权供应商'
+  [languages.zh.params]
+  description = '山东钰弘源国际贸易有限公司是专业的商用车零部件授权供应商，专注SHACMAN陕汽、CNHTC中国重汽、WEICHAI潍柴、FAW解放等品牌配件，产品出口全球多国，提供一站式采购、质量保障与售后支持。'
 
 [languages.en]
 languageCode = 'en'
 languageName = 'English'
 weight = 2
 title = 'Shandong Yuhongyuan International Trade Co., Ltd.'
-description = 'Professional Authorized Supplier of Commercial Vehicle Parts Worldwide'
+  [languages.en.params]
+  description = 'Shandong Yuhongyuan International Trade Co., Ltd. is a professional authorized supplier of commercial vehicle parts for SHACMAN, CNHTC, WEICHAI, FAW and more, exporting worldwide with one-stop sourcing and reliable after-sales support.'
 
 [languages.ru]
 languageCode = 'ru'
 languageName = 'Русский'
 weight = 3
 title = 'Шаньдун Юйхуньюань Международная Торговая Компания, ООО'
-description = 'Профессиональный авторизованный поставщик запчастей для коммерческих автомобилей по всему миру'
+  [languages.ru.params]
+  description = 'Шаньдун Юйхуньюань — профессиональный авторизованный поставщик запчастей для коммерческих автомобилей SHACMAN, CNHTC, WEICHAI, FAW. Поставки по всему миру, комплексное сопровождение и надёжная поддержка.'
 
 # Menus
 [[menus.main]]

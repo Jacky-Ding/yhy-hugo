@@ -3,7 +3,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{{ if .IsHome }}{{ .Site.Title }} - {{ T "site_tagline" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="keywords" content="商用车配件,commercial vehicle parts,SHACMAN,CNHTC,WEICHAI,FAW,auto parts export,запчасти для коммерческих автомобилей">
 <!-- Hreflang for multilingual SEO -->
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
@@ -76,12 +75,7 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "{{ .Site.Title }}",
-  "url": "{{ .Site.BaseURL }}",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{{ .Site.BaseURL }}?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "url": "{{ .Site.BaseURL }}"
 }
 </script>
 {{ end }}
