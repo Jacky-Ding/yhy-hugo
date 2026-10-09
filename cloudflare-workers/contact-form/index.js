@@ -14,9 +14,9 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
 
-// Admin password — fallback for development, MUST be set via wrangler secret in production
-// wrangler secret put ADMIN_PASSWORD --env production
-const FALLBACK_PASSWORD = 'yhytradehub2024';
+// Admin password — MUST be provided via Cloudflare Secret (never hardcode).
+// Set it with: wrangler secret put ADMIN_PASSWORD
+// No insecure fallback: admin endpoint fails closed if the secret is missing.
 
 // Success responses by language
 const responses = {
@@ -36,7 +36,13 @@ export default {
 
     // Admin endpoint - GET submissions
     if (request.method === 'GET') {
-      const ADMIN_PASSWORD = env.ADMIN_PASSWORD || FALLBACK_PASSWORD;
+      const ADMIN_PASSWORD = env.ADMIN_PASSWORD;
+      if (!ADMIN_PASSWORD) {
+        return new Response(JSON.stringify({ success: false, message: 'Admin password not configured' }), {
+          status: 500,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+        });
+      }
       const authHeader = request.headers.get('Authorization');
       if (authHeader !== `Bearer ${ADMIN_PASSWORD}`) {
         return new Response(JSON.stringify({ success: false, message: 'Unauthorized' }), {
