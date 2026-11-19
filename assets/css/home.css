@@ -134,3 +134,18 @@
 .hl-body h3{font-size:18px;color:var(--navy-800);font-weight:600;margin-bottom:9px;letter-spacing:.01em}
 .hl-body p{font-size:13.8px;line-height:1.75;color:var(--gray-700);margin:0}
 @media(max-width:768px){.hl-body{padding:17px 18px 20px}.hl-body h3{font-size:16.5px}.hl-body p{font-size:13px}.hl-thumb .highlight-num{top:10px;left:12px;font-size:13px;padding:3px 9px}}
+
+/* 主品牌卡：国内 / 海外双布局优势标签行 */
+.brand-hero-net{list-style:none;margin:15px 0 15px;padding:0;display:flex;flex-direction:column;gap:9px}
+.brand-hero-net li{display:flex;align-items:baseline;gap:10px;font-size:12.8px;line-height:1.6;color:var(--gray-700)}
+.bh-net-label{flex:0 0 auto;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold-700);background:rgba(200,149,76,.13);border:1px solid rgba(200,149,76,.22);
+  border-radius:4px;padding:2px 7px;font-weight:600;white-space:nowrap}
+.bh-net-text{color:var(--gray-600);text-align:left;flex:1 1 auto;min-width:0}
+@media(max-width:900px){
+  .brand-hero-net{margin:13px 0;gap:8px}
+  .brand-hero-net li{font-size:12.4px;gap:8px;text-align:left;justify-content:flex-start}
+}
+@media(max-width:480px){
+  .brand-hero-net li{flex-direction:column;gap:4px;align-items:flex-start}
+}
