@@ -110,6 +110,33 @@
     </div>
 </div>
 
+<!-- Featured parts: 具体产品详情页入口（每个都是一条可被搜索到的落地页） -->
+{{ $parts := where .Site.RegularPages "Section" "products" }}
+{{ if $parts }}
+<div class="content-section content-section-alt">
+    <div class="content-section-header reveal">
+        <div class="content-section-eyebrow">
+            <span class="content-section-eyebrow-bar"></span>
+            <span>02 · {{ T "pd_featured" }}</span>
+        </div>
+        <h2 class="content-section-title">{{ T "pd_featured" }}</h2>
+        <p class="content-section-desc">{{ T "pd_featured_note" }}</p>
+    </div>
+    <div class="pf-grid">
+        {{ range $parts.ByTitle }}
+        <a class="pf-card" href="{{ .Permalink }}">
+            <span class="pf-cat">{{ .Params.category_label }}</span>
+            <h3>{{ .Title }}</h3>
+            <p class="pf-desc">{{ .Params.description | truncate 78 }}</p>
+            <div class="pf-meta">
+                {{ range first 3 .Params.brands }}<span>{{ . }}</span>{{ end }}
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
 <!-- Product Image Banner -->
 <div class="content-section content-section-alt">
     <div class="preview-grid">
@@ -134,7 +161,7 @@
     <div class="content-section-header reveal">
         <div class="content-section-eyebrow">
             <span class="content-section-eyebrow-bar"></span>
-            <span>02 · {{ T "products_guarantee" }}</span>
+            <span>03 · {{ T "products_guarantee" }}</span>
         </div>
         <h2 class="content-section-title">{{ T "products_guarantee" }}</h2>
     </div>
@@ -189,7 +216,7 @@
     <div class="content-section-header reveal">
         <div class="content-section-eyebrow">
             <span class="content-section-eyebrow-bar"></span>
-            <span>03 · {{ T "products_custom" }}</span>
+            <span>04 · {{ T "products_custom" }}</span>
         </div>
         <h2 class="content-section-title">{{ T "products_custom" }}</h2>
     </div>
