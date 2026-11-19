@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="page-hero">
-    <div class="container">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container">
         <nav class="crumb" aria-label="breadcrumb">
             <a href="{{ .Site.Home.Permalink }}">{{ T "home" }}</a>
             <span>/</span>
@@ -8,8 +9,8 @@
             <span>/</span>
             <span aria-current="page">{{ .Title }}</span>
         </nav>
-        <h1>{{ .Title }}</h1>
-        {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
     </div>
 </section>
 
