@@ -251,3 +251,30 @@
 /* 品类页侧栏产品图 */
 .cat-side-img{padding:0;background:#fff;overflow:hidden}
 .cat-side-img img{width:100%;height:auto;display:block;padding:14px}
+/* ============================================================
+   核心优势卡片：真实场景照片 + 金色序号
+   ============================================================ */
+.highlights-grid .highlight-card{padding:0;overflow:hidden;display:flex;flex-direction:column;
+  background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);
+  transition:transform .3s var(--ease-out),box-shadow .3s var(--ease-out)}
+.highlights-grid .highlight-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.hl-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--gray-100)}
+.hl-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .55s var(--ease-out)}
+.highlight-card:hover .hl-thumb img{transform:scale(1.05)}
+.hl-thumb::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(5,13,24,.28) 0%,rgba(5,13,24,0) 42%)}
+.hl-thumb .highlight-num{position:absolute;top:14px;left:16px;right:auto;width:auto;z-index:2;display:inline-block;
+  font-family:var(--font-display);font-size:15px;letter-spacing:.14em;
+  color:var(--gold-300);background:rgba(5,13,24,.55);backdrop-filter:blur(6px);
+  padding:4px 11px;border-radius:5px;border:1px solid rgba(200,149,76,.35)}
+.hl-body{padding:22px 24px 26px;flex:1;display:flex;flex-direction:column}
+.highlights-grid .highlight-card{text-align:left}
+.hl-body h3{font-size:18px;color:var(--navy-800);font-weight:600;margin-bottom:9px;letter-spacing:.01em}
+.hl-body p{font-size:13.8px;line-height:1.75;color:var(--gray-700);margin:0}
+
+@media(max-width:768px){
+  .hl-body{padding:17px 18px 20px}
+  .hl-body h3{font-size:16.5px}
+  .hl-body p{font-size:13px}
+  .hl-thumb .highlight-num{top:10px;left:12px;font-size:13px;padding:3px 9px}
+}
