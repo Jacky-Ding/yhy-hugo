@@ -27,7 +27,10 @@
 
             <aside class="cat-side">
                 <div class="cat-side-box cat-side-img">
-                    <img src="{{ printf "/images/categories/%s.webp" .Params.category_key | relURL }}"
+                    {{ $k := .Params.category_key }}
+                    <img src="{{ printf "/images/categories/%s.webp" $k | relURL }}"
+                         srcset="{{ printf "/images/categories/%s-320.webp" $k | relURL }} 320w, {{ printf "/images/categories/%s.webp" $k | relURL }} 640w"
+                         sizes="280px"
                          alt="{{ .Title }}" loading="lazy" decoding="async" width="640" height="480">
                 </div>
 

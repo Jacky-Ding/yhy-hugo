@@ -278,3 +278,31 @@
   .hl-body p{font-size:13px}
   .hl-thumb .highlight-num{top:10px;left:12px;font-size:13px;padding:3px 9px}
 }
+/* ============================================================
+   移动端语言入口：菜单内一排按钮 + 头部地球图标快捷入口
+   ============================================================ */
+.mobile-langs{padding:20px 20px 28px;border-top:1px solid rgba(255,255,255,.12);margin-top:6px}
+.mobile-langs-label{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.42);margin-bottom:12px}
+.mobile-langs-opts{display:flex;gap:8px}
+.mobile-langs-opts a{flex:1;text-align:center;padding:11px 6px;border-radius:8px;font-size:14px;
+  color:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.2);transition:.2s}
+.mobile-langs-opts a:hover{border-color:rgba(200,149,76,.6);color:#fff}
+.mobile-langs-opts a.active{background:var(--gold-500);border-color:var(--gold-500);
+  color:var(--navy-900);font-weight:600}
+
+@media(max-width:768px){
+  /* 头部保留一个紧凑的语言入口，不再整个隐藏 */
+  .lang-switcher{display:block}
+  .current-lang{padding:9px 11px;gap:0}
+  .current-lang > span{display:none}
+  .current-lang .chev{display:none}
+  .lang-dropdown{min-width:120px;top:calc(100% + 6px)}
+  .lang-option{padding:11px 14px;font-size:13.5px}
+}
+/* 移动端：品类卡图片压扁，减少页面长度（10 个品类不再要滚很久） */
+@media(max-width:768px){
+  .pf-thumb{aspect-ratio:16/9}
+  .pf-grid{gap:14px}
+  .pf-card h3{margin-top:4px}
+}

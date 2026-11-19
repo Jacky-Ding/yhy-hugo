@@ -90,9 +90,12 @@
         <div class="footer-bottom">
             <p class="footer-copyright">{{ replace (T "copyright") "{year}" (now.Format "2006") | safeHTML }}</p>
             <div class="footer-languages">
-                <a href="/zh/"{{ if eq .Site.Language.Lang "zh" }} class="active"{{ end }}>中文</a>
-                <a href="/en/"{{ if eq .Site.Language.Lang "en" }} class="active"{{ end }}>English</a>
-                <a href="/ru/"{{ if eq .Site.Language.Lang "ru" }} class="active"{{ end }}>Русский</a>
+                {{/* 跟随当前页面切换语言，不再写死首页 */}}
+                {{ $tr := .AllTranslations }}
+                {{ if not $tr }}{{ $tr = .Site.Home.AllTranslations }}{{ end }}
+                {{ range $tr }}
+                <a href="{{ .RelPermalink }}"{{ if eq .Lang $.Site.Language.Lang }} class="active"{{ end }} hreflang="{{ .Language.Locale }}">{{ .Language.Label }}</a>
+                {{ end }}
             </div>
         </div>
     </div>

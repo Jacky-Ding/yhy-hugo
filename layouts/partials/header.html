@@ -33,4 +33,15 @@
         <li><a href="{{ "global/" | relLangURL }}">{{ T "global" }}</a></li>
         <li><a href="{{ "contact/" | relLangURL }}">{{ T "contact" }}</a></li>
     </ul>
+    {{/* 移动端语言切换：原来只能滚到页脚，且页脚链接写死首页，这里跟随当前页面 */}}
+    <div class="mobile-langs">
+        <span class="mobile-langs-label">{{ T "lang_label" }}</span>
+        <div class="mobile-langs-opts">
+            {{ $tr := .AllTranslations }}
+            {{ if not $tr }}{{ $tr = .Site.Home.AllTranslations }}{{ end }}
+            {{ range $tr }}
+            <a href="{{ .RelPermalink }}"{{ if eq .Lang $.Site.Language.Lang }} class="active"{{ end }}>{{ .Language.Label }}</a>
+            {{ end }}
+        </div>
+    </div>
 </div>
