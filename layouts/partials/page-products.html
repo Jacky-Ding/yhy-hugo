@@ -17,8 +17,8 @@
         <a class="pf-card" href="{{ .Permalink }}">
             <div class="pf-thumb">
                 {{ $k := .Params.category_key }}
-                <img src="{{ printf "/images/cat-v2/%s.webp" $k | relURL }}"
-                     srcset="{{ printf "/images/cat-v2/%s-320.webp" $k | relURL }} 320w, {{ printf "/images/cat-v2/%s.webp" $k | relURL }} 640w"
+                <img src="{{ printf "/img/cat-v2/%s.webp" $k | relURL }}"
+                     srcset="{{ printf "/img/cat-v2/%s-320.webp" $k | relURL }} 320w, {{ printf "/img/cat-v2/%s.webp" $k | relURL }} 640w"
                      sizes="(max-width: 768px) 92vw, (max-width: 1200px) 30vw, 280px"
                      alt="{{ .Title }}" loading="lazy" decoding="async" width="640" height="480">
             </div>
@@ -35,7 +35,7 @@
 <div class="content-section content-section-alt">
     <div class="preview-grid">
         <div class="preview-image reveal-left">
-            <img src="{{ "images/engine-detail.webp" | relURL }}" alt="Engine Components" loading="lazy" decoding="async" width="800" height="600">
+            <img src="{{ "img/engine-detail.webp" | relURL }}" alt="Engine Components" loading="lazy" decoding="async" width="800" height="600">
             <div class="preview-image-overlay"></div>
             <div class="preview-badge">OEM</div>
         </div>
@@ -116,7 +116,7 @@
     </div>
     <div class="preview-grid">
         <div class="preview-image reveal-left">
-            <img src="{{ "images/quality-check.webp" | relURL }}" alt="Quality Control" loading="lazy" decoding="async" width="800" height="600">
+            <img src="{{ "img/quality-check.webp" | relURL }}" alt="Quality Control" loading="lazy" decoding="async" width="800" height="600">
             <div class="preview-image-overlay"></div>
         </div>
         <div class="preview-text reveal-right">

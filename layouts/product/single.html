@@ -115,7 +115,7 @@
   "description": {{ .Params.description | jsonify }},
   "brand": { "@type": "Brand", "name": "YHY" },
   "category": "{{ .Params.category_label }}",
-  "image": "{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "images/og-banner.jpg" | absURL }}{{ end }}",
+  "image": "{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "img/og-banner.jpg" | absURL }}{{ end }}",
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",

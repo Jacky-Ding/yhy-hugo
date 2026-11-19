@@ -6,7 +6,7 @@ backend:
   auth_endpoint: /auth         # 认证端点，保持不变
 
 # 媒体文件存放的本地路径和访问路径
-media_folder: "static/images/uploads"
+media_folder: "static/img/uploads"
 public_folder: "/images/uploads"
 
 # 时区设置，方便显示正确的时间[reference:7]

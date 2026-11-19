@@ -25,8 +25,8 @@
      之前这里预加载的是已经不再使用的 hero-truck（桌面 222KB / 手机 74KB），
      纯属白下载。现在预加载真正要用的那张，并按断点分档。 -->
 {{ if .IsHome }}
-<link rel="preload" as="image" href="{{ "images/engine-detail-800.webp" | absURL }}" media="(max-width: 768px)" fetchpriority="high">
-<link rel="preload" as="image" href="{{ "images/engine-detail.webp" | absURL }}" media="(min-width: 769px)" fetchpriority="high">
+<link rel="preload" as="image" href="{{ "img/engine-detail-800.webp" | absURL }}" media="(max-width: 768px)" fetchpriority="high">
+<link rel="preload" as="image" href="{{ "img/engine-detail.webp" | absURL }}" media="(min-width: 769px)" fetchpriority="high">
 {{ end }}
 <!-- Google Fonts — non-blocking (fallback inside <noscript>) -->
 <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@500&display=swap">
@@ -72,7 +72,7 @@
 <meta property="og:locale" content="{{ replace .Site.Language.Locale "-" "_" }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <!-- 社交平台（微信/Facebook/Twitter/LinkedIn）不认 WebP，必须用 JPG -->
-<meta property="og:image" content="{{ "images/og-banner.jpg" | absURL }}">
+<meta property="og:image" content="{{ "img/og-banner.jpg" | absURL }}">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -80,7 +80,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} - {{ T "site_tagline" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ "images/og-banner.jpg" | absURL }}">
+<meta name="twitter:image" content="{{ "img/og-banner.jpg" | absURL }}">
 <!-- Schema.org Organization -->
 <script type="application/ld+json">
 {
@@ -92,11 +92,11 @@
   "url": "{{ .Site.BaseURL }}",
   "logo": {
     "@type": "ImageObject",
-    "url": "{{ "images/logo.png" | absURL }}",
+    "url": "{{ "img/logo.png" | absURL }}",
     "width": 296,
     "height": 261
   },
-  "image": "{{ "images/og-banner.jpg" | absURL }}",
+  "image": "{{ "img/og-banner.jpg" | absURL }}",
   "description": "{{ .Site.Params.description }}",
   "foundingDate": "2022",
   "email": "{{ .Site.Params.company_email }}",
