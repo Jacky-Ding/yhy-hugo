@@ -1,0 +1,90 @@
+{{ define "main" }}
+<section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container">
+        <nav class="crumb" aria-label="breadcrumb">
+            <a href="{{ .Site.Home.Permalink }}">{{ T "home" }}</a>
+            <span>/</span>
+            <a href="{{ "products/" | relLangURL }}">{{ T "products" }}</a>
+            <span>/</span>
+            <span aria-current="page">{{ .Title }}</span>
+        </nav>
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        <p class="page-hero-subtitle">{{ .Params.subtitle }}</p>
+        <div class="cat-badges">
+            <span class="cat-badge">{{ .Params.part_count }} {{ T "cat_pn_count" }}</span>
+            <span class="cat-badge cat-badge-sh">{{ T "cat_oem_badge" }}</span>
+        </div>
+    </div>
+</section>
+
+<section class="cat-page">
+    <div class="container">
+        <div class="cat-grid">
+            <div class="cat-main">
+                <div class="pd-body cat-content">{{ .Content }}</div>
+            </div>
+
+            <aside class="cat-side">
+                <div class="cat-side-box">
+                    <h3>{{ T "cat_other" }}</h3>
+                    <ul class="cat-nav">
+                        {{ $cur := .Permalink }}
+                        {{ range .CurrentSection.Parent.Sections.ByWeight }}
+                        <li class="{{ if eq .Permalink $cur }}on{{ end }}">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            {{ with .Params.part_count }}<span>{{ . }}</span>{{ end }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+
+                <div class="cat-side-box cat-side-cta">
+                    <h3>{{ T "cat_quote" }}</h3>
+                    <p>{{ T "cat_quote_hint" }}</p>
+                    <a class="btn btn-primary" href="https://wa.me/{{ .Site.Params.whatsapp_number }}?text={{ printf (T "pd_wa_text") .Title | urlquery }}" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        {{ T "pd_wa_btn" }}
+                    </a>
+                    <a class="btn btn-secondary" href="{{ "contact/" | relLangURL }}">{{ T "pd_inquiry_btn" }}</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<script>
+(function(){
+  var box = document.querySelector('.cat-content table');
+  if (!box) return;
+  // 给件号加可点击复制的交互
+  box.querySelectorAll('tbody tr').forEach(function(tr){
+    var td = tr.cells[0];
+    if (!td) return;
+    td.classList.add('pn-cell');
+    td.title = {{ T "cat_copy_hint" | jsonify }};
+    td.addEventListener('click', function(){
+      var txt = td.textContent.trim().replace(/`/g,'');
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(txt).then(function(){
+          td.classList.add('copied');
+          setTimeout(function(){ td.classList.remove('copied'); }, 1200);
+        });
+      }
+    });
+  });
+  // 件号过滤
+  var wrap = document.createElement('div');
+  wrap.className = 'pn-search';
+  wrap.innerHTML = '<input type="search" placeholder="{{ T "cat_search" }}" aria-label="{{ T "cat_search" }}">';
+  box.parentNode.insertBefore(wrap, box);
+  var input = wrap.querySelector('input');
+  input.addEventListener('input', function(){
+    var q = input.value.toLowerCase().trim();
+    box.querySelectorAll('tbody tr').forEach(function(tr){
+      tr.style.display = (!q || tr.textContent.toLowerCase().indexOf(q) > -1) ? '' : 'none';
+    });
+  });
+})();
+</script>
+{{ end }}

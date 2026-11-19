@@ -1,8 +1,20 @@
-<div class="lang-switcher">
-    <span class="current-lang">{{ .Site.Language.Label }}</span>
-    <div class="lang-dropdown">
-        {{ range .Page.AllTranslations }}
-        <a href="{{ .RelPermalink }}" class="lang-option{{ if eq .Lang $.Site.Language.Lang }} active{{ end }}">
+{{/*
+  语言切换：点击展开（原来的 hover 一移开就消失，很难点中）
+  同时支持 Esc 关闭 / 点击外部关闭 / 键盘 Tab
+*/}}
+{{ $trans := .Page.AllTranslations }}
+{{ if not $trans }}{{ $trans = .Site.Home.AllTranslations }}{{ end }}
+<div class="lang-switcher" id="lang-switcher">
+    <button class="current-lang" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/>
+        </svg>
+        <span>{{ .Site.Language.Label }}</span>
+        <svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="lang-dropdown" id="lang-menu" role="menu">
+        {{ range $trans }}
+        <a href="{{ .RelPermalink }}" class="lang-option{{ if eq .Lang $.Site.Language.Lang }} active{{ end }}" data-lang="{{ .Lang }}" role="menuitem"{{ if eq .Lang $.Site.Language.Lang }} aria-current="true"{{ end }}>
             {{ .Language.Label }}
         </a>
         {{ end }}

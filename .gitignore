@@ -5,6 +5,7 @@
 # Hugo 构建产物 & 缓存
 public/
 public.zip
+public_preview/
 resources/
 .hugo_build.lock
 *.tmp

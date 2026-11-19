@@ -196,3 +196,38 @@ function initParallax() {
         }
     });
 }
+
+/* 语言切换器：点击展开 / 点击外部或 Esc 关闭 */
+(function () {
+  var sw = document.getElementById('lang-switcher');
+  if (!sw) return;
+  var btn = sw.querySelector('.current-lang');
+  var menu = sw.querySelector('.lang-dropdown');
+  function setOpen(v) {
+    sw.classList.toggle('open', v);
+    btn.setAttribute('aria-expanded', v ? 'true' : 'false');
+  }
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    setOpen(!sw.classList.contains('open'));
+  });
+  document.addEventListener('click', function (e) {
+    if (!sw.contains(e.target)) setOpen(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') setOpen(false);
+  });
+  if (menu) {
+    menu.addEventListener('click', function (e) { e.stopPropagation(); });
+  }
+})();
+/* 记住语言选择：写 cookie，让边缘中间件下次把根路径直接分到同一语言 */
+document.querySelectorAll('.lang-option[data-lang]').forEach(function (a) {
+  a.addEventListener('click', function () {
+    var lang = a.getAttribute('data-lang');
+    if (lang) {
+      document.cookie = 'yhy_lang=' + lang + ';path=/;max-age=31536000;SameSite=Lax';
+    }
+  });
+});

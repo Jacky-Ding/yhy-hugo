@@ -1,13 +1,8 @@
-<div class="page-intro reveal">
-    <div class="page-intro-eyebrow">
-        <span class="page-intro-dot"></span>
-        <span>{{ T "eyebrow_products" }}</span>
-    </div>
-    <h1 class="page-intro-title">{{ T "products" }}</h1>
-    <p class="page-intro-lede">{{ T "products_core_desc" }}</p>
+<div class="cat-intro-bar reveal">
+    <p>{{ T "products_core_desc" }}</p>
 </div>
 
-<!-- Products Grid -->
+<!-- 十大品类：与陕汽官方配件图册的分类完全对应 -->
 <div class="content-section">
     <div class="content-section-header reveal">
         <div class="content-section-eyebrow">
@@ -15,127 +10,19 @@
             <span>01 · {{ T "products_categories" }}</span>
         </div>
         <h2 class="content-section-title">{{ T "products_categories" }}</h2>
-    </div>
-    <div class="products-grid stagger-children">
-        <div class="product-card">
-            <div class="product-card-top">
-                <div class="product-card-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="9"/>
-                        <circle cx="12" cy="12" r="3"/>
-                        <line x1="12" y1="3" x2="12" y2="6"/>
-                        <line x1="12" y1="18" x2="12" y2="21"/>
-                        <line x1="3" y1="12" x2="6" y2="12"/>
-                        <line x1="18" y1="12" x2="21" y2="12"/>
-                    </svg>
-                </div>
-                <div class="product-card-num">P1</div>
-            </div>
-            <h3>{{ T "product1_title" }}</h3>
-            <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product1_brand" }}</div>
-            <p>{{ T "product1_desc" }}</p>
-        </div>
-        <div class="product-card">
-            <div class="product-card-top">
-                <div class="product-card-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="9" width="18" height="11" rx="1"/>
-                        <path d="M3 14h18M7 9V6h10v3"/>
-                        <circle cx="7" cy="18" r="1.5"/>
-                        <circle cx="17" cy="18" r="1.5"/>
-                    </svg>
-                </div>
-                <div class="product-card-num">P2</div>
-            </div>
-            <h3>{{ T "product2_title" }}</h3>
-            <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product2_brand" }}</div>
-            <p>{{ T "product2_desc" }}</p>
-        </div>
-        <div class="product-card">
-            <div class="product-card-top">
-                <div class="product-card-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 18v-6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6"/>
-                        <path d="M3 18h18M7 18V8m10 10V8"/>
-                        <path d="M7 8l5-4 5 4"/>
-                    </svg>
-                </div>
-                <div class="product-card-num">P3</div>
-            </div>
-            <h3>{{ T "product3_title" }}</h3>
-            <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product3_brand" }}</div>
-            <p>{{ T "product3_desc" }}</p>
-        </div>
-        <div class="product-card">
-            <div class="product-card-top">
-                <div class="product-card-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                    </svg>
-                </div>
-                <div class="product-card-num">P4</div>
-            </div>
-            <h3>{{ T "product4_title" }}</h3>
-            <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product4_brand" }}</div>
-            <p>{{ T "product4_desc" }}</p>
-        </div>
-        <div class="product-card">
-            <div class="product-card-top">
-                <div class="product-card-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M12 7v5l3 2"/>
-                    </svg>
-                </div>
-                <div class="product-card-num">P5</div>
-            </div>
-            <h3>{{ T "product5_title" }}</h3>
-            <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product5_brand" }}</div>
-            <p>{{ T "product5_desc" }}</p>
-        </div>
-        <div class="product-card">
-            <div class="product-card-top">
-                <div class="product-card-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="3"/>
-                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                    </svg>
-                </div>
-                <div class="product-card-num">P6</div>
-            </div>
-            <h3>{{ T "product6_title" }}</h3>
-            <div class="product-brand-tag"><span class="product-brand-dot"></span>{{ T "product_fit_brand" }}: {{ T "product6_brand" }}</div>
-            <p>{{ T "product6_desc" }}</p>
-        </div>
-    </div>
-</div>
-
-<!-- Featured parts: 具体产品详情页入口（每个都是一条可被搜索到的落地页） -->
-{{ $parts := where .Site.RegularPages "Section" "products" }}
-{{ if $parts }}
-<div class="content-section content-section-alt">
-    <div class="content-section-header reveal">
-        <div class="content-section-eyebrow">
-            <span class="content-section-eyebrow-bar"></span>
-            <span>02 · {{ T "pd_featured" }}</span>
-        </div>
-        <h2 class="content-section-title">{{ T "pd_featured" }}</h2>
-        <p class="content-section-desc">{{ T "pd_featured_note" }}</p>
+        <p class="content-section-desc">{{ T "cat_list_note" }}</p>
     </div>
     <div class="pf-grid">
-        {{ range $parts.ByTitle }}
+        {{ range .Sections.ByWeight }}
         <a class="pf-card" href="{{ .Permalink }}">
-            <span class="pf-cat">{{ .Params.category_label }}</span>
+            <span class="pf-cat">{{ .Params.part_count }} {{ T "cat_pn_count" }}</span>
             <h3>{{ .Title }}</h3>
-            <p class="pf-desc">{{ .Params.description | truncate 78 }}</p>
-            <div class="pf-meta">
-                {{ range first 3 .Params.brands }}<span>{{ . }}</span>{{ end }}
-            </div>
+            <p class="pf-desc">{{ .Params.subtitle }}</p>
+            <span class="pf-more">{{ T "pd_view" }} →</span>
         </a>
         {{ end }}
     </div>
 </div>
-{{ end }}
 
 <!-- Product Image Banner -->
 <div class="content-section content-section-alt">
@@ -161,7 +48,7 @@
     <div class="content-section-header reveal">
         <div class="content-section-eyebrow">
             <span class="content-section-eyebrow-bar"></span>
-            <span>03 · {{ T "products_guarantee" }}</span>
+            <span>02 · {{ T "products_guarantee" }}</span>
         </div>
         <h2 class="content-section-title">{{ T "products_guarantee" }}</h2>
     </div>
@@ -216,7 +103,7 @@
     <div class="content-section-header reveal">
         <div class="content-section-eyebrow">
             <span class="content-section-eyebrow-bar"></span>
-            <span>04 · {{ T "products_custom" }}</span>
+            <span>03 · {{ T "products_custom" }}</span>
         </div>
         <h2 class="content-section-title">{{ T "products_custom" }}</h2>
     </div>
