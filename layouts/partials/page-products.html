@@ -15,7 +15,7 @@
     <div class="pf-grid">
         {{ range .Sections.ByWeight }}
         <a class="pf-card" href="{{ .Permalink }}">
-            <span class="pf-cat">{{ .Params.part_count }} {{ T "cat_pn_count" }}</span>
+            <span class="pf-cat">{{ .Params.category_key | upper }}</span>
             <h3>{{ .Title }}</h3>
             <p class="pf-desc">{{ .Params.subtitle }}</p>
             <span class="pf-more">{{ T "pd_view" }} →</span>

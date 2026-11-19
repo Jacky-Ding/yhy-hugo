@@ -226,3 +226,10 @@
   .brand-hero-main img{width:170px}
   .brand-hero-text p{max-width:none}
 }
+/* 品牌区第八格：暗示还有更多品牌，同时补齐网格 */
+.brand-item.brand-more{flex-direction:column;gap:2px;border:1px dashed var(--gray-300);
+  border-radius:8px;color:var(--gray-400);cursor:default;filter:none;opacity:.9;
+  transition:border-color .2s,color .2s}
+.brand-item.brand-more:hover{border-color:var(--gold-400);color:var(--gold-600);opacity:1}
+.brand-item.brand-more span{font-size:11px;letter-spacing:.04em;line-height:1.2}
+.brand-item.brand-more i{font-style:normal;font-size:13px;letter-spacing:2px;line-height:1}

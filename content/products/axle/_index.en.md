@@ -24,7 +24,7 @@ Ratio is the critical parameter: 4.11 for linehaul, 4.625 general purpose, 5.286
 
 ## Wheels
 
-Hubs, wheel ends and tyre specification. The catalogue includes a tyre fundamentals section covering ply rating, tread pattern and pressure matching.
+Hubs, wheel ends and tyre specification. Tyre specification covers ply rating, tread pattern and pressure matching — confirm the original parameters when ordering.
 
 
 ## Part numbers in stock

@@ -12,7 +12,7 @@
         <h1 class="page-hero-title">{{ .Title }}</h1>
         <p class="page-hero-subtitle">{{ .Params.subtitle }}</p>
         <div class="cat-badges">
-            <span class="cat-badge">{{ .Params.part_count }} {{ T "cat_pn_count" }}</span>
+            <span class="cat-badge">{{ T "cat_stock_badge" }}</span>
             <span class="cat-badge cat-badge-sh">{{ T "cat_oem_badge" }}</span>
         </div>
     </div>
@@ -33,7 +33,7 @@
                         {{ range .CurrentSection.Parent.Sections.ByWeight }}
                         <li class="{{ if eq .Permalink $cur }}on{{ end }}">
                             <a href="{{ .Permalink }}">{{ .Title }}</a>
-                            {{ with .Params.part_count }}<span>{{ . }}</span>{{ end }}
+                            
                         </li>
                         {{ end }}
                     </ul>

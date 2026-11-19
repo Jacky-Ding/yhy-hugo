@@ -22,7 +22,7 @@ Assembly, housing, bushes. Worn bushes show as rear axle oscillation and uneven 
 
 ## U-bolts
 
-The catalogue includes a dedicated **U-bolt reference table** with specifications and torque by model and axle type. Low unit price, but a missing or under-torqued U-bolt breaks leaf springs directly — the classic small part that triggers a major repair.
+U-bolt specification and torque differ by model and axle type — give us the model and we ship the matching set. Low unit price, but a missing or under-torqued U-bolt breaks leaf springs directly — the classic small part that triggers a major repair.
 
 
 ## Part numbers in stock

@@ -20,7 +20,7 @@ Cab tilt and perished cab mounts change the relative position of column and shaf
 
 ## An easy part to confuse
 
-The **steering oil tank filter** is frequently ordered under the wrong number, mistaken for a hydraulic oil filter. In the catalogue it sits under steering, not engine lubrication — worth checking when ordering.
+The **steering oil tank filter** is frequently ordered under the wrong number, mistaken for a hydraulic oil filter. It belongs to the steering system, not engine lubrication — worth checking when ordering.
 
 ## Safety note
 

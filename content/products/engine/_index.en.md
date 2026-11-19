@@ -12,7 +12,7 @@ The engine accounts for the largest share of a SHACMAN truck's maintenance cost,
 
 ## Scope
 
-Following the official SHACMAN parts catalogue, engine components split into eight blocks: **engine body** (cylinder head, liner, oil pan), **valve train** (valve assembly, crankshaft, camshaft, timing gears), **motion parts** (piston, connecting rod, high-pressure pump, injector, oil pump), **cooling** (pulleys, water pump), **intake and exhaust** (manifolds, turbocharger, air compressor), **lubrication** (oil filtration, oil cooler), **electrics** (starter, alternator, sensors) and the **engine repair kit**.
+In SHACMAN's part numbering system, engine components split into eight systems: **engine body** (cylinder head, liner, oil pan), **valve train** (valve assembly, crankshaft, camshaft, timing gears), **motion parts** (piston, connecting rod, high-pressure pump, injector, oil pump), **cooling** (pulleys, water pump), **intake and exhaust** (manifolds, turbocharger, air compressor), **lubrication** (oil filtration, oil cooler), **electrics** (starter, alternator, sensors) and the **engine repair kit**.
 
 ## What moves fastest in export markets
 
@@ -20,7 +20,7 @@ Three groups dominate in Africa and Southeast Asia: **filters** — air, oil and
 
 ## A note on Cummins
 
-Some SHACMAN models carry Cummins ISM/ISG engines with a completely different part numbering system. The catalogue includes a dedicated **Cummins filter cross-reference table**. Tell us the engine brand when ordering and we ship against the correct system — not a Weichai part against a Cummins engine.
+Some SHACMAN models carry Cummins ISM/ISG engines with a completely different part numbering system. Weichai and Cummins filters do not interchange. Tell us the engine brand when ordering and we ship against the correct system — never a Weichai part against a Cummins engine.
 
 
 ## Part numbers in stock
