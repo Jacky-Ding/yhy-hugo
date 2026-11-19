@@ -24,7 +24,7 @@
 @media (max-width: 1280px){.guarantee-grid{grid-template-columns: repeat(2,1fr)}}
 @media (max-width: 768px){.guarantee-grid{grid-template-columns: 1fr}.tag-list{flex-wrap: wrap}.tag{font-size: 12px;padding: 6px 12px}}
 @media (max-width: 480px){.tag{font-size: 11px;padding: 4px 10px}.guarantee-item{padding: var(--space-lg)}}
-.pf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.pf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:16px}
 .pf-card{display:flex;flex-direction:column;padding:22px;border:1px solid var(--gray-200);border-radius:var(--radius-md);
   background:var(--white);transition:.25s;height:100%}
 .pf-card:hover{border-color:var(--gold-400);transform:translateY(-3px);box-shadow:var(--shadow-md)}
