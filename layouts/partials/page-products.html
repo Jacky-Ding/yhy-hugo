@@ -15,6 +15,10 @@
     <div class="pf-grid">
         {{ range .Sections.ByWeight }}
         <a class="pf-card" href="{{ .Permalink }}">
+            <div class="pf-thumb">
+                <img src="{{ printf "/images/categories/%s.webp" .Params.category_key | relURL }}"
+                     alt="{{ .Title }}" loading="lazy" decoding="async" width="640" height="480">
+            </div>
             <span class="pf-cat">{{ .Params.category_key | upper }}</span>
             <h3>{{ .Title }}</h3>
             <p class="pf-desc">{{ .Params.subtitle }}</p>

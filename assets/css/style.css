@@ -233,3 +233,21 @@
 .brand-item.brand-more:hover{border-color:var(--gold-400);color:var(--gold-600);opacity:1}
 .brand-item.brand-more span{font-size:11px;letter-spacing:.04em;line-height:1.2}
 .brand-item.brand-more i{font-style:normal;font-size:13px;letter-spacing:2px;line-height:1}
+/* 品类卡缩略图：白底产品实拍，源自 Oceanlight 图册 */
+.pf-card{padding:0;overflow:hidden}
+.pf-thumb{position:relative;background:#fff;border-bottom:1px solid var(--gray-100);aspect-ratio:4/3;overflow:hidden}
+.pf-thumb img{width:100%;height:100%;object-fit:contain;padding:14px;transition:transform .35s var(--ease-out)}
+.pf-card:hover .pf-thumb img{transform:scale(1.06)}
+.pf-card .pf-cat{margin:16px 20px 0;display:block}
+.pf-card h3{margin:6px 20px 0}
+.pf-card .pf-desc{margin:8px 20px 0}
+.pf-card .pf-more{margin:0 20px 18px;display:block}
+@media(max-width:768px){
+  .pf-thumb img{padding:10px}
+  .pf-card .pf-cat{margin:13px 16px 0}
+  .pf-card h3,.pf-card .pf-desc{margin-left:16px;margin-right:16px}
+  .pf-card .pf-more{margin-left:16px;margin-right:16px}
+}
+/* 品类页侧栏产品图 */
+.cat-side-img{padding:0;background:#fff;overflow:hidden}
+.cat-side-img img{width:100%;height:auto;display:block;padding:14px}

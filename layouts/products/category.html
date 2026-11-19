@@ -26,6 +26,11 @@
             </div>
 
             <aside class="cat-side">
+                <div class="cat-side-box cat-side-img">
+                    <img src="{{ printf "/images/categories/%s.webp" .Params.category_key | relURL }}"
+                         alt="{{ .Title }}" loading="lazy" decoding="async" width="640" height="480">
+                </div>
+
                 <div class="cat-side-box">
                     <h3>{{ T "cat_other" }}</h3>
                     <ul class="cat-nav">
