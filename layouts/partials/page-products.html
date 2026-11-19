@@ -17,8 +17,8 @@
         <a class="pf-card" href="{{ .Permalink }}">
             <div class="pf-thumb">
                 {{ $k := .Params.category_key }}
-                <img src="{{ printf "/images/categories/%s.webp" $k | relURL }}"
-                     srcset="{{ printf "/images/categories/%s-320.webp" $k | relURL }} 320w, {{ printf "/images/categories/%s.webp" $k | relURL }} 640w"
+                <img src="{{ printf "/images/cat-v2/%s.webp" $k | relURL }}"
+                     srcset="{{ printf "/images/cat-v2/%s-320.webp" $k | relURL }} 320w, {{ printf "/images/cat-v2/%s.webp" $k | relURL }} 640w"
                      sizes="(max-width: 768px) 92vw, (max-width: 1200px) 30vw, 280px"
                      alt="{{ .Title }}" loading="lazy" decoding="async" width="640" height="480">
             </div>
