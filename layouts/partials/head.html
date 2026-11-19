@@ -21,20 +21,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="//tile.openstreetmap.org">
 <link rel="dns-prefetch" href="//basemaps.cartocdn.com">
-<!-- Preload hero background ONLY on the homepage, and only the size this device needs.
-     (子页面不使用 .hero-bg，之前全站 preload 会浪费 250KB) -->
+<!-- 首页 hero 背景：主图就是 .hero-bg 的 engine-detail，
+     之前这里预加载的是已经不再使用的 hero-truck（桌面 222KB / 手机 74KB），
+     纯属白下载。现在预加载真正要用的那张，并按断点分档。 -->
 {{ if .IsHome }}
-<link rel="preload" as="image" href="{{ "images/hero-truck-800.webp" | absURL }}" media="(max-width: 768px)" fetchpriority="high">
-<link rel="preload" as="image" href="{{ "images/hero-truck.webp" | absURL }}" media="(min-width: 769px)" fetchpriority="high">
+<link rel="preload" as="image" href="{{ "images/engine-detail-800.webp" | absURL }}" media="(max-width: 768px)" fetchpriority="high">
+<link rel="preload" as="image" href="{{ "images/engine-detail.webp" | absURL }}" media="(min-width: 769px)" fetchpriority="high">
 {{ end }}
 <!-- Google Fonts — non-blocking (fallback inside <noscript>) -->
 <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@500&display=swap">
 <noscript>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@500&display=swap">
 </noscript>
-<!-- Main Stylesheet — 内容指纹：文件名含 hash，可长期缓存 -->
-{{ $css := resources.Get "css/style.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<!-- 样式：按页拆分，base 全站共用（只下一次），页面块只带本页需要的规则。
+     两个 link 顺序不能颠倒：页面块必须在 base 之后，才能保持原有层叠优先级。 -->
+{{- $chunk := "" -}}
+{{- if .IsHome -}}
+  {{- $chunk = "home" -}}
+{{- else if eq .Kind "404" -}}
+  {{- $chunk = "" -}}
+{{- else if eq .Section "products" -}}
+  {{- if eq .Parent.Kind "home" -}}{{- $chunk = "products" -}}
+  {{- else if .Params.category_key -}}{{- $chunk = "category" -}}
+  {{- else -}}{{- $chunk = "part" -}}{{- end -}}
+{{- else if in (slice "about" "services" "contact" "global") .Section -}}
+  {{- $chunk = .Section -}}
+{{- end -}}
+{{ $base := resources.Get "css/base.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $base.RelPermalink }}" integrity="{{ $base.Data.Integrity }}">
+{{ with $chunk }}
+{{ $c := resources.Get (printf "css/%s.css" .) | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $c.RelPermalink }}" integrity="{{ $c.Data.Integrity }}">
+{{ end }}
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 <!-- Fallback: ensure content is visible if JavaScript is disabled -->

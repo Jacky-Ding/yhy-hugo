@@ -1,0 +1,43 @@
+/* YHY — contact */
+.contact-wrap{display: grid;grid-template-columns: 1fr 1fr;gap: var(--space-2xl);margin-bottom: var(--space-2xl)}
+.contact-info{display: flex;flex-direction: column;gap: var(--space-lg)}
+.contact-block{background: var(--white);padding: var(--space-xl);border-radius: var(--radius-lg);border: 1px solid var(--gray-200)}
+.contact-block h3{font-size: 1.25rem;margin-bottom: var(--space-sm)}
+.contact-block .company-name{font-size: 14px;color: var(--gray-500);margin-bottom: var(--space-lg);padding-bottom: var(--space-lg);border-bottom: 1px solid var(--gray-200)}
+.contact-item{display: flex;gap: var(--space-md);margin-bottom: var(--space-md)}
+.icon-circle{width: 36px;height: 36px;border-radius: 50%;background: var(--gold-50);display: flex;align-items: center;justify-content: center;color: var(--gold-600);flex-shrink: 0}
+.info-text{flex: 1}
+.info-text label{font-size: 12px;font-weight: 600;color: var(--gray-500);text-transform: uppercase;letter-spacing: 0.5px;display: block;margin-bottom: 2px}
+.info-text p{font-size: 14px;color: var(--gray-700)}
+.info-text a{color: var(--gold-600)}
+.info-text a:hover{text-decoration: underline}
+.qr-row{display: flex;gap: var(--space-md);margin-top: var(--space-md)}
+.qr-card{background: var(--gray-50);padding: var(--space-md);border-radius: var(--radius-md);text-align: center;flex: 1}
+.qr-card img{width: 80px;height: 80px;object-fit: cover;border-radius: var(--radius-sm);margin: 0 auto var(--space-sm)}
+.qr-label{font-size: 12px;color: var(--gray-500)}
+.contact-form{background: var(--white);padding: var(--space-xl);border-radius: var(--radius-lg);border: 1px solid var(--gray-200)}
+.contact-form h3{font-size: 1.25rem;margin-bottom: var(--space-lg)}
+.form-group{margin-bottom: var(--space-lg)}
+.form-group label{display: block;font-size: 14px;font-weight: 600;color: var(--gray-700);margin-bottom: var(--space-sm)}
+.form-group input,.form-group textarea{width: 100%;padding: 14px 18px;border: 2px solid var(--gray-200);border-radius: var(--radius-md);font-family: inherit;font-size: 15px;color: var(--gray-800);background: var(--white);transition: all var(--duration-fast)}
+.form-group input:focus,.form-group textarea:focus{outline: none;border-color: var(--gold-400);box-shadow: 0 0 0 4px rgba(200,149,76,0.1)}
+.form-group textarea{resize: vertical;min-height: 120px}
+.form-submit{width: 100%;padding: 16px;background: linear-gradient(135deg,var(--gold-500),var(--gold-400));color: var(--white);font-size: 15px;font-weight: 600;border-radius: var(--radius-md);border: none;cursor: pointer;transition: all var(--duration-normal) var(--ease-out)}
+.form-submit:hover{transform: translateY(-2px);box-shadow: var(--shadow-gold)}
+.form-submit:disabled{opacity: 0.7;cursor: not-allowed}
+.form-tips{margin-top: var(--space-md);font-size: 14px;text-align: center}
+.single-map-container{border-radius: var(--radius-lg);overflow: hidden;height: 450px;border: 1px solid var(--gray-200)}
+#company-map{height: 100%;width: 100%}
+.faq-list{display: flex;flex-direction: column;gap: var(--space-md)}
+.faq-item{background: var(--white);border-radius: var(--radius-md);border: 1px solid var(--gray-200);overflow: hidden}
+.faq-question{padding: var(--space-lg);font-size: 15px;font-weight: 600;color: var(--gray-800);cursor: pointer;display: flex;justify-content: space-between;align-items: center;transition: all var(--duration-fast)}
+.faq-question:hover{background: var(--gray-50)}
+.faq-answer{padding: 0 var(--space-lg);max-height: 0;overflow: hidden;transition: all var(--duration-normal) var(--ease-out)}
+.faq-answer p{font-size: 14px;color: var(--gray-600);line-height: 1.7}
+@media (max-width: 1024px){.contact-wrap{grid-template-columns: 1fr}}
+@media (max-width: 768px){.contact-wrap{grid-template-columns: 1fr}.contact-block{padding: var(--space-lg)}.qr-row{justify-content: center}.single-map-container{height: 300px}.faq-question{font-size: 0.95rem;padding: var(--space-md)}.faq-answer p{font-size: 0.9rem}}
+@media (max-width: 480px){.contact-form{padding: var(--space-lg)}.form-group input,.form-group textarea{font-size: 16px}.single-map-container{height: 250px}.qr-card img{width: 100px;height: 100px}}
+@media (hover: none) and (pointer: coarse){.faq-question{min-height: 48px}}
+.map-popup{font-size: 14px;line-height: 1.6;padding: 4px 0}
+.map-popup strong{font-size: 15px;color: var(--navy-800)}
+.form-hp-wrap,.form-hp-wrap *{position: absolute !important;left: -9999px !important;top: -9999px !important;width: 1px !important;height: 1px !important;overflow: hidden !important;opacity: 0 !important;pointer-events: none !important;border: none !important;outline: none !important;box-shadow: none !important;clip: rect(0,0,0,0) !important;clip-path: inset(50%) !important;margin: 0 !important;padding: 0 !important}

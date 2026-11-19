@@ -38,3 +38,5 @@ memory/
 node_modules/
 package-lock.json
 yarn.lock
+# 本地对照构建产物
+public_before/
