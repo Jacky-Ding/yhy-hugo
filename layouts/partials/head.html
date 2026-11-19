@@ -3,10 +3,11 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{{ if .IsHome }}{{ .Site.Title }} - {{ T "site_tagline" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <!-- Hreflang for multilingual SEO -->
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
-<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}" />
 {{ end }}
 <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}" />
 {{ end }}
@@ -20,43 +21,74 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="//tile.openstreetmap.org">
 <link rel="dns-prefetch" href="//basemaps.cartocdn.com">
-<!-- Preload hero background image so it appears as soon as possible -->
-<link rel="preload" as="image" href="{{ "images/hero-truck.webp" | relURL }}">
+<!-- Preload hero background ONLY on the homepage, and only the size this device needs.
+     (子页面不使用 .hero-bg，之前全站 preload 会浪费 250KB) -->
+{{ if .IsHome }}
+<link rel="preload" as="image" href="{{ "images/hero-truck-800.webp" | absURL }}" media="(max-width: 768px)" fetchpriority="high">
+<link rel="preload" as="image" href="{{ "images/hero-truck.webp" | absURL }}" media="(min-width: 769px)" fetchpriority="high">
+{{ end }}
 <!-- Google Fonts — non-blocking (fallback inside <noscript>) -->
 <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@500&display=swap">
 <noscript>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@500&display=swap">
 </noscript>
-<!-- Main Stylesheet -->
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+<!-- Main Stylesheet — 内容指纹：文件名含 hash，可长期缓存 -->
+{{ $css := resources.Get "css/style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 <!-- Fallback: ensure content is visible if JavaScript is disabled -->
 <noscript>
 <style>.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger-children>*{opacity:1!important;transform:none!important}</style>
 </noscript>
-<!-- Critical: redirect root path to best language BEFORE page renders -->
+{{ if .IsHome }}
+<!-- 根路径语言分流：只在 "/" 上执行，绝不会影响 /zh/ /en/ /ru/ 的正常收录 -->
 <script>
-(function(){if(window.location.pathname!=='/')return;var r=sessionStorage.getItem('yhyr');if(r==='1')return;var s=['zh','en','ru'],l=localStorage.getItem('yhy_lang');function g(t){if(s.indexOf(t)===-1)t='en';sessionStorage.setItem('yhyr','1');localStorage.setItem('yhy_lang',t);window.location.replace('/'+t+'/')}if(l&&s.indexOf(l)!==-1){g(l);return}var n=navigator.language||navigator.userLanguage||'',t='en';if(n.indexOf('zh')===0)t='zh';else if(n.indexOf('ru')===0)t='ru';g(t)})();
+(function(){if(location.pathname!=='/')return;var r=sessionStorage.getItem('yhyr');if(r==='1')return;var s=['zh','en','ru'],l=localStorage.getItem('yhy_lang');function g(t){if(s.indexOf(t)===-1)t='en';sessionStorage.setItem('yhyr','1');localStorage.setItem('yhy_lang',t);location.replace('/'+t+'/')}if(l&&s.indexOf(l)!==-1){g(l);return}var n=navigator.language||'',t='en';if(n.indexOf('zh')===0)t='zh';else if(n.indexOf('ru')===0)t='ru';g(t)})();
 </script>
-<meta property="og:title" content="{{ .Title }}" />
+{{ end }}
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} - {{ T "site_tagline" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ replace .Site.Language.Locale "-" "_" }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "images/og-banner.webp" | absURL }}">
+<!-- 社交平台（微信/Facebook/Twitter/LinkedIn）不认 WebP，必须用 JPG -->
+<meta property="og:image" content="{{ "images/og-banner.jpg" | absURL }}">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{{ .Site.Title }} - {{ T "site_tagline" }}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} - {{ T "site_tagline" }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{ "images/og-banner.jpg" | absURL }}">
 <!-- Schema.org Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "{{ .Site.BaseURL }}#organization",
   "name": "{{ .Site.Title }}",
+  "alternateName": "{{ if eq .Site.Language.Lang "zh" }}{{ .Site.Params.company_full_name_en }}{{ else }}{{ .Site.Params.company_full_name_zh }}{{ end }}",
   "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ "images/logo.png" | absURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ "images/logo.png" | absURL }}",
+    "width": 296,
+    "height": 261
+  },
+  "image": "{{ "images/og-banner.jpg" | absURL }}",
   "description": "{{ .Site.Params.description }}",
+  "foundingDate": "2022",
+  "email": "{{ .Site.Params.company_email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "兰山区宏大路临沂港跨境电商产业园三楼",
+    "addressLocality": "临沂市",
+    "addressRegion": "山东省",
+    "addressCountry": "CN"
+  },
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "{{ .Site.Params.company_phone }}",
@@ -75,8 +107,55 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "{{ .Site.BaseURL }}#website",
   "name": "{{ .Site.Title }}",
-  "url": "{{ .Site.BaseURL }}"
+  "url": "{{ .Site.BaseURL }}",
+  "publisher": { "@id": "{{ .Site.BaseURL }}#organization" },
+  "inLanguage": ["zh-CN", "en", "ru"]
+}
+</script>
+{{ else }}
+<!-- Schema.org BreadcrumbList（子页面） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ T "home" }}",
+      "item": "{{ .Site.Home.Permalink }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
+{{ end }}
+{{ if eq .Section "contact" }}
+<!-- Schema.org FAQPage：MOQ / 交期 / 质保 / 付款方式，
+     对应海外采购商最常搜索的长尾问题，有助于获得富结果与 AI 搜索引用 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i := seq 1 4 }}{{ if gt $i 1 }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ T (printf "faq%d_title" $i) | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ T (printf "faq%d_answer" $i) | jsonify }}
+      }
+    }
+    {{ end }}
+  ]
 }
 </script>
 {{ end }}

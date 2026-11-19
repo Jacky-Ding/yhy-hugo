@@ -1,3 +1,12 @@
+# ============================================================
+# Cloudflare Pages _headers
+# 规则说明：Cloudflare 会把「所有匹配规则」的同名 header 合并成一条，
+# 所以这里绝对不能出现 `*.ext` 或重复的 Cache-Control，否则会拼接成
+# "public, max-age=300, must-revalidate, public, max-age=86400, ..." 这种废头。
+# 只写前缀路径，且每个 header 只出现一次。
+# ============================================================
+
+# ---------- 全局安全头 ----------
 /*
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
@@ -6,31 +15,24 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
-# Cache HTML pages for a short time so updates appear quickly
-*.html
-  Cache-Control: public, max-age=300, must-revalidate
+# ---------- 图片 / 字体：内容极少变动 ----------
+/images/*
+  Cache-Control: public, max-age=2592000
 
-# Cache CSS / JS — moderate duration, since filenames are not hashed
-# (Hugo Pipes fingerprinting would allow a much longer cache)
-*.css
-  Cache-Control: public, max-age=86400
-*.js
-  Cache-Control: public, max-age=86400
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
 
-# Cache images / fonts — they change rarely, so a longer cache is fine
-*.jpg
-  Cache-Control: public, max-age=2592000
-*.jpeg
-  Cache-Control: public, max-age=2592000
-*.png
-  Cache-Control: public, max-age=2592000
-*.webp
-  Cache-Control: public, max-age=2592000
-*.svg
-  Cache-Control: public, max-age=2592000
-*.ico
-  Cache-Control: public, max-age=2592000
-*.woff
+# ---------- CSS / JS：文件名已带内容指纹（hash），可放心长期缓存 ----------
+/css/*
   Cache-Control: public, max-age=31536000, immutable
-*.woff2
+
+/js/*
   Cache-Control: public, max-age=31536000, immutable
+
+/lib/*
+  Cache-Control: public, max-age=2592000
+
+# ---------- HTML ----------
+# 刻意不设置 Cache-Control：沿用 Pages 默认的
+# "public, max-age=0, must-revalidate" + ETag，
+# 保证改版后用户立刻看到新版，同时 304 几乎零成本。

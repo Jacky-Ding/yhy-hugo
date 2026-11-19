@@ -1,6 +1,6 @@
 # Hugo configuration for YHY International Trade — tri-lingual static site
 baseURL = '/'
-languageCode = 'zh'
+locale = 'zh-CN'
 title = '山东钰弘源国际贸易有限公司'
 defaultContentLanguage = 'zh'
 defaultContentLanguageInSubdir = true
@@ -11,6 +11,14 @@ summaryLength = 140
 # Canonical URLs for SEO
 canonifyURLs = false
 
+# ⚠️ 注意：以下两个键必须写在所有 [表] 之前。
+# 之前它们被写在 [minify.tdewolff.html] 之后，TOML 会把它们归入该表，
+# 导致 disableKinds 从未生效（空白的 /categories/ /tags/ 页被生成并可能被收录）。
+disableKinds = ['taxonomy', 'term']
+
+# relativeURLs 已移除：与 canonifyURLs 冲突，且会破坏 canonical / sitemap 的绝对路径。
+# 本站所有链接由 canonifyURLs 统一输出为绝对 URL。
+
 # Enable HTML minification for faster page loads
 [minify]
   minifyOutput = true
@@ -19,33 +27,27 @@ canonifyURLs = false
   [minify.tdewolff.html]
     keepWhitespace = false
 
-# Cloudflare Pages friendly - relative URLs
-relativeURLs = true
-
-# Disable unused output formats for speed
-disableKinds = ['taxonomy', 'term']
-
 # i18n — three languages with auto redirection handled by JS
 [languages]
 [languages.zh]
-languageCode = 'zh-CN'
-languageName = '中文'
+locale = 'zh-CN'
+label = '中文'
 weight = 1
 title = '山东钰弘源国际贸易有限公司'
   [languages.zh.params]
   description = '山东钰弘源国际贸易有限公司是专业的商用车零部件授权供应商，专注SHACMAN陕汽、CNHTC中国重汽、WEICHAI潍柴、FAW解放等品牌配件，产品出口全球多国，提供一站式采购、质量保障与售后支持。'
 
 [languages.en]
-languageCode = 'en'
-languageName = 'English'
+locale = 'en'
+label = 'English'
 weight = 2
 title = 'Shandong Yuhongyuan International Trade Co., Ltd.'
   [languages.en.params]
   description = 'Shandong Yuhongyuan International Trade Co., Ltd. is a professional authorized supplier of commercial vehicle parts for SHACMAN, CNHTC, WEICHAI, FAW and more, exporting worldwide with one-stop sourcing and reliable after-sales support.'
 
 [languages.ru]
-languageCode = 'ru'
-languageName = 'Русский'
+locale = 'ru'
+label = 'Русский'
 weight = 3
 title = 'Шаньдун Юйхуньюань Международная Торговая Компания, ООО'
   [languages.ru.params]
