@@ -28,7 +28,7 @@ highlight1_desc = "10+ years of international trade expertise, well-versed in tr
 
 highlight2_title = "Abundant Inventory"
 
-highlight2_desc = "Over 100,000 SKUs in stock, 50,000m² modern warehousing to rapidly fulfill customer demands"
+highlight2_desc = "Over 50,000 SKUs in stock, 30,000m² modern warehousing to rapidly fulfill customer demands"
 
 highlight3_title = "Brand Authorization"
 
@@ -108,9 +108,9 @@ about_adv2_item4 = "Business network covering multiple core regions domestically
 
 about_adv3_title = "Excellent Warehouse Management"
 
-about_adv3_item1 = "50,000m² of modern, scientifically laid-out warehousing facilities"
+about_adv3_item1 = "30,000m² of modern, scientifically laid-out warehousing facilities"
 
-about_adv3_item2 = "Inventory exceeds 100,000 SKUs with ample stock to meet diverse needs"
+about_adv3_item2 = "Inventory exceeds 50,000 SKUs with ample stock to meet diverse needs"
 
 about_adv3_item3 = "Professional warehousing, packaging, and shipping team operating with standardized procedures"
 
@@ -296,11 +296,11 @@ global_domestic_desc = "Three integrated entities, synergizing efficiently to fo
 
 subsidiary_yhy_title = "Shandong Yuhongyuan International Trade Co., Ltd. (Linyi)"
 
-subsidiary_yhy_desc = "The company's operations and logistics hub, responsible for global product resource integration, centralized procurement, 50,000m² modern warehouse management, and cross-border order processing — the core driving force behind global business."
+subsidiary_yhy_desc = "The company's operations and logistics hub, responsible for global product resource integration, centralized procurement, modern warehouse management, and cross-border order processing — the core driving force behind global business."
 
 subsidiary_huanuo_title = "Shandong Huanuo Automobile Sales & Service Co., Ltd. (Jinan)"
 
-subsidiary_huanuo_desc = "The company's core product and brand center. Powered by a dual-wheel system of 'OEM-authorized core parts + proprietary brands (Jingchu, Huanyue) differentiated products,' equipped with 50,000m² professional warehousing, supplying full-category, high-quality commercial vehicle parts to global clients."
+subsidiary_huanuo_desc = "The company's core product and brand center. Powered by a dual-wheel system of 'OEM-authorized core parts + proprietary brands (Jingchu, Huanyue) differentiated products,' equipped with professional warehousing, supplying full-category, high-quality commercial vehicle parts to global clients."
 
 subsidiary_hongyuan_title = "Linyi Hongyuan International Freight Forwarding Co., Ltd. (Linyi)"
 
@@ -340,7 +340,7 @@ global_synergy_desc = "Through efficient integration of internal resources, we h
 
 synergy1_title = "Dual-City Warehousing, Efficient Fulfillment"
 
-synergy1_desc = "50,000m² professional warehousing facilities in Linyi and 50,000m² in Jinan operating in synergy, with inventory exceeding 100,000 SKUs — flexibly responding to global clients' spot, rush, and large-volume customized demands."
+synergy1_desc = "Professional warehousing in Linyi and Jinan totalling 30,000m², operating in synergy, with inventory exceeding 50,000 SKUs — flexibly responding to global clients' spot, rush, and large-volume customized demands."
 
 synergy2_title = "Complete Credentials, Compliance Guarantee"
 
@@ -498,7 +498,7 @@ product_types = "Product Types"
 
 featured_products = "Featured Products"
 
-footer_description = "Professional authorized supplier of commercial vehicle parts. Backed by 10+ years experience, 100,000+ SKUs, and global operations in China and Africa."
+footer_description = "Professional authorized supplier of commercial vehicle parts. Backed by 10+ years experience, 50,000+ SKUs, and global operations in China and Africa."
 
 footer_quick_links = "Quick Links"
 
@@ -608,9 +608,9 @@ cat_quote_hint = "Send us the part number for price and availability. Common ite
 cat_copy_hint = "Click to copy part number"
 cat_search = "Search part number or description…"
 cat_list_note = "Full-range coverage across engine, drivetrain, chassis, braking and electrical systems. Common part numbers held in stock, the rest sourced fast."
-hero_stat1_v = "100K+"
+hero_stat1_v = "50K+"
 hero_stat1 = "SKUs in stock"
-hero_stat2_v = "50,000㎡"
+hero_stat2_v = "30,000㎡"
 hero_stat2 = "Warehousing"
 hero_stat3_v = "500+"
 hero_stat3 = "Long-term clients"
@@ -625,6 +625,6 @@ cat_pn_table_title = "Popular part numbers"
 brand_more = "More brands"
 lang_label = "Language"
 brand_net1_label = "China"
-brand_net1_text = "Linyi + Jinan: 100,000 m² of warehousing, 100,000+ SKUs ready to ship"
+brand_net1_text = "Linyi + Jinan: 30,000 m² of warehousing, 50,000+ SKUs ready to ship"
 brand_net2_label = "Overseas"
 brand_net2_text = "Zambia: service centres in Ndola and Lusaka, 7×24 local response"

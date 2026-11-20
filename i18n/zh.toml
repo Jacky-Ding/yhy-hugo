@@ -28,7 +28,7 @@ highlight1_desc = "10年以上国际贸易经验的专业团队，熟悉各国�
 
 highlight2_title = "海量库存"
 
-highlight2_desc = "10万+SKU现货，5万平现代化仓储，快速响应客户需求"
+highlight2_desc = "5万+SKU现货，3万平现代化仓储，快速响应客户需求"
 
 highlight3_title = "品牌授权"
 
@@ -108,9 +108,9 @@ about_adv2_item4 = "业务网络覆盖国内外多个核心地区"
 
 about_adv3_title = "仓储管理水平优异"
 
-about_adv3_item1 = "拥有5万平方米现代化仓储设施，布局科学"
+about_adv3_item1 = "拥有3万平方米现代化仓储设施，布局科学"
 
-about_adv3_item2 = "库存SKU超10万种，现货充足，满足多场景需求"
+about_adv3_item2 = "库存SKU超5万种，现货充足，满足多场景需求"
 
 about_adv3_item3 = "配备专业仓储包装发运团队，操作标准化"
 
@@ -296,11 +296,11 @@ global_domestic_desc = "三位一体，高效协同，构成集团在国内的�
 
 subsidiary_yhy_title = "山东钰弘源国际贸易有限公司 (临沂)"
 
-subsidiary_yhy_desc = "公司的运营与物流中枢，负责全球市场的产品资源整合、集中采购、5万平方米现代化仓储管理及跨境订单处理，是驱动全球业务的核心动力。"
+subsidiary_yhy_desc = "公司的运营与物流中枢，负责全球市场的产品资源整合、集中采购、现代化仓储管理及跨境订单处理，是驱动全球业务的核心动力。"
 
 subsidiary_huanuo_title = "山东华诺汽车销售服务有限公司 (济南)"
 
-subsidiary_huanuo_desc = "公司的核心产品与品牌中心。凭借\"原厂授权核心件 + 自有品牌（景初、环岳）差异化产品\"的双轮驱动体系，配备5万平方米专业仓储，为全球客户提供全品类、高品质的商用车零部件供应。"
+subsidiary_huanuo_desc = "公司的核心产品与品牌中心。凭借\"原厂授权核心件 + 自有品牌（景初、环岳）差异化产品\"的双轮驱动体系，配备专业仓储，为全球客户提供全品类、高品质的商用车零部件供应。"
 
 subsidiary_hongyuan_title = "临沂弘远国际货运代理有限公司 (临沂)"
 
@@ -340,7 +340,7 @@ global_synergy_desc = "我们通过内部资源的高效整合，形成了难以
 
 synergy1_title = "双城仓储，高效履约"
 
-synergy1_desc = "临沂5万平方米与济南5万平方米的专业仓储设施协同运作，库存SKU超10万种，能灵活响应全球客户的现货、急单与大批量定制化需求。"
+synergy1_desc = "临沂与济南双城合计3万平方米的专业仓储设施协同运作，库存SKU超5万种，能灵活响应全球客户的现货、急单与大批量定制化需求。"
 
 synergy2_title = "资质齐全，合规保障"
 
@@ -498,7 +498,7 @@ product_types = "种产品类型"
 
 featured_products = "精选产品"
 
-footer_description = "专业商用车零部件授权供应商。凭借10+年经验、10万+SKU现货，及在中国和非洲的全球运营，为您提供高品质服务。"
+footer_description = "专业商用车零部件授权供应商。凭借10+年经验、5万+SKU现货，及在中国和非洲的全球运营，为您提供高品质服务。"
 
 footer_quick_links = "快速链接"
 
@@ -608,9 +608,9 @@ cat_quote_hint = "报件号即可查询库存与价格，常规件赞比亚现�
 cat_copy_hint = "点击复制件号"
 cat_search = "搜索件号或品名…"
 cat_list_note = "发动机、传动、底盘、制动、电气等全车系覆盖，常规型号常备现货，非常规件可快速调货。"
-hero_stat1_v = "10万+"
+hero_stat1_v = "5万+"
 hero_stat1 = "现货 SKU"
-hero_stat2_v = "5万㎡"
+hero_stat2_v = "3万㎡"
 hero_stat2 = "现代化仓储"
 hero_stat3_v = "500+"
 hero_stat3 = "长期合作客户"
@@ -625,6 +625,6 @@ cat_pn_table_title = "常用件号"
 brand_more = "更多品牌"
 lang_label = "语言"
 brand_net1_label = "国内"
-brand_net1_text = "临沂 + 济南双城 10 万㎡ 仓储，SKU 超 10 万种，现货直发"
+brand_net1_text = "临沂 + 济南双城 3 万㎡ 仓储，SKU 超 5 万种，现货直发"
 brand_net2_label = "海外"
 brand_net2_text = "赞比亚恩多拉、卢萨卡双服务中心，7×24 小时属地响应"
