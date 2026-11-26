@@ -100,3 +100,6 @@ company_phone = '+86 186 0639 3111'
 whatsapp_number = '8618606393111'
 primary_color = '#165DFF'
 primary_dark = '#0E42B3'
+
+# ICP 备案（2025-11 通过）：页脚展示，号码不翻译
+icp_beian = '鲁ICP备2025139541号-1'

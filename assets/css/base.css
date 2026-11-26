@@ -176,3 +176,12 @@ h1,h2,h3,h4,h5,h6{font-family: var(--font-display);font-weight: 400;line-height:
   transition:background .25s,transform .25s}
 .not-found a:hover{background:var(--gold-400);transform:translateY(-1px)}
 @media(max-width:768px){.not-found{min-height:56vh;padding:72px 20px 88px}}
+
+/* 页脚：版权 + ICP 备案号同一行，备案号与版权同级字重便于阅读，
+   悬停提亮（合规要求"显著位置标明"，所以不做成几乎看不见的灰） */
+.footer-legal{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px}
+.footer-icp{font-size:13px;line-height:1.6;color:rgba(255,255,255,0.5);
+  text-decoration:none;transition:color .2s}
+.footer-icp:hover,.footer-icp:focus-visible{color:rgba(255,255,255,0.85);text-decoration:underline}
+.footer-icp:focus-visible{outline:2px solid rgba(200,149,76,0.7);outline-offset:3px;border-radius:2px}
+@media(max-width:768px){.footer-legal{justify-content:center}}

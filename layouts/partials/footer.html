@@ -88,7 +88,16 @@
         </div>
         
         <div class="footer-bottom">
-            <p class="footer-copyright">{{ replace (T "copyright") "{year}" (now.Format "2006") | safeHTML }}</p>
+            <div class="footer-legal">
+                <p class="footer-copyright">{{ replace (T "copyright") "{year}" (now.Format "2006") | safeHTML }}</p>
+                {{/* ICP 备案号：备案号本身不翻译，只本地化标签；必须可点击跳转工信部系统。
+                     号码配在 config/_default/hugo.toml 的 params.icp_beian，留空则整行不渲染。 */}}
+                {{ with site.Params.icp_beian }}
+                <a class="footer-icp" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer nofollow">
+                    {{- with T "icp_label" }}{{ . }}&nbsp;{{ end -}}{{ . }}
+                </a>
+                {{ end }}
+            </div>
             <div class="footer-languages">
                 {{/* 跟随当前页面切换语言，不再写死首页 */}}
                 {{ $tr := .AllTranslations }}
